@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 import { Article } from '../interfaces'
 
 type ListDetailProps = {

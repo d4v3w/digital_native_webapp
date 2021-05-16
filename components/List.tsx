@@ -1,4 +1,3 @@
-import * as React from 'react'
 import ListItem from './ListItem'
 import { Article } from '../interfaces'
 import styles from './utils.module.css'
