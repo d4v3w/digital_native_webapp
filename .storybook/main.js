@@ -8,4 +8,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-postcss"
   ],
+  core: {
+    builder: "webpack5",
+  },
 }
