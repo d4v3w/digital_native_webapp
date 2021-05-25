@@ -13,10 +13,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "pretty": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "es2020"
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx", "postcss.config.js", "next.config.js", "tailwind.config.js"]
