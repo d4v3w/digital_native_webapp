@@ -36,7 +36,7 @@ const Layout = ({ children, title = '' }: Props) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <header className={styles.header}>
-      <nav>
+      <nav className={styles.nav}>
         <Link href="/">
           <a>Home</a>
         </Link>{' '}

@@ -4,7 +4,7 @@ import styles from '../components/layout.module.css'
 
 const ContactPage = () => (
   <Layout title='Contact'>
-    <article>
+    <article className={styles.article}>
       <h1 className={styles.heading2Xl}>Contact Me</h1>
       <p>This is the about page</p>
       <p>

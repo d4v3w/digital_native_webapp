@@ -3,7 +3,7 @@ import styles from '../components/layout.module.css'
 
 const AboutPage = () => (
   <Layout title="About">
-    <article>
+    <article className={styles.article}>
       <h1 className={styles.heading2Xl}>About</h1>
       <p>This is the about page.</p>
       <p>

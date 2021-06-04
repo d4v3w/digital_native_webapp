@@ -10,6 +10,19 @@
   align-items: center;
 }
 
+.header {
+  font-size: 2rem;
+}
+
+.article {
+  height: 90vh;
+  background-color: light-blue;
+}
+
+.section {
+  height: 30vh;
+}
+
 .footer {
   margin-top: 2em;
   display: flex;

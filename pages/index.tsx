@@ -1,21 +1,21 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
+import Markdown from '../components/Markdown'
 import styles from '../components/layout.module.css'
 
 const IndexPage = () => (
   <Layout title='Home'>
-    <article>
+    <article className={styles.article}>
       <h1 className={styles.heading2Xl}>Welcome to Digital Native Online 👋</h1>
-      <p>
-        Welcome to Digital Native Online. Find out more{' '}
+      <section className={styles.section}>
+        <Markdown content="Welcome to Digital Native Online:" />
         <Link href='/about' >
-          <a>about</a>
-        </Link>{' '}
-        Digital Native here.
-      </p>
-      <p>
-        Happy Jungling!
-      </p>
+          <a>Find out more about Digital Native here.</a>
+        </Link>
+      </section>
+      <section className={styles.section}>
+        <Markdown content="Happy Jungling!" />
+      </section>
     </article>
   </Layout>
 )
