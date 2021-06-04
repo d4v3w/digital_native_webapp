@@ -1,14 +1,34 @@
 import ReactMarkdown from "react-markdown"
 
-type MarkdownProps = {
+export interface MarkdownProps {
+  /**
+   * Markdown string to render
+   */
   content: string
-  inline?: boolean
+  /**
+   * Is this an inline <span> or block <div>
+   */
+  isInline?: boolean
+  /**
+   * CSS class to add to block element. 
+   */
   className?: string
 }
 
-export default function Markdown(props: MarkdownProps) {
-  const inlineClass: string = (props.inline) ? '' : 'text-block'
+
+/**
+ * Primary UI component for outputting string markdown
+ */  
+export const Markdown: React.FC<MarkdownProps> = ({
+  content = '',
+  isInline = true,
+  className = '',
+}) => {
+  const elementClass: string = (!isInline) ? className : ''
   return (
-    <ReactMarkdown children={props.content} className={inlineClass} />
+    <ReactMarkdown
+      children={content}
+      className={elementClass}
+    />
   );
 }
