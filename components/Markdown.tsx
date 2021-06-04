@@ -1,5 +1,4 @@
-import "./styles.css";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown from "react-markdown"
 
 type MarkdownProps = {
   content: string
@@ -8,8 +7,8 @@ type MarkdownProps = {
 }
 
 export default function Markdown(props: MarkdownProps) {
-  const inlineClass: string = (props.inline) ? '' : 'text-block';
+  const inlineClass: string = (props.inline) ? '' : 'text-block'
   return (
-      <ReactMarkdown children={props.content} className={inlineClass} />
+    <ReactMarkdown children={props.content} className={inlineClass} />
   );
 }

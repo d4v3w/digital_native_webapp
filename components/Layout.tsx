@@ -1,4 +1,5 @@
-import { ReactNode } from 'react';
+import React from 'react'
+import { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import { SITE_COPYRIGHT, SITE_NAME } from '../utils/common'
@@ -15,7 +16,7 @@ const pageTitle = (title: string) => {
   return title ? title + ' | ' + siteTitle : siteTitle;
 }
 
-const Layout = ({ children, title = '' }: Props) => (
+const Layout = ({ children, title = '' }: Props): JSX.Element => (
   <div className={styles.container}>
     <Head>
       <title>{pageTitle(title)}</title>

@@ -11,8 +11,8 @@ module.exports = {
 
         // [Webpack 5] Automatic Node.js Polyfills Removed
         // https://github.com/webpack/webpack/issues/11282
-        config.resolve.fallback = { util: require.resolve("webpack/lib/util/") };
-        config.resolve.fallback = { fs: false };
+        // config.resolve.fallback = { util: require.resolve("webpack/lib/util/") };
+        // config.resolve.fallback = { fs: false };
 
         return config
     },

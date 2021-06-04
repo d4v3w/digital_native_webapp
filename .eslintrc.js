@@ -27,6 +27,22 @@ module.exports = {
   ],
   rules: {
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "quotes": "off",
+
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    'prettier/prettier': [
+      'warn',
+      {
+        singleQuote: true,
+        semi: true,
+      }
+    ],
   },
 };

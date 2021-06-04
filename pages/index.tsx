@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import Markdown from '../components/Markdown'
 import styles from '../components/layout.module.css'
 
-const IndexPage = () => (
+const IndexPage = (): JSX.Element => (
   <Layout title='Home'>
     <article className={styles.article}>
       <h1 className={styles.heading2Xl}>Welcome to Digital Native Online 👋</h1>
