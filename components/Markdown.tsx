@@ -10,21 +10,20 @@ export interface MarkdownProps {
    */
   isInline?: boolean
   /**
-   * CSS class to add to block element. 
+   * CSS class to add to block element. (isInline must also be false)
    */
   className?: string
 }
-
 
 /**
  * Primary UI component for outputting string markdown
  */  
 export const Markdown: React.FC<MarkdownProps> = ({
-  content = '',
+  content,
   isInline = true,
-  className = '',
+  className,
 }) => {
-  const elementClass: string = (!isInline) ? className : ''
+  const elementClass = (!isInline && className) ? className : ''
   return (
     <ReactMarkdown
       children={content}

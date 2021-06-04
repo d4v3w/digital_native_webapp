@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react';
 import { Markdown, MarkdownProps } from '../components/Markdown';
 
 export default {
-  title: 'Markdown Component',
+  title: 'Shared/Component/Markdown',
   component: Markdown,
 } as Meta;
 
@@ -32,5 +32,5 @@ Simple.args = {
         [My Link](https://www.mylink.com/)
         
     `,
-  label: 'Button',
+    isInline: true,
 };
