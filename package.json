@@ -9,7 +9,8 @@
     "type-check": "tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint --ext .jsx,.js,.ts,.tsx"
+    "lint": "eslint --ext .jsx,.js,.ts,.tsx",
+    "lint-fix": "eslint --fix --ext .jsx,.js,.ts,.tsx"
   },
   "dependencies": {
     "next": "latest",
