@@ -31,3 +31,5 @@ export const Markdown: React.FC<MarkdownProps> = ({
     />
   );
 }
+
+export default Markdown;
