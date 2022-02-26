@@ -2,8 +2,8 @@ module.exports = {
   purge: false,
   darkMode: 'media', // or 'media' or 'class'
   content: [
-    './pages/**/*.{html,js,tsx}',
-    './components/**/*.{html,js,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {},
