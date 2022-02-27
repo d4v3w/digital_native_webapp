@@ -14,7 +14,7 @@
 
 # production
 /build
-/.buildcache
+/buildcache
 
 # misc
 .DS_Store
