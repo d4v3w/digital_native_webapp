@@ -38,9 +38,7 @@ export const Hero: React.FC<HeroProps> = ({
         <div></div>
         
         <div>
-          <iframe src="https://open.spotify.com/embed/album/4zvOadQLbZbYsnpKCAUhUN?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-          <iframe src="https://open.spotify.com/embed/artist/7rNM47ikxQ7mEym71hzBnp?utm_source=generator" width="100%" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-          <iframe src="https://open.spotify.com/embed/track/5NzFXYux0iE7S3iY1YCawK?theme=0" width="100%" height="380" frameBorder="0" allow="encrypted-media"></iframe>
+          <iframe src="https://open.spotify.com/embed/playlist/1cd7ClB03VVYIGDTsuqRgv?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
       </div>
       ${ content }
