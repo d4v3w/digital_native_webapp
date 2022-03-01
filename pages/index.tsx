@@ -1,6 +1,4 @@
-import Link from 'next/link'
 import Layout from '../components/Layout'
-import Markdown from '../components/Markdown'
 import Hero from '../components/Hero'
 import styles from '../components/layout.module.css'
 
