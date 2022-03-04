@@ -10,16 +10,15 @@ type Props = {
 }
 
 const WithStaticProps = ({ items }: Props) => (
-  <Layout title='News'>
+  <Layout title='Digital Native Latest News'>
     <article>
-      <h1 className={styles.heading2Xl}>News</h1>
+      <h1 className={styles.heading2Xl}>Digital Native News</h1>
       <p>
-        News from inside <code>getStaticProps()</code>.
+        Digital Native news and updates. Latest Drum and Bass releases.
       </p>
-      <p>You are currently on: /news</p>
       <List items={items} />
     </article>
-  </Layout >
+  </Layout>
 )
 
 export const getStaticProps: GetStaticProps = async () => {
