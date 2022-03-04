@@ -37,6 +37,7 @@ const Layout = ({ children, title = '' }: Props): JSX.Element => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <header className={styles.header}>
+      <h1><a href="/">Digital Native</a></h1>
       <nav className={styles.nav}>
         <Link href="/">
           <a>Home</a>
