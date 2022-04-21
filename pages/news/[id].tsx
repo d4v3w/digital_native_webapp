@@ -22,14 +22,7 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
     )
   }
 
-  return (
-    <Layout
-      title={`${item ? item.title : 'News'
-        } | ${SITE_NAME}`}
-    >
-      {item && <ListDetail item={item} />}
-    </Layout>
-  )
+  return <Layout title={`${item ? item.title : 'News'} | ${SITE_NAME}`}>{item && <ListDetail item={item} />}</Layout>
 }
 
 export default StaticPropsDetail

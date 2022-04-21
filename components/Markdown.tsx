@@ -1,4 +1,4 @@
-import ReactMarkdown from "react-markdown"
+import ReactMarkdown from 'react-markdown'
 
 export interface MarkdownProps {
   /**
@@ -17,19 +17,10 @@ export interface MarkdownProps {
 
 /**
  * Primary UI component for outputting string markdown
- */  
-export const Markdown: React.FC<MarkdownProps> = ({
-  content,
-  isInline = true,
-  className,
-}) => {
-  const elementClass = (!isInline && className) ? className : ''
-  return (
-    <ReactMarkdown
-      children={content}
-      className={elementClass}
-    />
-  );
+ */
+export const Markdown: React.FC<MarkdownProps> = ({ content, isInline = true, className }) => {
+  const elementClass = !isInline && className ? className : ''
+  return <ReactMarkdown children={content} className={elementClass} />
 }
 
-export default Markdown;
+export default Markdown

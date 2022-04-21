@@ -7,11 +7,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'airbnb',
+    'plugin:@next/next/recommended',
     'plugin:prettier/recommended',
   ],
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -19,17 +17,20 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'prettier',
-    'error'
-  ],
   rules: {
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
     "quotes": "off",
-
+    
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ],
     "@typescript-eslint/quotes": [
       "error",
       "single",
@@ -41,7 +42,7 @@ module.exports = {
       'warn',
       {
         singleQuote: true,
-        semi: true,
+        semi: false,
       }
     ],
   },

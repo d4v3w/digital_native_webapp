@@ -10,12 +10,10 @@ type Props = {
 }
 
 const WithStaticProps = ({ items }: Props) => (
-  <Layout title='Digital Native Latest News'>
+  <Layout title="Digital Native Latest News">
     <article>
       <h1 className={styles.heading2Xl}>Digital Native News</h1>
-      <p>
-        Digital Native news and updates. Latest Drum and Bass releases.
-      </p>
+      <p>Digital Native news and updates. Latest Drum and Bass releases.</p>
       <List items={items} />
     </article>
   </Layout>
