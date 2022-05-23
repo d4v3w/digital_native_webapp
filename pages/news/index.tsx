@@ -1,8 +1,8 @@
 import { GetStaticProps } from 'next'
-import styles from '../../components/layout.module.css'
 import { Article } from '../../interfaces'
 import { newsData } from '../../utils/sample-data'
 import Layout from '../../components/Layout'
+import styles from '../../components/layout.module.css'
 import List from '../../components/List'
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 const WithStaticProps = ({ items }: Props) => (
   <Layout title="Digital Native Latest News">
     <article>
-      <h1 className={styles.heading2Xl}>Digital Native News</h1>
+      <h1 className={styles.headingPrimary}>Digital Native News</h1>
       <p>Digital Native news and updates. Latest Drum and Bass releases.</p>
       <List items={items} />
     </article>

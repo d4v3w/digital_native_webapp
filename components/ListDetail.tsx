@@ -1,14 +1,25 @@
 import { Article } from '../interfaces'
+import styles from '../components/layout.module.css'
+import Markdown from './Markdown'
+import Link from 'next/link'
 
 type ListDetailProps = {
   item: Article
 }
 
 const ListDetail = ({ item: item }: ListDetailProps) => (
-  <div>
-    <h1>Detail for {item.title}</h1>
-    <p>ID: {item.id}</p>
-  </div>
+  <article className={styles.article}>
+    <h2 className={styles.headingSecondary}>{item.title}</h2>
+    <p>{item.date}</p>
+    <p>{item.story}</p>
+    <nav>
+      <Link href="/news" passHref>
+        <a>
+          <Markdown content="Back" />
+        </a>
+      </Link>
+    </nav>
+  </article>
 )
 
 export default ListDetail

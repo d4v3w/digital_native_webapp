@@ -1,13 +1,15 @@
 import React from 'react'
 import { ReactNode } from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 import { SITE_COPYRIGHT, SITE_NAME } from '../utils/common'
 import styles from './layout.module.css'
+import classNames from 'classnames'
+import { Header } from './Header'
 
 type Props = {
   children?: ReactNode
   title?: string
+  className?: string
 }
 
 const siteTitle = SITE_NAME
@@ -16,7 +18,7 @@ const pageTitle = (title: string) => {
   return title ? title + ' | ' + siteTitle : siteTitle
 }
 
-const Layout = ({ children, title = '' }: Props): JSX.Element => (
+const Layout = ({ children, title = '', className = '' }: Props): JSX.Element => (
   <div className={styles.container}>
     <Head>
       <title>{pageTitle(title)}</title>
@@ -33,31 +35,8 @@ const Layout = ({ children, title = '' }: Props): JSX.Element => (
       <meta name="twitter:card" content="summary_large_image" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <header className={styles.header}>
-      <h1>
-        <Link href="/">
-          <a>Digital Native</a>
-        </Link>
-      </h1>
-      <nav className={styles.nav}>
-        <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/news">
-          <a>News</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/contact">
-          <a>Contact</a>
-        </Link>
-      </nav>
-    </header>
-    {children}
+    <Header className="fixed" />
+    <div className={classNames(styles.bodyContent, className)}>{children}</div>
     <footer className={styles.footer}>
       <span>{SITE_COPYRIGHT}</span>
     </footer>

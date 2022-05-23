@@ -4,7 +4,7 @@ import styles from '../components/layout.module.css'
 const AboutPage = () => (
   <Layout title="About">
     <article className={styles.article}>
-      <h1 className={styles.heading2Xl}>About Digital Native</h1>
+      <h1 className={styles.headingPrimary}>About Digital Native</h1>
       <p>Drum and Bass Producer from the Midlands, UK.</p>
       <p>
         With a sound on the deeper, liquid side of dnb, but not averse to more technical, jungly or darker styles and
