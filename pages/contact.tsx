@@ -8,18 +8,23 @@ const ContactPage = () => (
       <h1 className={styles.headingPrimary}>Contact Me</h1>
       <p>Contact Digital Native UK via social media links:</p>
       <p>
-        <Link href="https://www.facebook.com/digitalnativeuk">
+        <Link href="https://www.facebook.com/digitalnativeuk" passHref>
           <a>Facebook: digitalnativeuk</a>
         </Link>
       </p>
       <p>
-        <Link href="https://soundcloud.com/digitalnativeuk">
+        <Link href="https://soundcloud.com/digitalnativeuk" passHref>
           <a>Sound Cloud: digitalnativeuk</a>
         </Link>
       </p>
       <p>
-        <Link href="https://twitter.com/digitalnativeuk">
+        <Link href="https://twitter.com/digitalnativeuk" passHref>
           <a>Twitter: digitalnativeuk</a>
+        </Link>
+      </p>
+      <p>
+        <Link href="https://digitalnativeuk.bandcamp.com" passHref>
+          <a>Bandcamp: digitalnativeuk</a>
         </Link>
       </p>
     </article>

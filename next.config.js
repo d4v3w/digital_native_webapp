@@ -1,4 +1,8 @@
 module.exports = {
+    i18n: {
+        locales: ["en"],
+        defaultLocale: "en",
+    },
     // tailwind.config.js
     prefix: 'tw-',
     future: {

@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import styles from '../components/layout.module.css'
+import Link from 'next/link'
 
 const AboutPage = () => (
   <Layout title="About">
@@ -19,9 +20,17 @@ const AboutPage = () => (
         Recordings. Self releases available to stream or download via Bandcamp and Soundcloud.
       </p>
       <p>
-        https://digitalnativeuk.bandcamp.com
+        <Link href="https://digitalnativeuk.bandcamp.com" passHref>
+          <a>Bandcamp: digitalnativeuk</a>
+        </Link>
         <br />
-        https://soundcloud.com/digitalnativeuk
+        <Link href="https://soundcloud.com/digitalnativeuk" passHref>
+          <a>Soundcloud: digitalnativeuk</a>
+        </Link>
+        <br />
+        <Link href="https://www.facebook.com/digitalnativeuk" passHref>
+          <a>Facebook: digitalnativeuk</a>
+        </Link>
       </p>
     </article>
   </Layout>
