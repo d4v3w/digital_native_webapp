@@ -19,12 +19,16 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           <a>Home</a>
         </Link>{' '}
         |{' '}
+        <Link href="/music" passHref>
+          <a>Music</a>
+        </Link>{' '}
+        |{' '}
         <Link href="/about" passHref>
           <a>About</a>
         </Link>{' '}
         |{' '}
-        <Link href="/news" passHref>
-          <a>News</a>
+        <Link href="/production" passHref>
+          <a>Production</a>
         </Link>{' '}
         |{' '}
         <Link href="/contact" passHref>
