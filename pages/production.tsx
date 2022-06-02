@@ -1,6 +1,5 @@
 import Layout from '../components/Layout'
 import styles from '../components/layout.module.css'
-import Link from 'next/link'
 
 const ProductionPage = () => (
   <Layout title="Production">
