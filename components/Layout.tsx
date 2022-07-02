@@ -5,7 +5,7 @@ import { SITE_COPYRIGHT, SITE_NAME } from '../utils/common'
 import styles from './layout.module.css'
 import classNames from 'classnames'
 import { Header } from './Header'
-import siteImage from '../public/static/images/hero/digital_native-journey_through---understated---gfr027.jpg'
+import siteImage from '../public/images/hero/digital_native-journey_through---understated---gfr027.jpg'
 
 type Props = {
   children?: ReactNode
