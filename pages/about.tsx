@@ -18,7 +18,8 @@ const AboutPage = () => (
       <p>
         Releases on Goldfat, Hospital, Glitch Audio, Beats In Mind, Silent Audio, Liquid Brilliants and SIMBAL
         Recordings. 
-        
+      </p>
+      <p>
         Self releases available to stream or download via Bandcamp and Soundcloud.
       </p>
       <p>
