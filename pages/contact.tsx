@@ -6,7 +6,13 @@ const ContactPage = () => (
   <Layout title="Contact">
     <article className={styles.article}>
       <h1 className={styles.headingPrimary}>Contact Me</h1>
-      <p>Contact Digital Native UK via social media links:</p>
+      <p>You can reach me in the following places </p>
+      <p>
+        All social media Platforms - digitalnativeuk
+      </p>
+      <p>
+        Email: digitalnativeuk@outlook.com
+      </p>
       <p>
         <Link href="https://www.facebook.com/digitalnativeuk" passHref>
           <a>Facebook: digitalnativeuk</a>
