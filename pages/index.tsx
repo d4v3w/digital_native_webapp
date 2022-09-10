@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import { NewsFeed, NewsProps } from './news/index'
-import { newsData } from './news/news-items'
+import { newsData } from '../utils/news-items'
 import { Article } from '../interfaces'
 import { GetStaticProps } from 'next/types'
 

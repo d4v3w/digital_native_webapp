@@ -1,4 +1,4 @@
-import { Article, User } from '../../interfaces'
+import { Article, User } from '../interfaces'
 
 /** Dummy user data. */
 export const userData: User[] = [

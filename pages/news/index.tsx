@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next/types'
 import { Article } from '../../interfaces'
-import { newsData } from './news-items'
+import { newsData } from '../../utils/news-items'
 import Layout from '../../components/Layout'
 import styles from '../../components/news.module.css'
 import List from '../../components/List'
