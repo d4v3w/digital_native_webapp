@@ -1,22 +1,23 @@
 .news-list {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-content: center;
 }
 
 .news-item {
-  min-height: 4rem;
   border: 1px solid #ccc;
   display: inline-flex;
-  max-width: 30vw;
+  width: 30vw;
   padding: 1em;
   border-radius: 5px;
+  background-color: #fff;
+  color: #222;
 }
 
 .newsItemImage {
+  min-width: 20vw;
 }
 
 .home-feed .news-item {
-  max-width: 50vw;
 }

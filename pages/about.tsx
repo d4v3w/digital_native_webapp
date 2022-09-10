@@ -1,12 +1,25 @@
 import Layout from '../components/Layout'
 import styles from '../components/layout.module.css'
+import utilStyles from '../components/utils.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
+import heroImage from '../public/images/hero/digital_native_profile_portrait.jpg'
 
 const AboutPage = (): JSX.Element => (
   <Layout title="About">
     <article className={styles.article}>
       <h1 className={styles.headingPrimary}>About Digital Native</h1>
       <p>Drum and Bass Producer from the Midlands, UK.</p>
+      <div className={utilStyles.floatImgL}>
+        <Image
+          src={heroImage}
+          alt="Digital Native: Drum and Bass Producer"
+          width={512}
+          height={512}
+          layout={'fixed'}
+          priority={true}
+        />
+      </div>
       <p>
         With a sound on the deeper, liquid side of dnb, but not averse to more technical, jungly or darker styles and
         drawing influence from a broad musical taste, the focus is on creating a musical journey.

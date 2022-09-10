@@ -4,13 +4,16 @@
   width: 100%;
   background-color: #222;
   padding: 0 1rem;
+  display: flex;
+  min-height: 100px;
 }
 
-.masthead strong {
+.headerTitle .headerText {
   position: absolute;
   left: -9999px;
 }
 
 .headerLogo {
   height: 100px;
+  flex-grow: 1;
 }

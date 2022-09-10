@@ -4,19 +4,23 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
-section {
+body {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  padding: 48px 20px;
-  margin: 0 auto;
-  max-width: 600px;
-  color: #333;
+  min-width: 328px;
+}
+
+section {
+  margin: 0;
+  padding: 1rem;
+  background-color: #888;
 }
 
 h1 {
   font-weight: 600;
   font-size: 1.6em;
+  color: #fff;
 }
 
 h2 {
@@ -26,6 +30,7 @@ h2 {
 
 p {
   margin: 1em 0;
+  color: #ccc;
 }
 
 article {

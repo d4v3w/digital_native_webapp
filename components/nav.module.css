@@ -1,19 +1,24 @@
 .nav {
-  padding: 0;
+  flex: 1;
+  padding: 3px;
+  flex-grow: 4;
+  flex-basis: auto;
 }
 
 .navList {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  padding: 0;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: stretch;
 }
 
 .navItem {
   display: inline-flex;
   color: #1ea7fd;
   text-decoration: none;
+  padding: 1rem;
 }
 
 .navItem:hover {
@@ -27,8 +32,16 @@
 }
 
 /* Media Query for Desktop/Landscape Devices */
-@media (orientation: landscape) {
+
+/* Small screens */
+@media all and (max-width: 650px) {
   .navList {
-    max-width: 50vw;
+    /* On small screens, we are no longer using row direction but column */
+    /*flex-direction: column;
+    max-width: 50vw;*/
+  }
+
+  .navItem {
+    padding: 0 0.5rem;
   }
 }

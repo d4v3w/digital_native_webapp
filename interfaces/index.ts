@@ -14,8 +14,8 @@ export type Article = {
   title: string
   summary: string
   story: string
-  image: string
-  link: string
+  image?: string
+  link?: string
   date: string
   author: User
 }

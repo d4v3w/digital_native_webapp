@@ -11,38 +11,80 @@ export const userData: User[] = [
 export const newsData: Article[] = [
   {
     id: 1,
+    type: 'news',
     title: 'New Digital Native Website is Live',
     author: {
       name: 'Andy',
     },
-    story:
-      'Welcome to the new all new Digital Native UK website! You are the first time experience history first hand.',
+    summary: 'Digital Native UK',
+    story: 'Welcome to the new all new Digital Native UK website!',
     date: new Date('2022-03-02').toString(),
-    image: 'https://www.digitalnativeuk.com/public/images/artwork/ARTWORK.jpg',
+    image: '',
     link: 'https://www.digitalnativeuk.com/',
   },
   {
     id: 2,
-    title: 'New Digital Native Website is Live',
+    type: 'news',
+    title: 'Happy Birthday Digital Native',
     author: {
       name: 'Andy',
     },
-    story:
-      'Welcome to the new all new Digital Native UK website! You are the first time experience history first hand.',
+    summary: 'Digital Native UKs Birthday!',
+    story: 'Digital Native UKs Birthday!',
     date: new Date('2022-07-01').toString(),
-    image: 'https://www.digitalnativeuk.com/public/images/artwork/ARTWORK.jpg',
+    image: '',
     link: 'https://www.digitalnativeuk.com/',
   },
   {
     id: 3,
+    type: 'news',
     title: 'New Digital Native Website is Live',
     author: {
       name: 'Andy',
     },
-    story:
-      'Welcome to the new all new Digital Native UK website! You are the first time experience history first hand.',
-    date: new Date('2022-09-02').toString(),
-    image: 'https://www.digitalnativeuk.com/public/images/artwork/ARTWORK.jpg',
+    summary: '',
+    story: 'Welcome to the new all new Digital Native UK website!',
+    date: new Date('2022-09-01').toString(),
+    image: '',
+    link: 'https://www.digitalnativeuk.com/',
+  },
+  {
+    id: 4,
+    type: 'news',
+    title: 'New Digital Native Website is Live',
+    author: {
+      name: 'Andy',
+    },
+    summary: '',
+    story: 'Welcome to the new all new Digital Native UK website!',
+    date: new Date('2022-09-01').toString(),
+    image: '',
+    link: 'https://www.digitalnativeuk.com/',
+  },
+  {
+    id: 5,
+    type: 'release',
+    title: 'New Release Full Fat',
+    author: {
+      name: 'Andy',
+    },
+    summary: 'Full Fat',
+    story: 'Full Fat Release **Out Now!**',
+    date: new Date('2022-09-10').toString(),
+    image: '/images/artwork/ARTWORK.jpg',
+    link: 'https://www.digitalnativeuk.com/',
+  },
+  {
+    id: 6,
+    type: 'release',
+    title: 'New Release Understated',
+    author: {
+      name: 'Andy',
+    },
+    summary: 'Understated',
+    story: 'Understated the New Digital Native Release **Out Now!**',
+    date: new Date('2022-09-10').toString(),
+    image: '/images/artwork/GFR027-Artwork.jpg',
     link: 'https://www.digitalnativeuk.com/',
   },
 ]
