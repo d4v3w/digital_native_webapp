@@ -11,7 +11,9 @@ export const userData: User[] = [
 export const newsData: Article[] = [
   {
     id: 1,
+    type: 'news',
     title: 'New Digital Native Website is Live',
+    summary: '',
     author: {
       name: 'Dave',
     },

@@ -3,6 +3,7 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: center;
+  gap: 0.5rem;
 }
 
 .news-item {
@@ -19,5 +20,15 @@
   min-width: 20vw;
 }
 
-.home-feed .news-item {
+/* Media Query for Desktop/Landscape Devices */
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .news-list {
+  }
+
+  .news-item {
+    width: auto;
+    min-width: 100%;
+  }
 }
