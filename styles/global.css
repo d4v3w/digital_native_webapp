@@ -14,6 +14,16 @@ section {
   color: #333;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
 p {
   margin: 1em 0;
 }

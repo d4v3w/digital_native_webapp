@@ -22,6 +22,11 @@ export const Nav: React.FC<NavProps> = ({ className = '' }) => {
             <a>Home</a>
           </Link>
         </li>
+        <li className={classNames(styles.navItem, getActiveClass('/news'))}>
+          <Link href="/news" passHref>
+            <a>News</a>
+          </Link>
+        </li>
         <li className={classNames(styles.navItem, getActiveClass('/music'))}>
           <Link href="/music" passHref>
             <a>Music</a>

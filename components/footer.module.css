@@ -5,3 +5,12 @@
   width: 100%;
   flex-shrink: 0;
 }
+
+.footerLinks {
+  display: flex;
+}
+
+.footerLink {
+  display: inline-flex;
+  color: rgba(242, 244, 246, 0.7);
+}

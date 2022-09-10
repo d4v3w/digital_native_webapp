@@ -3,28 +3,17 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
 }
 
 .bodyContent {
-  padding: 7rem 2rem 0;
-  flex-grow: 1;
+  padding: 8rem 1rem 0;
 }
 
 .article {
   color: #555;
+  width: 100%;
 }
 
 .section {
   height: 30vh;
-}
-
-.headingPrimary {
-  font-size: 1.4em;
-  color: #fff;
-}
-
-.headingSecondary {
-  font-size: 1.3em;
-  color: #fff;
 }

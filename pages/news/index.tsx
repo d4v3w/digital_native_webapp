@@ -1,22 +1,30 @@
-import { GetStaticProps } from 'next'
+import { GetStaticProps } from 'next/types'
 import { Article } from '../../interfaces'
-import { newsData } from '../../utils/sample-data'
+import { newsData } from './news-items'
 import Layout from '../../components/Layout'
-import styles from '../../components/layout.module.css'
+import styles from '../../components/news.module.css'
 import List from '../../components/List'
+import classNames from 'classnames'
 
-type Props = {
+export type NewsProps = {
   items: Article[]
+  className?: string
 }
 
-const WithStaticProps = ({ items }: Props): JSX.Element => (
+const NewsPage = ({ items }: NewsProps): JSX.Element => (
   <Layout title="Digital Native Latest News">
     <article>
-      <h1 className={styles.headingPrimary}>Digital Native News</h1>
+      <h1 className={classNames(styles.news)}>Digital Native News</h1>
       <p>Digital Native news and updates. Latest Drum and Bass releases.</p>
-      <List items={items} />
+      <List items={items} className="news" />
     </article>
   </Layout>
+)
+
+export const NewsFeed: React.FC<NewsProps> = ({ items, className = '' }) => (
+  <article className={classNames(styles.news, className)}>
+    <List items={items} className="news" />
+  </article>
 )
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -27,4 +35,4 @@ export const getStaticProps: GetStaticProps = async () => {
   return { props: { items } }
 }
 
-export default WithStaticProps
+export default NewsPage

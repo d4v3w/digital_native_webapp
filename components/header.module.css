@@ -3,11 +3,14 @@
   z-index: 999;
   width: 100%;
   background-color: #222;
-  padding: 0 2rem;
-  flex-shrink: 0;
+  padding: 0 1rem;
 }
 
-.masthead {
-  font-size: 1.6em;
-  color: #fff;
+.masthead strong {
+  position: absolute;
+  left: -9999px;
+}
+
+.headerLogo {
+  height: 100px;
 }
