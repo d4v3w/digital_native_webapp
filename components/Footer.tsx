@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import classNames from 'classnames'
 import styles from './footer.module.css'
 import { SITE_COPYRIGHT } from '../utils/common'
