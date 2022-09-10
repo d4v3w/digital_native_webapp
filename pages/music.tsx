@@ -1,9 +1,8 @@
-
 import Layout from '../components/Layout'
 import styles from '../components/layout.module.css'
 import Link from 'next/link'
 
-const MusicPage = () => (
+const MusicPage = (): JSX.Element => (
   <Layout title="Music">
     <article className={styles.article}>
       <h1 className={styles.headingPrimary}>Digital Native UK Music</h1>

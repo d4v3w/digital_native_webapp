@@ -2,7 +2,7 @@ import Layout from '../components/Layout'
 import styles from '../components/layout.module.css'
 import Link from 'next/link'
 
-const AboutPage = () => (
+const AboutPage = (): JSX.Element => (
   <Layout title="About">
     <article className={styles.article}>
       <h1 className={styles.headingPrimary}>About Digital Native</h1>
@@ -17,11 +17,9 @@ const AboutPage = () => (
       </p>
       <p>
         Releases on Goldfat, Hospital, Glitch Audio, Beats In Mind, Silent Audio, Liquid Brilliants and SIMBAL
-        Recordings. 
+        Recordings.
       </p>
-      <p>
-        Self releases available to stream or download via Bandcamp and Soundcloud.
-      </p>
+      <p>Self releases available to stream or download via Bandcamp and Soundcloud.</p>
       <p>
         <Link href="https://digitalnativeuk.bandcamp.com" passHref>
           <a>Bandcamp: digitalnativeuk</a>

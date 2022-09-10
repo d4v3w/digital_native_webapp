@@ -9,7 +9,7 @@ type Props = {
   items: Article[]
 }
 
-const WithStaticProps = ({ items }: Props) => (
+const WithStaticProps = ({ items }: Props): JSX.Element => (
   <Layout title="Digital Native Latest News">
     <article>
       <h1 className={styles.headingPrimary}>Digital Native News</h1>

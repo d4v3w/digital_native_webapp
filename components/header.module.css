@@ -7,15 +7,7 @@
   flex-shrink: 0;
 }
 
-.header a {
-  text-decoration: none;
-  color: #1ea7fd;
-}
-
 .masthead {
   font-size: 1.6em;
   color: #fff;
-}
-.nav {
-  padding: 0.5em 0;
 }

@@ -1,0 +1,32 @@
+.nav {
+  padding: 0.5em 0;
+}
+
+.navList {
+  display: flex;
+  padding: 0;
+}
+
+.navItem {
+  display: inline-flex;
+  color: #1ea7fd;
+  text-decoration: none;
+  padding: 3px 12px 3px 3px;
+}
+
+.navItem:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.navActive {
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* Media Query for Desktop/Landscape Devices */
+@media (orientation: landscape) {
+  .navList {
+    max-width: 50vw;
+  }
+}

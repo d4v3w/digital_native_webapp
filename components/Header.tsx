@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Nav } from './Nav'
 import classNames from 'classnames'
 import styles from './header.module.css'
 
@@ -14,27 +15,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           <strong className={styles.masthead}>Digital Native UK</strong>
         </a>
       </Link>
-      <nav className={styles.nav}>
-        <Link href="/" passHref>
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/music" passHref>
-          <a>Music</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about" passHref>
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/production" passHref>
-          <a>Production</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/contact" passHref>
-          <a>Contact</a>
-        </Link>
-      </nav>
+      <Nav />
     </header>
   )
 }

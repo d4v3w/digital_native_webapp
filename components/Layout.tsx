@@ -1,10 +1,11 @@
 import React from 'react'
 import { ReactNode } from 'react'
 import Head from 'next/head'
-import { SITE_COPYRIGHT, SITE_NAME } from '../utils/common'
+import { SITE_NAME } from '../utils/common'
 import styles from './layout.module.css'
 import classNames from 'classnames'
 import { Header } from './Header'
+import { Footer } from './Footer'
 import siteImage from '../public/images/hero/digital_native-journey_through---understated---gfr027.jpg'
 
 type Props = {
@@ -33,9 +34,7 @@ const Layout = ({ children, title = '', className = '' }: Props): JSX.Element =>
     </Head>
     <Header className="fixed" />
     <div className={classNames(styles.bodyContent, className)}>{children}</div>
-    <footer className={styles.footer}>
-      <span>{SITE_COPYRIGHT}</span>
-    </footer>
+    <Footer className="bottom" />
   </div>
 )
 

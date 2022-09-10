@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 import styles from '../components/layout.module.css'
 
-const ProductionPage = () => (
+const ProductionPage = (): JSX.Element => (
   <Layout title="Production">
     <article className={styles.article}>
       <h1 className={styles.headingPrimary}>Digital Native Production Tutorials</h1>

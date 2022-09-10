@@ -1,5 +1,7 @@
 import classNames from 'classnames'
 import styles from '../components/hero.module.css'
+import Image from 'next/image'
+import heroImage from '../public/images/hero/digital_native_profile_portrait.jpg'
 
 export interface HeroProps {
   /**
@@ -14,6 +16,19 @@ export interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ className }) => {
   return (
     <article className={classNames(styles.article, styles.hero, className)}>
+      <Image
+        src={heroImage}
+        alt="Digital Native: Drum and Bass Producer"
+        width={512}
+        height={512}
+        layout={'responsive'}
+        priority={true}
+      />
+      <h1 className={styles.headingPrimary}>Digital Native UK</h1>
+      <p>
+        Releases on Goldfat, Hospital, Glitch Audio, Beats In Mind, Silent Audio, Liquid Brilliants and SIMBAL
+        Recordings. Self releases available to stream or download via Bandcamp and Soundcloud.
+      </p>
       <div>
         <div>
           <iframe
