@@ -6,14 +6,16 @@
 }
 
 .bodyContent {
-  padding: 7rem 1rem 0;
+  padding: 7rem 0 0;
+}
+
+.section {
+  height: 30vh;
 }
 
 .article {
   color: #555;
   width: 100%;
-}
-
-.section {
-  height: 30vh;
+  padding: 1rem;
+  margin-bottom: 0 1rem;
 }

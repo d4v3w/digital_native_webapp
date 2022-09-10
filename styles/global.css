@@ -2,7 +2,6 @@
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
-@tailwind utilities;
 
 body {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;

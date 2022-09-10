@@ -1,8 +1,12 @@
 import Layout from '../components/Layout'
+import { Article } from '../interfaces'
+import { newsData } from '../utils/news-items'
+import { GetStaticProps } from 'next/types'
 import styles from '../components/layout.module.css'
+import { NewsFeed, NewsProps } from './news/index'
 import Link from 'next/link'
 
-const MusicPage = (): JSX.Element => (
+const MusicPage = ({ items }: NewsProps): JSX.Element => (
   <Layout title="Music">
     <article className={styles.article}>
       <h1 className={styles.headingPrimary}>Digital Native UK Music</h1>
@@ -33,7 +37,15 @@ const MusicPage = (): JSX.Element => (
         </Link>
       </p>
     </article>
+    <section>
+      <NewsFeed items={items} filter="release" limit={2} className="home-feed" />
+    </section>
   </Layout>
 )
+
+export const getStaticProps: GetStaticProps = async () => {
+  const items: Article[] = newsData
+  return { props: { items } }
+}
 
 export default MusicPage

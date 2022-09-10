@@ -2,7 +2,8 @@ import { GetStaticProps } from 'next/types'
 import { Article } from '../../interfaces'
 import { newsData } from '../../utils/news-items'
 import Layout from '../../components/Layout'
-import styles from '../../components/news.module.css'
+import styles from '../../components/layout.module.css'
+import newsStyles from '../../components/news.module.css'
 import List from '../../components/List'
 import classNames from 'classnames'
 
@@ -15,7 +16,7 @@ export type NewsProps = {
 
 const NewsPage = ({ items, className = '' }: NewsProps): JSX.Element => (
   <Layout title="Digital Native Latest News">
-    <article className={classNames(styles.news, className)}>
+    <article className={classNames(styles.article, newsStyles.news, className)}>
       <h1 className={classNames(styles.news)}>Digital Native News</h1>
       <p>Digital Native news and updates. Latest Drum and Bass releases.</p>
       <List items={items} filter="news" order="desc" className="news" />

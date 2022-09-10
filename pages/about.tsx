@@ -14,8 +14,8 @@ const AboutPage = (): JSX.Element => (
         <Image
           src={heroImage}
           alt="Digital Native: Drum and Bass Producer"
-          width={512}
-          height={512}
+          width={360}
+          height={360}
           layout={'fixed'}
           priority={true}
         />
