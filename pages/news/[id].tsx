@@ -1,7 +1,7 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 import { Article } from '../../interfaces'
-import { newsData } from '../../utils/sample-data'
+import { newsData } from '../../utils/news-items'
 import Layout from '../../components/Layout'
 import ListDetail from '../../components/ListDetail'
 import { SITE_NAME } from '../../utils/common'

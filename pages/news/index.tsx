@@ -1,30 +1,37 @@
-import { GetStaticProps } from 'next'
+import { GetStaticProps } from 'next/types'
 import { Article } from '../../interfaces'
-import { newsData } from '../../utils/sample-data'
+import { newsData } from '../../utils/news-items'
 import Layout from '../../components/Layout'
-import styles from '../../components/layout.module.css'
+import styles from '../../components/news.module.css'
 import List from '../../components/List'
+import classNames from 'classnames'
 
-type Props = {
+export type NewsProps = {
   items: Article[]
+  filter?: string
+  limit?: number
+  className?: string
 }
 
-const WithStaticProps = ({ items }: Props): JSX.Element => (
+const NewsPage = ({ items, className = '' }: NewsProps): JSX.Element => (
   <Layout title="Digital Native Latest News">
-    <article>
-      <h1 className={styles.headingPrimary}>Digital Native News</h1>
+    <article className={classNames(styles.news, className)}>
+      <h1 className={classNames(styles.news)}>Digital Native News</h1>
       <p>Digital Native news and updates. Latest Drum and Bass releases.</p>
-      <List items={items} />
+      <List items={items} filter="news" order="desc" className="news" />
     </article>
   </Layout>
 )
 
+export const NewsFeed: React.FC<NewsProps> = ({ items, filter = 'news', limit = 2, className = '' }) => (
+  <article className={classNames(styles.news, className)}>
+    <List items={items} filter={filter} limit={limit} order="desc" className="news" />
+  </article>
+)
+
 export const getStaticProps: GetStaticProps = async () => {
-  // Example for including static props in a Next.js function component page.
-  // Don't forget to include the respective types for any props passed into
-  // the component.
   const items: Article[] = newsData
   return { props: { items } }
 }
 
-export default WithStaticProps
+export default NewsPage

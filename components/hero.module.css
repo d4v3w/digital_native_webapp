@@ -1,5 +1,7 @@
 .hero {
+  width: 100%;
   color: rgba(242, 244, 246, 0.7);
+  margin-bottom: 1rem;
 }
 
 /* Media Query for Desktop/Landscape Devices */

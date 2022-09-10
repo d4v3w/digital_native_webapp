@@ -1,7 +1,5 @@
 import classNames from 'classnames'
 import styles from '../components/hero.module.css'
-import Image from 'next/image'
-import heroImage from '../public/images/hero/digital_native_profile_portrait.jpg'
 
 export interface HeroProps {
   /**
@@ -16,16 +14,6 @@ export interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ className }) => {
   return (
     <article className={classNames(styles.hero, className)}>
-      <div className={styles.heroImage}>
-        <Image
-          src={heroImage}
-          alt="Digital Native: Drum and Bass Producer"
-          width={512}
-          height={512}
-          layout={'responsive'}
-          priority={true}
-        />
-      </div>
       <div className={styles.heroPlayer}>
         <iframe
           src="https://open.spotify.com/embed/playlist/5Ohs23L7Llqp2Z0ujz4i3O?utm_source=generator&theme=0"
