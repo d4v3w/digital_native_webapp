@@ -11,6 +11,7 @@ export type User = {
 
 export type Article = {
   id: number
+  type: string
   title: string
   summary: string
   story: string
