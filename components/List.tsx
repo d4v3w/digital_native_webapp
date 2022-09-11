@@ -34,7 +34,7 @@ const List = ({ items, filter = '', order = 'asc', limit = 999, className = 'def
           return
         }
         counter = counter + 1
-        return <ListItem id={counter} data={item} className={className} />
+        return <ListItem id={counter} item={item} className={className} />
       })}
     </ul>
   )

@@ -13,8 +13,25 @@
   box-shadow: 10px 5px 5px rgba(1, 1, 1, 0.35);
 }
 
+.newsListItem a {
+  display: block;
+  width: 100%;
+}
+
+.heading {
+  font-weight: 600;
+}
+
 .newsListItemImage {
   min-width: 20vw;
+}
+
+.shortText,
+.shortText p {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Media Query for Desktop/Landscape Devices */

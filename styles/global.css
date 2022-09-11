@@ -25,11 +25,17 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 1.3em;
+  color: #222;
 }
 
 p {
+  font-size: 1.2em;
   margin: 1em 0;
   color: #ccc;
+}
+
+section p {
+  color: #111;
 }
 
 article {
@@ -42,6 +48,10 @@ article a {
 
 article p a {
   color: #476d7e;
+}
+
+section article a {
+  color: #fff;
 }
 
 ul {

@@ -8,12 +8,14 @@ import { GetStaticProps } from 'next/types'
 const IndexPage = ({ items }: NewsFeedProps): JSX.Element => (
   <Layout title="Home">
     <Hero />
-    <section>
-      <NewsFeed items={items} filter="release" limit={2} className="home-release-feed" />
-    </section>
-    <section>
-      <NewsFeed items={items} filter="news" limit={6} className="home-news-feed" />
-    </section>
+    <main>
+      <section>
+        <NewsFeed items={items} filter="release" limit={2} className="home-release-feed" />
+      </section>
+      <section>
+        <NewsFeed items={items} filter="news" limit={6} className="home-news-feed" />
+      </section>
+    </main>
   </Layout>
 )
 

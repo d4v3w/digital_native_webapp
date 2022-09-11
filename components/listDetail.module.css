@@ -1,0 +1,12 @@
+.articleDetail {
+  color: #999;
+}
+.detailImage {
+  max-width: 900px;
+}
+
+/* Media Query for Desktop/Landscape Devices */
+
+/* Small screens */
+@media all and (max-width: 650px) {
+}

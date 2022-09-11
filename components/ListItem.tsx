@@ -2,10 +2,12 @@ import Link from 'next/link'
 import { Article } from '../interfaces'
 import styles from './listItem.module.css'
 import Image from 'next/image'
+import Markdown from './Markdown'
+import classNames from 'classnames'
 
 type ListItemProps = {
   id: number
-  data: Article
+  item: Article
   className?: string
 }
 
@@ -20,17 +22,18 @@ const newsImage = (image: string | undefined) => {
   )
 }
 
-const ListItem = ({ id, data, className = 'default' }: ListItemProps) => {
+const ListItem = ({ id, item, className = 'default' }: ListItemProps) => {
   return (
-    <li key={data.id} className={styles[className + 'ListItem']}>
-      <article className={className} data-index={id} data-id={data.id.toString()}>
-        <h2 className={styles.heading}>{data.title}</h2>
-        <div>{data.story}</div>
-        {newsImage(data.image)}
-        <Link href="/news/[id]" as={`/news/${data.id}`}>
-          <a className={styles.listItem}>Read More...</a>
-        </Link>
-      </article>
+    <li key={id} className={styles[className + 'ListItem']}>
+      <Link href="/news/[id]" as={`/news/${item.id}`}>
+        <a className={styles.listItem} title={item.title}>
+          <article className={className} data-index={id} data-id={item.id.toString()}>
+            <h2 className={classNames(styles.heading, styles.shortText)}>{item.title}</h2>
+            <Markdown content={item.summary} className={styles.shortText} isInline={false} />
+            {newsImage(item.image)}
+          </article>
+        </a>
+      </Link>
     </li>
   )
 }
