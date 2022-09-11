@@ -17,7 +17,8 @@ export const newsData: Article[] = [
       name: 'Andy',
     },
     summary: 'Digital Native UK',
-    story: 'Welcome to the new all new Digital Native UK website! It has been a long time coming, but we finally have a website we are happy to call home :)',
+    story:
+      'Welcome to the new all new Digital Native UK website! It has been a long time coming, but we finally have a website we are happy to call home :)',
     date: new Date('2022-03-02').toString(),
     image: '/images/artwork/036Cover.jpg',
     link: 'https://www.digitalnativeuk.com/',
