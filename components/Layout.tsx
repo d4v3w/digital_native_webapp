@@ -30,6 +30,7 @@ const Layout = ({ children, title = '', className = '' }: Props): JSX.Element =>
       <meta property="og:image" content={siteImage.src} />
       <meta name="og:title" content={siteTitle} />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="msvalidate.01" content="140A49DC28723A43FFD7F16C8C9D900F" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
