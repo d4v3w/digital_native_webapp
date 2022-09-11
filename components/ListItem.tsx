@@ -29,7 +29,8 @@ const ListItem = ({ id, item, className = 'default' }: ListItemProps) => {
         <a className={styles.listItem} title={item.title}>
           <article className={className} data-index={id} data-id={item.id.toString()}>
             <h2 className={classNames(styles.heading, styles.shortText)}>{item.title}</h2>
-            <Markdown content={item.summary} className={styles.shortText} isInline={false} />
+            <Markdown content={item.summary} className={styles.summary} isInline={false} />
+            <Markdown content={item.story} className={classNames(styles.summary, styles.shortText)} isInline={false} />
             {newsImage(item.image)}
           </article>
         </a>

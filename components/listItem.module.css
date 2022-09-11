@@ -20,6 +20,16 @@
 
 .heading {
   font-weight: 600;
+  font-size: 1rem;
+}
+
+.summary p {
+  font-weight: normal;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  margin: 0.1rem;
+  padding: 0;
+  color: #2f4f4f;
 }
 
 .newsListItemImage {

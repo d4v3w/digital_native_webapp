@@ -31,11 +31,13 @@ const ListDetail = ({ item: item }: ListDetailProps) => (
         <h2>
           <Markdown content={item.title} />
         </h2>
-        <section>
-          <Markdown content={item.summary} />
+        <section className={styles.content}>
+          <blockquote>
+            <Markdown content={item.summary} isInline={false} className={styles.summaryText} />
+          </blockquote>
           <Markdown content={item.story} />
           {newsImage(item.image)}
-          <Markdown content={item.date} />
+          <Markdown content={item.date} isInline={false} className={styles.date} />
           <nav>
             <Link href="/news" passHref>
               <a>
