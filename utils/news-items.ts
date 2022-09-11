@@ -37,7 +37,7 @@ export const newsData: Article[] = [
     link: 'https://www.digitalnativeuk.com/',
   },
   {
-    id: 5,
+    id: 3,
     type: 'news',
     title: 'Digital Native DJ Set',
     author: {
