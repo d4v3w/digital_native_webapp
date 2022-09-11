@@ -1,8 +1,8 @@
 .nav {
   flex: 1;
-  padding: 1em 0;
-  flex-grow: 4;
+  padding: 0;
   flex-basis: auto;
+  min-width: 340px;
 }
 
 .navList {
@@ -12,6 +12,7 @@
   justify-content: flex-end;
   align-items: flex-start;
   align-content: stretch;
+  padding: 0;
 }
 
 .navItem {
@@ -34,7 +35,7 @@
 /* Media Query for Desktop/Landscape Devices */
 
 /* Small screens */
-@media all and (max-width: 620px) {
+@media all and (max-width: 600px) {
   .navList {
     /* On small screens, we are no longer using row direction but column */
     /*flex-direction: column;
@@ -43,6 +44,6 @@
   }
 
   .navItem {
-    padding: 0 0.5rem;
+    padding: 0.5rem;
   }
 }
