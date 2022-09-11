@@ -14,4 +14,5 @@
 .footerLink {
   display: inline-flex;
   color: rgba(242, 244, 246, 0.7);
+  margin: 0 0.5rem;
 }
