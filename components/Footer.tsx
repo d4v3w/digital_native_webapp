@@ -12,7 +12,7 @@ export const Footer: React.FC<FooterProps> = ({ className = '' }) => {
     <footer className={classNames(styles.footer, className)}>
       <ul className={styles.footerLinks}>
         <li className={styles.footerLink}>
-          <SocialIcon url="https://www.facebook.com/digitalnativeuk" bgColor="#ff5a01" />
+          <SocialIcon url="https://www.facebook.com/digitalnativeuk" />
         </li>
         <li className={styles.footerLink}>
           <SocialIcon url="https://soundcloud.com/digitalnativeuk" />
