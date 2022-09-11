@@ -13,17 +13,15 @@ export interface HeroProps {
  */
 export const Hero: React.FC<HeroProps> = ({ className }) => {
   return (
-    <article className={classNames(styles.hero, className)}>
-      <div className={styles.heroPlayer}>
-        <iframe
-          src="https://open.spotify.com/embed/playlist/5Ohs23L7Llqp2Z0ujz4i3O?utm_source=generator&theme=0"
-          width="100%"
-          height="80"
-          frameBorder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        ></iframe>
-      </div>
-    </article>
+    <div className={classNames(styles.hero, styles.heroPlayer, className)}>
+      <iframe
+        src="https://open.spotify.com/embed/playlist/5Ohs23L7Llqp2Z0ujz4i3O?utm_source=generator&theme=0"
+        width="100%"
+        height="80"
+        frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      ></iframe>
+    </div>
   )
 }
 

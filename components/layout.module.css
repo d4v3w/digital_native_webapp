@@ -23,3 +23,8 @@
 .listSquare {
   list-style-type: square;
 }
+
+.player iframe {
+  max-width: 600px !important;
+  min-height: 400px;
+}

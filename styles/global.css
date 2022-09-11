@@ -62,6 +62,8 @@ section p {
 
 article {
   width: 100%;
+  max-width: 100rem;
+  margin: 1rem auto;
 }
 
 article a {

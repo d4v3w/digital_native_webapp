@@ -15,11 +15,13 @@ const ProductionPage = (): JSX.Element => (
       </article>
       <section>
         <article className={styles.article}>
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=x6lHFy0J7zo&list=PLBkTp5mHsGugRXtoQht4Pd1QC0ct3orhJ"
-            height={'100%'}
-            width={'100%'}
-          />
+          <div className={styles.player}>
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=x6lHFy0J7zo&list=PLBkTp5mHsGugRXtoQht4Pd1QC0ct3orhJ"
+              height={'100%'}
+              width={'100%'}
+            />
+          </div>
         </article>
       </section>
     </main>
