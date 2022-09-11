@@ -19,6 +19,9 @@ export interface MarkdownProps {
  * Primary UI component for outputting string markdown
  */
 export const Markdown: React.FC<MarkdownProps> = ({ content, isInline = true, className }) => {
+  if (content === '') {
+    return null
+  }
   const elementClass = !isInline && className ? className : ''
   return <ReactMarkdown children={content} className={elementClass} />
 }

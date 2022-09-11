@@ -9,18 +9,35 @@ export type NewsFeedProps = {
   limit?: number
   order?: string
   className?: string
+  isHeadingHidden?: boolean
+  isImageHidden?: boolean
+  isTextHidden?: boolean
 }
 
 export const NewsFeed: React.FC<NewsFeedProps> = ({
   items,
-  filter = 'news',
+  filter,
   limit,
   order = 'desc',
   className = '',
-}) => (
-  <div className={classNames(styles.news, className)}>
-    <List items={items} filter={filter} limit={limit} order={order} className="news" />
-  </div>
-)
+  isHeadingHidden,
+  isImageHidden,
+  isTextHidden,
+}) => {
+  return (
+    <div className={classNames(styles.news, className)}>
+      <List
+        items={items}
+        filter={filter}
+        limit={limit}
+        order={order}
+        className="news"
+        isHeadingHidden={isHeadingHidden}
+        isImageHidden={isImageHidden}
+        isTextHidden={isTextHidden}
+      />
+    </div>
+  )
+}
 
 export default NewsFeed

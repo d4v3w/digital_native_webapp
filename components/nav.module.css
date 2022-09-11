@@ -1,6 +1,6 @@
 .nav {
   flex: 1;
-  padding: 3px;
+  padding: 1em 0;
   flex-grow: 4;
   flex-basis: auto;
 }
@@ -18,7 +18,7 @@
   display: inline-flex;
   color: #1ea7fd;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .navItem:hover {

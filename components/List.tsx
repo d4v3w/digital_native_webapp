@@ -10,9 +10,21 @@ export type ListProps = {
   order?: string
   limit?: number
   className?: string
+  isHeadingHidden?: boolean
+  isImageHidden?: boolean
+  isTextHidden?: boolean
 }
 
-const List = ({ items, filter = '', order = 'asc', limit = 999, className = 'default' }: ListProps) => {
+const List = ({
+  items,
+  filter = '',
+  order = 'asc',
+  limit = 999,
+  className = 'default',
+  isHeadingHidden,
+  isImageHidden,
+  isTextHidden,
+}: ListProps) => {
   let sortedItems: Article[]
   let counter = 0
   if (order !== 'asc') {
@@ -34,7 +46,16 @@ const List = ({ items, filter = '', order = 'asc', limit = 999, className = 'def
           return
         }
         counter = counter + 1
-        return <ListItem id={counter} item={item} className={className} />
+        return (
+          <ListItem
+            id={counter}
+            item={item}
+            className={className}
+            isHeadingHidden={isHeadingHidden}
+            isImageHidden={isImageHidden}
+            isTextHidden={isTextHidden}
+          />
+        )
       })}
     </ul>
   )

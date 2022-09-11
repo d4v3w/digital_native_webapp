@@ -39,7 +39,14 @@ const MusicPage = ({ items }: NewsFeedProps): JSX.Element => (
         </p>
       </article>
       <section>
-        <NewsFeed items={items} filter="release" limit={2} className="home-feed" />
+        <NewsFeed
+          items={items}
+          filter="release"
+          limit={2}
+          className="home-feed"
+          isHeadingHidden={true}
+          isTextHidden={true}
+        />
       </section>
     </main>
   </Layout>

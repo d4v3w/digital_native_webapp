@@ -41,6 +41,7 @@
   color: #666;
 }
 
+/* Float images in copy */
 .floatImgL,
 .floatImgR {
   float: none;

@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   flex-shrink: 0;
+  margin-bottom: 1rem;
 }
 
 .footerLinks {

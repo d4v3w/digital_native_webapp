@@ -1,7 +1,3 @@
-.listItem {
-  margin: 0 0 1.25rem;
-}
-
 .newsListItem {
   border: 1px solid #ccc;
   display: inline-flex;
