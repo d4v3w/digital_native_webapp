@@ -3,10 +3,3 @@
   color: rgba(242, 244, 246, 0.7);
   margin-bottom: 1rem;
 }
-
-/* Media Query for Desktop/Landscape Devices */
-@media only screen and (orientation: landscape) {
-  .heroImage {
-    max-width: 40vw;
-  }
-}

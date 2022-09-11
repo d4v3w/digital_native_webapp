@@ -1,0 +1,13 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.newsList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  gap: 0.5rem;
+}

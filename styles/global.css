@@ -1,13 +1,13 @@
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 /* purgecss end ignore */
 
 body {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  min-width: 328px;
 }
 
 section {

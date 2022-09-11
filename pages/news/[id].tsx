@@ -1,18 +1,19 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-
+import { NewsFeed } from '../../components/NewsFeed'
 import { Article } from '../../interfaces'
 import { newsData } from '../../utils/news-items'
 import Layout from '../../components/Layout'
 import ListDetail from '../../components/ListDetail'
 import { SITE_NAME } from '../../utils/common'
 
-type Props = {
+type NewsArticleProps = {
   item?: Article
+  newsFeedItems: Article[]
   errors?: string
 }
 
-const StaticPropsDetail = ({ item, errors }: Props) => {
-  if (errors) {
+const StaticPropsDetail = ({ item, newsFeedItems, errors }: NewsArticleProps) => {
+  if (!item || errors) {
     return (
       <Layout title="Error | Digital Native (UK)">
         <p>
@@ -22,7 +23,15 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
     )
   }
 
-  return <Layout title={`${item ? item.title : 'News'} | ${SITE_NAME}`}>{item && <ListDetail item={item} />}</Layout>
+  return (
+    <Layout title={`${item ? item.title : 'News'} | ${SITE_NAME}`}>
+      <ListDetail item={item} />
+
+      <section>
+        <NewsFeed items={newsFeedItems} filter="release" limit={2} className="home-release-feed" />
+      </section>
+    </Layout>
+  )
 }
 
 export default StaticPropsDetail
@@ -43,11 +52,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 // direct database queries.
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
+    const newsFeedItems: Article[] = newsData
     const id = params?.id
     const item = newsData.find((data) => data.id === Number(id))
     // By returning { props: item }, the StaticPropsDetail component
     // will receive `item` as a prop at build time
-    return { props: { item } }
+    return { props: { item, newsFeedItems } }
   } catch (error) {
     let message
     if (error instanceof Error) message = error.message

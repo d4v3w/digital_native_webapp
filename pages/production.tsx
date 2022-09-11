@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import styles from '../components/layout.module.css'
+import ReactPlayer from 'react-player'
 
 const ProductionPage = (): JSX.Element => (
   <Layout title="Production">
@@ -11,6 +12,11 @@ const ProductionPage = (): JSX.Element => (
         drawing influence from a broad musical taste, the focus is on creating a musical journey.
       </p>
     </article>
+    <section>
+      <article className={styles.article}>
+        <ReactPlayer url="https://www.youtube.com/watch?v=x6lHFy0J7zo&list=PLBkTp5mHsGugRXtoQht4Pd1QC0ct3orhJ" />
+      </article>
+    </section>
   </Layout>
 )
 

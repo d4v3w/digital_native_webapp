@@ -1,6 +1,10 @@
 module.exports = {
+    reactStrictMode: true,
     images: {
         domains: ['www.digitalnativeuk.com'],
+    },
+    compiler: {
+        styledComponents: true,
     },
     i18n: {
         locales: ["en"],
@@ -15,6 +19,13 @@ module.exports = {
         // https://github.com/webpack/webpack/issues/11282
         // config.resolve.fallback = { util: require.resolve("webpack/lib/util/") };
         // config.resolve.fallback = { fs: false };
+
+        // SVG support
+        config.module.rules.push({
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack'],
+        });
 
         return config
     },

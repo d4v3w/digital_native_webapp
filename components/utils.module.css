@@ -37,26 +37,25 @@
   padding-top: 1px;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.listItem {
-  margin: 0 0 1.25rem;
-}
-
 .lightText {
   color: #666;
 }
 
-.floatImgL {
-  float: left;
-  margin: 0.5rem 1rem 0.5rem 0;
+.floatImgL,
+.floatImgR {
+  float: none;
+  margin: 0 0 1rem 0;
 }
 
-.floatImgR {
-  float: right;
-  margin: 0 1rem 0.5rem 0.5rem;
+/* Media Query for Desktop/Landscape Devices */
+@media only screen and (min-width: 650px) {
+  .floatImgL {
+    float: left;
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+
+  .floatImgR {
+    float: right;
+    margin: 0 1rem 0.5rem 0.5rem;
+  }
 }

@@ -34,11 +34,12 @@
 /* Media Query for Desktop/Landscape Devices */
 
 /* Small screens */
-@media all and (max-width: 650px) {
+@media all and (max-width: 620px) {
   .navList {
     /* On small screens, we are no longer using row direction but column */
     /*flex-direction: column;
     max-width: 50vw;*/
+    font-size: small;
   }
 
   .navItem {

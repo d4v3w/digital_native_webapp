@@ -3,10 +3,10 @@ import { Article } from '../interfaces'
 import { newsData } from '../utils/news-items'
 import { GetStaticProps } from 'next/types'
 import styles from '../components/layout.module.css'
-import { NewsFeed, NewsProps } from './news/index'
+import { NewsFeed, NewsFeedProps } from '../components/NewsFeed'
 import Link from 'next/link'
 
-const MusicPage = ({ items }: NewsProps): JSX.Element => (
+const MusicPage = ({ items }: NewsFeedProps): JSX.Element => (
   <Layout title="Music">
     <article className={styles.article}>
       <h1 className={styles.headingPrimary}>Digital Native UK Music</h1>

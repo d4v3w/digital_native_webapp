@@ -6,29 +6,31 @@ const ContactPage = (): JSX.Element => (
   <Layout title="Contact">
     <article className={styles.article}>
       <h1 className={styles.headingPrimary}>Contact Me</h1>
-      <p>You can reach me in the following places </p>
-      <p>All social media Platforms - digitalnativeuk</p>
-      <p>Email: digitalnativeuk@outlook.com</p>
       <p>
-        <Link href="https://www.facebook.com/digitalnativeuk" passHref>
-          <a>Facebook: digitalnativeuk</a>
-        </Link>
+        You can reach me in the usual places across All social media Platforms - <strong>digitalnativeuk</strong>
       </p>
-      <p>
-        <Link href="https://soundcloud.com/digitalnativeuk" passHref>
-          <a>Sound Cloud: digitalnativeuk</a>
-        </Link>
-      </p>
-      <p>
-        <Link href="https://twitter.com/digitalnativeuk" passHref>
-          <a>Twitter: digitalnativeuk</a>
-        </Link>
-      </p>
-      <p>
-        <Link href="https://digitalnativeuk.bandcamp.com" passHref>
-          <a>Bandcamp: digitalnativeuk</a>
-        </Link>
-      </p>
+      <ul className={styles.listSquare}>
+        <li>
+          <Link href="https://www.facebook.com/digitalnativeuk" passHref>
+            <a>Facebook: digitalnativeuk</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="https://soundcloud.com/digitalnativeuk" passHref>
+            <a>Sound Cloud: digitalnativeuk</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="https://twitter.com/digitalnativeuk" passHref>
+            <a>Twitter: digitalnativeuk</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="https://digitalnativeuk.bandcamp.com" passHref>
+            <a>Bandcamp: digitalnativeuk</a>
+          </Link>
+        </li>
+      </ul>
     </article>
   </Layout>
 )
