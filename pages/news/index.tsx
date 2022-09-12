@@ -9,11 +9,15 @@ import classNames from 'classnames'
 
 const NewsPage = ({ items, className = '' }: NewsFeedProps): JSX.Element => (
   <Layout title="Digital Native Latest News">
-    <article className={classNames(styles.article, newsStyles.news, className)}>
-      <h1 className={classNames(styles.news)}>Digital Native News</h1>
-      <p>Digital Native news and updates. Latest Drum and Bass releases.</p>
-      <NewsFeed items={items} filter="" order="desc" className="news" isImageHidden={true} isTextHidden={false} />
-    </article>
+    <main>
+      <section>
+        <article className={classNames(styles.article, newsStyles.news, className)}>
+          <h1 className={classNames(styles.news)}>Digital Native News</h1>
+          <p>Digital Native news and updates. Latest Drum and Bass releases.</p>
+          <NewsFeed items={items} filter="" order="desc" className="news" isImageHidden={true} isTextHidden={false} />
+        </article>
+      </section>
+    </main>
   </Layout>
 )
 
