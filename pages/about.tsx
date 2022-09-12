@@ -22,19 +22,22 @@ const AboutPage = (): JSX.Element => (
           />
         </div>
         <p>
-          With a sound on the deeper, liquid side of dnb, but not averse to more technical, jungly or darker styles and
-          drawing influence from a broad musical taste, the focus is on creating a musical journey.
+          Based in the UK, Digital Native is a Drum and Bass producer known mainly for soulful, melodic dnb 
+          with a string of releases with Goldfat Records, Beats in Mind and Glitch Audio. 
         </p>
         <p>
-          Expect old breaks, musicality, emotion and soul at the core of anything you hear from Digital Native with
-          attention to the details.
+          Growing up on a mix of 60s rock to big band and playing multiple instruments, Digital Native draws 
+          influence from a broad musical palette. Having crafted a sound leading more towards the liquid end 
+          of dnb, more recent releases have allowed Digital Native to delve into heavier, darker vibes and 
+          old school influences. Regardless, musicality, emotion and soul are the root of all his music.
         </p>
         <p>
-          Releases on Goldfat, Hospital, Glitch Audio, Beats In Mind, Silent Audio, Liquid Brilliants and SIMBAL
-          Recordings.
-        </p>
-        <p>Self releases available to stream or download via Bandcamp and Soundcloud.</p>
-        <p>
+          Aside from multiple releases on various labels the last couple of years have seen a remix for 
+          London Elekricity on Hospital Records and growing support including on Radio 1 and Kiss FM. 
+          Live shows, most notably at XOYO for the RAM30 celebrations, and guest mixes on the Hospital 
+          podcast and Rinse FM have also allowed Digital Native to dig deeper into the full spectrum of 
+          his Drum and Bass tastes and showcase his mixing talents.
+        </p>               
           <Link href="https://digitalnativeuk.bandcamp.com" passHref>
             <a>Bandcamp: digitalnativeuk</a>
           </Link>

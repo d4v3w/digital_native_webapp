@@ -6,18 +6,39 @@ const ProductionPage = (): JSX.Element => (
   <Layout title="Production">
     <main>
       <article className={styles.article}>
-        <h1 className={styles.headingPrimary}>Digital Native Production Tutorials</h1>
-        <p>Drum and Bass Producer from the Midlands, UK.</p>
+        <h1 className={styles.headingPrimary}>Digital Native Production</h1>
+        <p>In this section youll find tutorials, samples and resources that will hopefully help you in your own production journey. </p>
         <p>
-          With a sound on the deeper, liquid side of dnb, but not averse to more technical, jungly or darker styles and
-          drawing influence from a broad musical taste, the focus is on creating a musical journey.
+          Check out the links below to navigate quickly to section you need.
         </p>
       </article>
       <section>
         <article className={styles.article}>
           <div className={styles.player}>
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=x6lHFy0J7zo&list=PLBkTp5mHsGugRXtoQht4Pd1QC0ct3orhJ"
+              url="https://www.youtube.com/watch?v=KIdN4IszoVE&t"
+              height={'100%'}
+              width={'100%'}
+            />
+          </div>
+        </article>
+      </section>
+      <section>
+        <article className={styles.article}>
+          <div className={styles.player}>
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=vp1Z3z59Mlk"
+              height={'100%'}
+              width={'100%'}
+            />
+          </div>
+        </article>
+      </section>
+      <section>
+        <article className={styles.article}>
+          <div className={styles.player}>
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=3SwZjXyKlbg&t"
               height={'100%'}
               width={'100%'}
             />
