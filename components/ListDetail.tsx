@@ -5,7 +5,6 @@ import Markdown from './Markdown'
 import Link from 'next/link'
 import Image from 'next/image'
 import classNames from 'classnames'
-import ListItem from './ListItem'
 
 type ListDetailProps = {
   item: Article
