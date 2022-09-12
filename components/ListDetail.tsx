@@ -5,6 +5,7 @@ import Markdown from './Markdown'
 import Link from 'next/link'
 import Image from 'next/image'
 import classNames from 'classnames'
+import ListItem from './ListItem'
 
 type ListDetailProps = {
   item: Article
@@ -18,6 +19,19 @@ const newsImage = (image: string | undefined) => {
     <div className={styles.detailImage}>
       <Image src={image} alt="" width={250} height={250} layout={'responsive'} />
     </div>
+  )
+}
+
+const newsLink = (link: string | undefined) => {
+  if (!link) {
+    return null
+  }
+  return (
+    <Link href={link} passHref>
+      <a>
+        <Markdown content={link} />
+      </a>
+    </Link>
   )
 }
 
@@ -36,6 +50,7 @@ const ListDetail = ({ item: item }: ListDetailProps) => (
             <Markdown content={item.summary} isInline={false} className={styles.summaryText} />
           </blockquote>
           <Markdown content={item.story} />
+          {newsLink(item.link)}
           {newsImage(item.image)}
           <Markdown content={item.date} isInline={false} className={styles.date} />
           <nav>
