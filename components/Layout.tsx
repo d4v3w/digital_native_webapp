@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import Head from 'next/head'
 import { SITE_NAME } from '../utils/common'
 import styles from './layout.module.css'
@@ -37,8 +37,8 @@ const Layout = ({ children, title = '', className = '' }: Props): JSX.Element =>
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <link rel="manifest" href="/site.webmanifest" />
     </Head>
-    <Header className="fixed" />
-    <div className={classNames(styles.bodyContent, className)}>{children}</div>
+    <Header className="top" />
+    <main className={classNames(styles.main, className)}>{children}</main>
     <Footer className="bottom" />
   </div>
 )

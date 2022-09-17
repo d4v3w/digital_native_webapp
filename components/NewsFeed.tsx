@@ -1,10 +1,10 @@
-import { Article } from '../interfaces'
+import { Content } from '../interfaces'
 import styles from './newsFeed.module.css'
 import List from './List'
 import classNames from 'classnames'
 
 export type NewsFeedProps = {
-  items: Article[]
+  items: Content[]
   filter?: string
   limit?: number
   order?: string

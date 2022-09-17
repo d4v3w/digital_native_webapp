@@ -1,36 +1,28 @@
 import Layout from '../components/Layout'
-import styles from '../components/layout.module.css'
-import ReactPlayer from 'react-player'
+import Article from '../components/Article'
+import Player from '../components/Player'
+import Markdown from '../components/Markdown'
+import Section from '../components/Section'
 
 const ProductionPage = (): JSX.Element => (
-  <Layout title="Production">
-    <main>
-      <section>
-        <article className={styles.article}>
-          <h1 className={styles.headingPrimary}>Digital Native Production</h1>
-          <p>
-            In this section youll find tutorials, samples and resources that will hopefully help you in your own
-            production journey.{' '}
-          </p>
-          <p>Check out the links below to navigate quickly to section you need.</p>
-        </article>
-        <article className={styles.article}>
-          <div className={styles.player}>
-            <ReactPlayer url="https://www.youtube.com/watch?v=KIdN4IszoVE&t" height={'100%'} width={'100%'} />
-          </div>
-        </article>
-        <article className={styles.article}>
-          <div className={styles.player}>
-            <ReactPlayer url="https://www.youtube.com/watch?v=vp1Z3z59Mlk" height={'100%'} width={'100%'} />
-          </div>
-        </article>
-        <article className={styles.article}>
-          <div className={styles.player}>
-            <ReactPlayer url="https://www.youtube.com/watch?v=3SwZjXyKlbg&t" height={'100%'} width={'100%'} />
-          </div>
-        </article>
-      </section>
-    </main>
+  <Layout title="Production" className="production">
+    <Article heading="Digital Native Production" isInline={true}>
+      <Markdown className="summary">
+        In this section youll find tutorials, samples and resources that will hopefully help you in your own production
+        journey. Check out the links below to navigate quickly to section you need.
+      </Markdown>
+    </Article>
+    <Section>
+      <Article heading="Forever and Ever" isInline={true}>
+        <Player url="https://www.youtube.com/watch?v=KIdN4IszoVE&t" />
+      </Article>
+      <Article heading="London Elektricity Remix" isInline={true}>
+        <Player url="https://www.youtube.com/watch?v=vp1Z3z59Mlk" />
+      </Article>
+      <Article heading="Joureny Through" isInline={true}>
+        <Player url="https://www.youtube.com/watch?v=3SwZjXyKlbg&t" />
+      </Article>
+    </Section>
   </Layout>
 )
 

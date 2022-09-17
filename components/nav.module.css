@@ -1,25 +1,22 @@
 .nav {
-  flex: 1;
-  padding: 0;
-  flex-basis: auto;
-  min-width: 340px;
+  grid-area: nav;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .navList {
+  flex: 1;
   display: flex;
-  flex-flow: row wrap;
-  /* This aligns items to the end line on main-axis */
-  justify-content: flex-end;
-  align-items: flex-start;
-  align-content: stretch;
-  padding: 0;
 }
 
 .navItem {
-  display: inline-flex;
+  flex: 1;
   color: #1ea7fd;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0 0.5rem 0.2rem 0rem;
+  margin: 0 1rem;
+  text-align: center;
 }
 
 .navItem:hover {
@@ -32,18 +29,9 @@
   border-bottom: 1px solid #fff;
 }
 
-/* Media Query for Desktop/Landscape Devices */
-
-/* Small screens */
-@media all and (max-width: 600px) {
-  .navList {
-    /* On small screens, we are no longer using row direction but column */
-    /*flex-direction: column;
-    max-width: 50vw;*/
-    font-size: small;
-  }
-
+@media (max-width: 600px) {
   .navItem {
-    padding: 0.5rem;
+    padding: 0;
+    margin: 0 0.5rem;
   }
 }

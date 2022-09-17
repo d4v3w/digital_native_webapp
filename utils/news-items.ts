@@ -1,14 +1,13 @@
-import { Article, User } from '../interfaces'
+import { Content, User } from '../interfaces'
 
 /** Dummy user data. */
 export const userData: User[] = [
-  { id: 'andy', name: 'Andy' },
-  { id: 'dave', name: 'Dave' },
-  { id: '', name: 'Guest' },
+  { id: 'andy', name: 'Andy Williams' },
+  { id: 'dave', name: 'Dave Williams' },
 ]
 
 /** Dummy news data. */
-export const newsData: Article[] = [
+export const newsData: Content[] = [
   {
     id: 1,
     type: 'news',

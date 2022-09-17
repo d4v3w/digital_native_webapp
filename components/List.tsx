@@ -2,10 +2,10 @@ import ListItem from './ListItem'
 import styles from './list.module.css'
 import classNames from 'classnames'
 
-import type { Article } from '../interfaces'
+import type { Content } from '../interfaces'
 
 export type ListProps = {
-  items: Article[]
+  items: Content[]
   filter?: string
   order?: string
   limit?: number
@@ -25,7 +25,7 @@ const List = ({
   isImageHidden,
   isTextHidden,
 }: ListProps) => {
-  let sortedItems: Article[]
+  let sortedItems: Content[]
   let counter = -1
   if (order !== 'asc') {
     // Descending

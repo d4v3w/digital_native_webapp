@@ -1,52 +1,47 @@
 import Link from 'next/link'
-import { Article } from '../interfaces'
+import { Content } from '../interfaces'
 import styles from './listItem.module.css'
-import utilStyles from './utils.module.css'
-import Image from 'next/image'
 import Markdown from './Markdown'
 import classNames from 'classnames'
+import Article from './Article'
+import Heading from './Heading'
 
 type ListItemProps = {
   id: number
-  item: Article
+  item: Content
   className?: string
   isHeadingHidden?: boolean
   isImageHidden?: boolean
   isTextHidden?: boolean
 }
 
-const newsImage = (image: string | undefined, isImageHidden: boolean | undefined) => {
-  if (!image || isImageHidden) {
-    return null
-  }
-  return (
-    <div className={styles.newsListItemImage}>
-      <Image src={image} alt="" width={250} height={250} layout={'responsive'} priority={true} />
-    </div>
-  )
-}
-
-const ListItem = ({ id, item, className = 'default', isHeadingHidden, isImageHidden, isTextHidden }: ListItemProps) => {
-  let readMore = 'Read more...'
+const ListItem = ({ id, item, className = 'default', isHeadingHidden, isTextHidden }: ListItemProps) => {
   if (isHeadingHidden) {
     item.title = ''
   }
   if (isTextHidden) {
     item.summary = ''
     item.story = ''
-    readMore = ''
   }
   return (
-    <li className={classNames(styles[className + 'ListItem'], utilStyles.blurredBox)}>
+    <li className={classNames(styles[className + 'ListItem'])}>
       <Link href="/news/[id]" as={`/news/${item.id}`}>
         <a className={styles.listItem} title={item.title}>
-          <article className={className} data-index={id} data-id={item.id.toString()}>
-            <h2 className={classNames(styles.heading, styles.shortText)}>{item.title}</h2>
-            <Markdown content={item.summary} className={styles.summary} isInline={false} />
-            <Markdown content={item.story} className={classNames(styles.summary, styles.shortText)} isInline={false} />
-            <Markdown content={readMore} />
-            {newsImage(item.image, isImageHidden)}
-          </article>
+          <Article
+            heading={item.title}
+            src={item.image}
+            isInline={true}
+            className={className}
+            data-index={id}
+            data-id={item.id.toString()}
+          >
+            <Heading type="subheading" className={classNames(styles.heading, styles.shortText)}>
+              {item.summary}
+            </Heading>
+            <Markdown className={classNames(styles.summary, styles.shortText)} isInline={false}>
+              {item.story}
+            </Markdown>
+          </Article>
         </a>
       </Link>
     </li>

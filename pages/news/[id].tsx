@@ -1,24 +1,27 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { NewsFeed } from '../../components/NewsFeed'
-import { Article } from '../../interfaces'
+import { Content } from '../../interfaces'
 import { newsData } from '../../utils/news-items'
 import Layout from '../../components/Layout'
 import ListDetail from '../../components/ListDetail'
 import { SITE_NAME } from '../../utils/common'
+import Article from '../../components/Article'
 
-type NewsArticleProps = {
-  item?: Article
-  newsFeedItems: Article[]
+type NewsPageProps = {
+  item?: Content
+  newsFeedItems: Content[]
   errors?: string
 }
 
-const StaticPropsDetail = ({ item, newsFeedItems, errors }: NewsArticleProps) => {
+const StaticPropsDetail = ({ item, newsFeedItems, errors }: NewsPageProps) => {
   if (!item || errors) {
     return (
       <Layout title="Error | Digital Native (UK)">
-        <p>
-          <span style={{ color: 'red' }}>Error:</span> {errors}
-        </p>
+        <Article heading="Error">
+          <p>
+            <span style={{ color: 'red' }}>Error:</span>
+          </p>
+        </Article>
       </Layout>
     )
   }
@@ -26,9 +29,8 @@ const StaticPropsDetail = ({ item, newsFeedItems, errors }: NewsArticleProps) =>
   return (
     <Layout title={`${item ? item.title : 'News'} | ${SITE_NAME}`}>
       <ListDetail item={item} />
-
       <section>
-        <NewsFeed items={newsFeedItems} filter="release" limit={2} className="home-release-feed" />
+        <NewsFeed items={newsFeedItems} filter="" limit={3} className="home-release-feed" />
       </section>
     </Layout>
   )
@@ -52,7 +54,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 // direct database queries.
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
-    const newsFeedItems: Article[] = newsData
+    const newsFeedItems: Content[] = newsData
     const id = params?.id
     const item = newsData.find((data) => data.id === Number(id))
     // By returning { props: item }, the StaticPropsDetail component

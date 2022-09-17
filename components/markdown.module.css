@@ -1,0 +1,33 @@
+.markdown {
+  color: rgba(41, 43, 45, 1);
+}
+
+.markdown.default {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+}
+
+.markdown.article {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+}
+
+.markdown.summary {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.markdown.large {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+.markdown.footnote {
+  font-size: 0.8rem;
+}
+
+.markdown p {
+  padding: 0 0 0.5rem 0;
+}

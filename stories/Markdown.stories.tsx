@@ -1,16 +1,16 @@
-import { Story, Meta } from '@storybook/react';
-import { Markdown, MarkdownProps } from '../components/Markdown';
+import { Story, Meta } from '@storybook/react'
+import Markdown from '../components/Markdown'
 
 export default {
   title: 'Shared/Component/Markdown',
   component: Markdown,
-} as Meta;
+} as Meta
 
-const Template: Story<MarkdownProps> = (args) => <Markdown {...args} />;
+const Template: Story = (args) => <Markdown {...args} />
 
-export const Simple = Template.bind({});
+export const Simple = Template.bind({})
 Simple.args = {
-    content: `
+  content: `
         # Heading 1
 
         Some thing to write about.
@@ -32,5 +32,5 @@ Simple.args = {
         [My Link](https://www.mylink.com/)
         
     `,
-    isInline: true,
-};
+  isInline: true,
+}

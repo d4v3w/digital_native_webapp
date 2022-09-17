@@ -9,7 +9,7 @@ export interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ className = '' }) => {
   return (
-    <footer className={classNames(styles.footer, className)}>
+    <footer className={classNames(styles.footer, className)} role="">
       <ul className={styles.footerLinks}>
         <li className={styles.footerLink}>
           <SocialIcon url="https://www.facebook.com/digitalnativeuk" />

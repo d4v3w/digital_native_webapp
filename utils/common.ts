@@ -5,4 +5,4 @@
 const year = new Date();  
 
 export const SITE_NAME: string = 'Digital Native UK';
-export const SITE_COPYRIGHT: string = `© Digital Native UK ${year.getFullYear()}`;
+export const SITE_COPYRIGHT: string = `© Digital Native UK ${year.getFullYear()}. All rights reserved.`;

@@ -4,85 +4,8 @@
 @tailwind utilities;
 /* purgecss end ignore */
 
-body {
+html {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-main {
-  min-height: 80vh;
-}
-
-section {
-  margin: 0;
-  padding: 1rem;
-  background-color: #00050d;
-}
-
-section:first-of-type {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-h1 {
-  font-weight: 600;
-  font-size: 1.6em;
-  color: #fff;
-}
-
-h2 {
-  font-weight: 500;
-  font-size: 1.3em;
-  color: #222;
-}
-
-p {
-  font-size: 1.2em;
-  margin: 1em 0;
-  color: #ccc;
-}
-
-section p {
-  color: #111;
-}
-
-article {
-  width: 100%;
-  max-width: 100rem;
-  margin: 1rem auto;
-}
-
-article a {
-  color: #686868;
-}
-
-article p a {
-  color: #476d7e;
-}
-
-section article a {
-  color: #fff;
-}
-
-ul {
-  padding-left: 30px;
-  margin: 1em 0;
-}
-
-li {
-  margin-bottom: 8px;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }

@@ -5,6 +5,9 @@
   width: 100%;
   flex-shrink: 0;
   margin-bottom: 1rem;
+  grid-area: footer;
+  padding: 1rem;
+  color: rgba(108, 122, 137, 0.8);
 }
 
 .footerLinks {
@@ -14,5 +17,5 @@
 .footerLink {
   display: inline-flex;
   color: rgba(242, 244, 246, 0.7);
-  margin: 0 0.5rem;
+  margin: 1rem;
 }

@@ -1,23 +1,11 @@
 .newsListItem {
   border: 1px solid #ccc;
-  display: inline-flex;
-  width: 30vw;
-  padding: 1em;
   border-radius: 5px;
   background-color: #fff;
   color: #222;
+  max-width: 20%;
 }
 
 .newsListItemImage {
   min-width: 20vw;
-}
-
-/* Media Query for Desktop/Landscape Devices */
-
-/* Small screens */
-@media all and (max-width: 650px) {
-  .newsListItem {
-    width: auto;
-    min-width: 100%;
-  }
 }

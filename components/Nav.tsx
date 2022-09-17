@@ -7,7 +7,7 @@ export interface NavProps {
   className?: string
 }
 
-const navItems = ['Home', 'About', 'News', 'Music', 'Production', 'Contact']
+const navItems = ['Home', 'About', 'News', 'Music', 'Production']
 
 const getActiveClass = (path: string) => {
   const router = useRouter()
@@ -19,7 +19,7 @@ const getActiveClass = (path: string) => {
 
 export const Nav: React.FC<NavProps> = ({ className = '' }) => {
   return (
-    <nav className={classNames(styles.nav, className)}>
+    <nav className={classNames(styles.nav, className)} role="navigation">
       <ul className={classNames(styles.navList)}>
         {navItems.map((name, index) => (
           <li key={`nav-${index}`} className={classNames(styles.navItem, getActiveClass(name))}>

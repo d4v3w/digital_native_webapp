@@ -1,4 +1,4 @@
-import { Article, User } from '../interfaces'
+import { Content, User } from '../interfaces'
 
 /** Dummy user data. */
 export const userData: User[] = [
@@ -8,7 +8,7 @@ export const userData: User[] = [
 ]
 
 /** Dummy news data. */
-export const newsData: Article[] = [
+export const newsData: Content[] = [
   {
     id: 1,
     type: 'news',

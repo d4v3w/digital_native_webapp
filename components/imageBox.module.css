@@ -1,0 +1,11 @@
+.image {
+}
+
+.image.inline {
+  display: inline;
+}
+
+.image.block {
+  display: block;
+  flex: 1;
+}
