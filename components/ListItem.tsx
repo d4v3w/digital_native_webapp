@@ -21,7 +21,7 @@ const newsImage = (image: string | undefined, isImageHidden: boolean | undefined
   }
   return (
     <div className={styles.newsListItemImage}>
-      <Image src={image} alt="" width={250} height={250} layout={'responsive'} />
+      <Image src={image} alt="" width={250} height={250} layout={'responsive'} priority={true} />
     </div>
   )
 }
@@ -37,7 +37,7 @@ const ListItem = ({ id, item, className = 'default', isHeadingHidden, isImageHid
     readMore = ''
   }
   return (
-    <li key={id} className={classNames(styles[className + 'ListItem'], utilStyles.blurredBox)}>
+    <li className={classNames(styles[className + 'ListItem'], utilStyles.blurredBox)}>
       <Link href="/news/[id]" as={`/news/${item.id}`}>
         <a className={styles.listItem} title={item.title}>
           <article className={className} data-index={id} data-id={item.id.toString()}>

@@ -26,7 +26,7 @@ const List = ({
   isTextHidden,
 }: ListProps) => {
   let sortedItems: Article[]
-  let counter = 0
+  let counter = -1
   if (order !== 'asc') {
     // Descending
     sortedItems = items.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -36,7 +36,7 @@ const List = ({
   }
   return (
     <ul className={classNames(styles.list, styles[className + 'List'])}>
-      {sortedItems.map((item) => {
+      {sortedItems.map((item, index) => {
         // Limit based on counter
         if (limit && counter === limit) {
           return
@@ -45,9 +45,13 @@ const List = ({
         if (filter && item.type !== filter) {
           return
         }
-        counter = counter + 1
+        // Increment counter
+        ++counter
+        const key =
+          `${className}-item-${index.toString()}-${item.id.toString()}` || `${index.toString()}-${counter.toString()}`
         return (
           <ListItem
+            key={key}
             id={counter}
             item={item}
             className={className}

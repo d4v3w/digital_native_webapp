@@ -21,8 +21,8 @@ export const Nav: React.FC<NavProps> = ({ className = '' }) => {
   return (
     <nav className={classNames(styles.nav, className)}>
       <ul className={classNames(styles.navList)}>
-        {navItems.map((name) => (
-          <li className={classNames(styles.navItem, getActiveClass(name))}>
+        {navItems.map((name, index) => (
+          <li key={`nav-${index}`} className={classNames(styles.navItem, getActiveClass(name))}>
             <Link href={name === 'Home' ? '/' : '/' + name.toLowerCase()} passHref>
               <a>{name}</a>
             </Link>
