@@ -13,13 +13,13 @@ const ProductionPage = (): JSX.Element => (
       </Markdown>
     </Article>
     <Section>
-      <Article heading="Forever and Ever" isInline={true}>
+      <Article heading="Forever and Ever" isInline={false}>
         <Player url="https://www.youtube.com/watch?v=KIdN4IszoVE&t" />
       </Article>
-      <Article heading="London Elektricity Remix" isInline={true}>
+      <Article heading="London Elektricity Remix" isInline={false}>
         <Player url="https://www.youtube.com/watch?v=vp1Z3z59Mlk" />
       </Article>
-      <Article heading="Joureny Through" isInline={true}>
+      <Article heading="Joureny Through" isInline={false}>
         <Player url="https://www.youtube.com/watch?v=3SwZjXyKlbg&t" />
       </Article>
     </Section>
