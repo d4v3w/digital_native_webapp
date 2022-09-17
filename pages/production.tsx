@@ -2,7 +2,6 @@ import Layout from '../components/Layout'
 import Article from '../components/Article'
 import Player from '../components/Player'
 import Markdown from '../components/Markdown'
-import Section from '../components/Section'
 
 const ProductionPage = (): JSX.Element => (
   <Layout title="Production" className="production">
