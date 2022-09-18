@@ -1,9 +1,10 @@
 .markdown {
-  color: rgba(41, 43, 45, 1);
+  color: rgba(41, 43, 45, 0.9);
+  display: inline;
 }
 
 .markdown.default {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.3rem;
 }
 
@@ -26,6 +27,13 @@
 
 .markdown.footnote {
   font-size: 0.8rem;
+}
+
+.markdown.link {
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(41, 43, 45, 1);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .markdown p {

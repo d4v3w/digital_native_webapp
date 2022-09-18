@@ -20,7 +20,7 @@ const getActiveClass = (path: string) => {
 export const Nav: React.FC<NavProps> = ({ className = '' }) => {
   return (
     <nav className={classNames(styles.nav, className)} role="navigation">
-      <input type="checkbox" id="menu-toggle" className={classNames(styles.toggle)} />
+      <input type="checkbox" id="menu-toggle" className={classNames(styles.toggle)} title="menu" />
       <label htmlFor="menu-toggle" className={classNames(styles.container)}>
         <div className={classNames(styles.button)}></div>
       </label>
@@ -28,7 +28,9 @@ export const Nav: React.FC<NavProps> = ({ className = '' }) => {
         {navItems.map((name, index) => (
           <li key={`nav-${index}`} className={classNames(styles.item, getActiveClass(name))}>
             <Link href={name === 'Home' ? '/' : '/' + name.toLowerCase()} passHref>
-              <a>{name}</a>
+              <a title={name} role="link">
+                {name}
+              </a>
             </Link>
           </li>
         ))}

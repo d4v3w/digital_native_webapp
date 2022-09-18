@@ -38,9 +38,9 @@ const ListDetail = ({ item: item }: ListDetailProps) => (
       </Markdown>
     </div>
     <nav role="navigation">
-      <Link href="/news" passHref>
+      <Link href="/news" title="Navigate to previous page" passHref>
         <a className={styles.link}>
-          <Markdown content="Back" />
+          <Markdown className="link">{`<< Back`}</Markdown>
         </a>
       </Link>
     </nav>
