@@ -34,7 +34,7 @@ const Article = ({ isInline = false, className = '', ...props }) => {
         alt={props.heading}
         isBlock={true}
         priority={true}
-        layout="responsive" 
+        layout="responsive"
       />
       {content}
     </article>

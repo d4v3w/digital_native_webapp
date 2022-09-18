@@ -8,7 +8,7 @@ import Section from '../components/Section'
 const IndexPage = ({ items }: ListProps): JSX.Element => (
   <Layout title="Home" className="home">
     <Section className={'home'}>
-      <List items={items} filter="release" limit={2} className="feed" />
+      <List items={items} filter="release" limit={3} className="feed" />
     </Section>
     <Section className={'home'}>
       <List items={items} filter="news" limit={6} className="feed" />
