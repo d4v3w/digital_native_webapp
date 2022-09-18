@@ -15,12 +15,12 @@ export type ListProps = {
   isTextHidden?: boolean
 }
 
-const List = ({
+export const List: React.FC<ListProps> = ({
   items,
   filter = '',
   order = 'asc',
   limit = 999,
-  className = 'default',
+  className = '',
   isHeadingHidden,
   isImageHidden,
   isTextHidden,
@@ -35,7 +35,7 @@ const List = ({
     sortedItems = items.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
   }
   return (
-    <ul className={classNames(styles.list, className)}>
+    <ul className={classNames(styles.list, styles[className])}>
       {sortedItems.map((item, index) => {
         // Limit based on counter
         if (limit && counter === limit) {
@@ -54,7 +54,7 @@ const List = ({
             key={key}
             id={counter}
             item={item}
-            className={classNames('listItem', className + 'Item')}
+            className={className}
             isHeadingHidden={isHeadingHidden}
             isImageHidden={isImageHidden}
             isTextHidden={isTextHidden}

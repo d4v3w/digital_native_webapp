@@ -1,22 +1,22 @@
 .markdown {
   color: rgba(41, 43, 45, 0.9);
   display: inline;
-}
-
-.markdown.default {
   font-size: 1.1rem;
   line-height: 1.3rem;
 }
 
+.markdown.default {
+}
+
 .markdown.article {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.3rem;
 }
 
 .markdown.summary {
   font-size: 1.2rem;
   line-height: 1.3rem;
-  font-weight: 600;
+  font-weight: 0;
   margin-bottom: 1rem;
 }
 

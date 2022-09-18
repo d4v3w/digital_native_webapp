@@ -1,11 +1,12 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { NewsFeed } from '../../components/NewsFeed'
+import { List } from '../../components/List'
 import { Content } from '../../interfaces'
 import { newsData } from '../../utils/news-items'
 import Layout from '../../components/Layout'
 import ListDetail from '../../components/ListDetail'
 import { SITE_NAME } from '../../utils/common'
 import Article from '../../components/Article'
+import Section from '../../components/Section'
 
 type NewsPageProps = {
   item?: Content
@@ -13,7 +14,7 @@ type NewsPageProps = {
   errors?: string
 }
 
-const StaticPropsDetail = ({ item, newsFeedItems, errors }: NewsPageProps) => {
+const ListPage = ({ item, newsFeedItems, errors }: NewsPageProps) => {
   if (!item || errors) {
     return (
       <Layout title="Error | Digital Native (UK)">
@@ -29,14 +30,14 @@ const StaticPropsDetail = ({ item, newsFeedItems, errors }: NewsPageProps) => {
   return (
     <Layout title={`${item ? item.title : 'News'} | ${SITE_NAME}`}>
       <ListDetail item={item} />
-      <section>
-        <NewsFeed items={newsFeedItems} filter="" limit={3} className="home-release-feed" />
-      </section>
+      <Section>
+        <List items={newsFeedItems} filter="" limit={20} className="small" />
+      </Section>
     </Layout>
   )
 }
 
-export default StaticPropsDetail
+export default ListPage
 
 export const getStaticPaths: GetStaticPaths = async () => {
   // Get the paths we want to pre-render based on users

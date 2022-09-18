@@ -1,17 +1,17 @@
 import Layout from '../components/Layout'
-import { NewsFeed, NewsFeedProps } from '../components/NewsFeed'
+import { List, ListProps } from '../components/List'
 import { newsData } from '../utils/news-items'
 import { Content } from '../interfaces'
 import { GetStaticProps } from 'next/types'
 import Section from '../components/Section'
 
-const IndexPage = ({ items }: NewsFeedProps): JSX.Element => (
+const IndexPage = ({ items }: ListProps): JSX.Element => (
   <Layout title="Home" className="home">
     <Section className={'home'}>
-      <NewsFeed items={items} filter="release" limit={2} className="home-release-feed" />
+      <List items={items} filter="release" limit={2} className="feed" />
     </Section>
     <Section className={'home'}>
-      <NewsFeed items={items} filter="news" limit={6} className="home-news-feed" />
+      <List items={items} filter="news" limit={6} className="feed" />
     </Section>
   </Layout>
 )

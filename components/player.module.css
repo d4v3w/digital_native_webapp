@@ -1,5 +1,14 @@
-.player {
-  height: 400px;
-  width: 800px;
-  max-width: 90vw;
+.player,
+.player iframe {
+  max-width: 90vw !important;
+  width: 40rem;
+  min-height: 30rem;
+}
+
+@media (max-width: 768px) {
+  .player,
+  .player iframe {
+    max-width: 100% !important;
+    width: 100%;
+  }
 }

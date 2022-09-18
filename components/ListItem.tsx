@@ -15,16 +15,33 @@ type ListItemProps = {
   isTextHidden?: boolean
 }
 
-const ListItem = ({ id, item, className = 'default', isHeadingHidden, isTextHidden }: ListItemProps) => {
+const ListItem = ({
+  id,
+  item,
+  className = 'default',
+  isImageHidden = false,
+  isHeadingHidden,
+  isTextHidden,
+}: ListItemProps) => {
+  if (isImageHidden) {
+    item.image = ''
+  }
   if (isHeadingHidden) {
     item.title = ''
   }
-  if (isTextHidden) {
-    item.summary = ''
-    item.story = ''
-  }
+  const text = !isTextHidden ? (
+    <>
+      <Heading type="subheading" className={classNames(styles.heading, styles.shortText)}>
+        {item.summary}
+      </Heading>
+      <Markdown className={classNames(styles.summary, styles.shortText)} isInline={false}>
+        {item.story}
+      </Markdown>
+    </>
+  ) : null
+
   return (
-    <li className={classNames(styles.listItem, className)}>
+    <li className={classNames(styles.item, styles[className])}>
       <Link href="/news/[id]" as={`/news/${item.id}`}>
         <a className={styles.link} title={item.title}>
           <Article
@@ -35,12 +52,7 @@ const ListItem = ({ id, item, className = 'default', isHeadingHidden, isTextHidd
             data-index={id}
             data-id={item.id.toString()}
           >
-            <Heading type="subheading" className={classNames(styles.heading, styles.shortText)}>
-              {item.summary}
-            </Heading>
-            <Markdown className={classNames(styles.summary, styles.shortText)} isInline={false}>
-              {item.story}
-            </Markdown>
+            {text}
           </Article>
         </a>
       </Link>

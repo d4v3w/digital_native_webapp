@@ -1,9 +1,12 @@
 .title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: large;
   color: rgba(236, 236, 236, 1);
   background-color: rgba(0, 0, 0, 0.3);
   padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .heading {
@@ -18,4 +21,5 @@
   font-weight: 500;
   font-size: large;
   color: #222;
+  line-height: 2rem;
 }

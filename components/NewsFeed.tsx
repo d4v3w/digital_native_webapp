@@ -17,7 +17,7 @@ export const NewsFeed: React.FC<NewsFeedProps> = ({
   filter,
   limit,
   order = 'desc',
-  className = 'news',
+  className = '',
   isHeadingHidden,
   isImageHidden,
   isTextHidden,

@@ -1,5 +1,19 @@
 .list {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.list.feed {
+  display: flex;
+  flex-flow: coloumn;
+}
+
+.list.rows {
+  flex-flow: row wrap;
+}
+
+.list.small {
+  flex-flow: row wrap;
+  margin: 0 1rem;
 }

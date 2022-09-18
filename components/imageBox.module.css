@@ -9,3 +9,8 @@
   display: block;
   flex: 1;
 }
+
+.image.small {
+  display: block;
+  border-radius: 2px;
+}

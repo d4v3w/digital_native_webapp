@@ -97,13 +97,14 @@
   .menu {
     display: none;
     position: absolute;
-    top: 1rem;
+    top: 0;
     margin-top: 50px;
     left: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
   }
 
   .toggle ~ .menu .item {
@@ -115,7 +116,6 @@
   }
 
   .toggle:checked ~ .menu .item {
-    border: 1px solid #333;
     height: auto;
     padding: 0em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);

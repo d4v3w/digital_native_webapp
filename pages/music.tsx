@@ -1,14 +1,14 @@
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
 import { Content } from '../interfaces'
 import { newsData } from '../utils/news-items'
 import { GetStaticProps } from 'next/types'
-import { NewsFeed, NewsFeedProps } from '../components/NewsFeed'
+import { List, ListProps } from '../components/List'
 import Section from '../components/Section'
 import Article from '../components/Article'
 import Markdown from '../components/Markdown'
+import Hero from '../components/Hero'
 
-const MusicPage = ({ items }: NewsFeedProps): JSX.Element => (
+const MusicPage = ({ items }: ListProps): JSX.Element => (
   <Layout title="Music" className="music">
     <Article heading="Digital Native UK Music">
       <Markdown className="summary">Drum and Bass Producer from the Midlands, UK.</Markdown>
@@ -24,17 +24,17 @@ const MusicPage = ({ items }: NewsFeedProps): JSX.Element => (
         Releases on Goldfat, Hospital, Glitch Audio, Beats In Mind, Silent Audio, Liquid Brilliants and SIMBAL
         Recordings. Self releases available to stream or download via Bandcamp and Soundcloud.
       </Markdown>
+      <Hero />
     </Article>
-    <Hero />
-    <Section className={'home'}>
-      <NewsFeed
+    <Section className={'music'}>
+      <List
         items={items}
         filter="release"
         isHeadingHidden={true}
         isTextHidden={true}
         limit={6}
         order="asc"
-        className="music-page-feed"
+        className="small"
       />
     </Section>
   </Layout>

@@ -6,7 +6,11 @@
 
 .article.inline {
   display: block;
-  min-height: 20vh;
+}
+
+.article.small {
+  width: 100%;
+  min-height: 75px;
 }
 
 .article:first-of-type {
@@ -14,17 +18,19 @@
 }
 
 .content {
-  max-width: auto;
+}
+
+.article.small .content {
+  position: absolute;
+  left: -9999px;
 }
 
 .innerContent {
   padding: 2rem;
 }
 
-@media (min-width: 600px) {
-  .content {
-    flex: 1;
-  }
+.article.feed .innerContent {
+  padding: 1rem;
 }
 
 .article a {
@@ -38,4 +44,15 @@
 
 .article .list .listitem {
   margin-bottom: 8px;
+}
+
+@media (min-width: 600px) {
+  .content {
+    flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  .innerContent {
+    padding: 1rem;
+  }
 }
