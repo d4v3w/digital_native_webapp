@@ -1,7 +1,5 @@
 import { Content } from '../interfaces'
-import styles from './newsFeed.module.css'
 import List from './List'
-import classNames from 'classnames'
 
 export type NewsFeedProps = {
   items: Content[]
@@ -19,24 +17,22 @@ export const NewsFeed: React.FC<NewsFeedProps> = ({
   filter,
   limit,
   order = 'desc',
-  className = '',
+  className = 'news',
   isHeadingHidden,
   isImageHidden,
   isTextHidden,
 }) => {
   return (
-    <div className={classNames(styles.news, className)}>
-      <List
-        items={items}
-        filter={filter}
-        limit={limit}
-        order={order}
-        className="news"
-        isHeadingHidden={isHeadingHidden}
-        isImageHidden={isImageHidden}
-        isTextHidden={isTextHidden}
-      />
-    </div>
+    <List
+      items={items}
+      filter={filter}
+      limit={limit}
+      order={order}
+      className={className}
+      isHeadingHidden={isHeadingHidden}
+      isImageHidden={isImageHidden}
+      isTextHidden={isTextHidden}
+    />
   )
 }
 

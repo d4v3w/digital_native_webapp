@@ -24,9 +24,9 @@ const ListItem = ({ id, item, className = 'default', isHeadingHidden, isTextHidd
     item.story = ''
   }
   return (
-    <li className={classNames(styles[className + 'ListItem'])}>
+    <li className={classNames(styles.listItem, className)}>
       <Link href="/news/[id]" as={`/news/${item.id}`}>
-        <a className={styles.listItem} title={item.title}>
+        <a className={styles.link} title={item.title}>
           <Article
             heading={item.title}
             src={item.image}

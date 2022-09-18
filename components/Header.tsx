@@ -13,9 +13,9 @@ const logoSize = 100
 export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
     <header className={classNames(styles.header, className)}>
-      <Link href="/" passHref className={styles.headerTitle}>
+      <Link href="/" passHref className={styles.logo}>
         <a className={styles.headerLogo}>
-          <strong className={styles.headerText}>Digital Native UK</strong>
+          <strong className={styles.text}>Digital Native UK</strong>
           <Image src={logoImage} alt="" width={logoSize} height={logoSize} priority={true} />
         </a>
       </Link>

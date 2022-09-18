@@ -1,20 +1,21 @@
 .header {
   display: grid;
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 1fr 90%;
   grid-template-areas: 'logo nav';
   grid-area: header;
   background-color: #222;
   position: sticky;
   top: 0;
   z-index: 99;
+  padding: 0 1rem;
 }
 
-.headerText {
+.text {
   position: absolute;
   left: -9999px;
 }
 
-.headerLogo {
+.logo {
   grid-area: logo;
   align-self: stretch;
   display: block;

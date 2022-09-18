@@ -6,7 +6,6 @@
 
 .article.inline {
   display: block;
-  margin-bottom: 1rem;
   min-height: 20vh;
 }
 
@@ -15,7 +14,7 @@
 }
 
 .content {
-  max-width: 1000px;
+  max-width: auto;
 }
 
 .innerContent {
@@ -32,11 +31,11 @@
   color: #fff;
 }
 
-.article ul {
+.article .list {
   padding-left: 30px;
   margin: 1em 0;
 }
 
-.article li {
+.article .list .listitem {
   margin-bottom: 8px;
 }

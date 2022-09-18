@@ -35,7 +35,7 @@ const List = ({
     sortedItems = items.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
   }
   return (
-    <ul className={classNames(styles.list, styles[className + 'List'])}>
+    <ul className={classNames(styles.list, className)}>
       {sortedItems.map((item, index) => {
         // Limit based on counter
         if (limit && counter === limit) {
@@ -54,7 +54,7 @@ const List = ({
             key={key}
             id={counter}
             item={item}
-            className={className}
+            className={classNames('listItem', className + 'Item')}
             isHeadingHidden={isHeadingHidden}
             isImageHidden={isImageHidden}
             isTextHidden={isTextHidden}

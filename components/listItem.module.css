@@ -1,4 +1,4 @@
-.newsListItem {
+.listItem {
   border: 1px solid #ccc;
   padding: 1em;
   border-radius: 5px;
@@ -7,15 +7,10 @@
   box-shadow: 10px 5px 5px rgba(1, 1, 1, 0.35);
   max-width: 30%;
   min-width: 320px;
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 600px) {
-  .newsListItem {
-    max-width: 500px;
-  }
-}
-
-.newsListItem a {
+.listItem .link {
   display: block;
   width: 100%;
 }
@@ -40,4 +35,16 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .listItem {
+    max-width: 45%;
+  }
+}
+@media (max-width: 426px) {
+  .listItem {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
 }
