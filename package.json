@@ -1,6 +1,6 @@
 {
   "name": "digital_native_webapp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "clean": "rm -rf ./node_modules/",
     "dev": "next",
