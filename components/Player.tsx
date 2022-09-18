@@ -10,7 +10,7 @@ type PlayerProps = {
 const Player = ({ url: url, className = '' }: PlayerProps) => {
   return (
     <div className={classNames(styles.player, className)}>
-      <ReactPlayer url={url} height={200} width={400} />
+      <ReactPlayer url={url} height={100} width={300} />
     </div>
   )
 }
