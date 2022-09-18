@@ -7,8 +7,9 @@ const ProductionPage = (): JSX.Element => (
   <Layout title="Production" className="production">
     <Article heading="Digital Native Production Tutorials" isInline={true}>
       <Markdown className="summary">
-        In this section youll find tutorials, samples and resources that will hopefully help you in your own production
-        journey. Check out the links below to navigate quickly to section you need.
+        In this section youll find tutorials, samples and resources that will hopefully 
+        help you in your own production journey. Check out the links below to navigate 
+        quickly to section you need.
       </Markdown>
       {/* prettier-ignore */}
       <Markdown className="article">
@@ -22,7 +23,7 @@ const ProductionPage = (): JSX.Element => (
       <Player url="https://www.youtube.com/watch?v=KIdN4IszoVE&t" />
     </Article>
     <Article
-      heading="London Elektricity - 'Possible Worlds' ft. Inja (Digital Native Remix) | DnB Production Tutorial"
+      heading="London Elektricity - 'Possible Worlds' ft. Inja (Digital Native Remix)"
       isInline={true}
     >
       <Player url="https://www.youtube.com/watch?v=vp1Z3z59Mlk" />
