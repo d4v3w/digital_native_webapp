@@ -1,14 +1,10 @@
-.player,
-.player iframe {
-  max-width: 90vw !important;
-  width: 40rem;
-  min-height: 30rem;
+.player {
+  min-width: 600px !important;
 }
 
 @media (max-width: 768px) {
   .player,
   .player iframe {
-    max-width: 100% !important;
-    width: 100%;
+    min-width: 300px !important
   }
 }
