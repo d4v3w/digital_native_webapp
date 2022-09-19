@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400&family=Noto+Sans:wght@300&display=swap');
+
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
@@ -5,7 +7,7 @@
 /* purgecss end ignore */
 
 html {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.2rem;
 }
