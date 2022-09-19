@@ -18,13 +18,17 @@ const ProductionPage = (): JSX.Element => (
         | Production
       </Markdown>
     </Article>
-    <Article heading="Forever and Ever | Track Breakdown" isInline={true}>
+    <Article heading="Forever and Ever | Track Breakdown" headingType="heading" isInline={true}>
       <Player url="https://www.youtube.com/watch?v=KIdN4IszoVE&t" />
     </Article>
-    <Article heading="London Elektricity - 'Possible Worlds' ft. Inja (Digital Native Remix)" isInline={true}>
+    <Article
+      heading="London Elektricity - 'Possible Worlds' ft. Inja (Digital Native Remix)"
+      headingType="heading"
+      isInline={true}
+    >
       <Player url="https://www.youtube.com/watch?v=vp1Z3z59Mlk" />
     </Article>
-    <Article heading="Journey Through | Track Breakdown" isInline={true}>
+    <Article heading="Journey Through | Track Breakdown" headingType="heading" isInline={true}>
       <Player url="https://www.youtube.com/watch?v=3SwZjXyKlbg&t" />
     </Article>
   </Layout>
