@@ -5,19 +5,19 @@
   background-color: #fff;
   color: #222;
   box-shadow: 10px 5px 5px rgba(1, 1, 1, 0.35);
-  max-width: 30%;
+  flex-basis: 30%;
   margin-bottom: 1rem;
 }
 
 .item.small {
-  width: 20vw;
+  flex-basis: 20%;
   padding: 0.2rem;
   max-width: 200px;
 }
 
 .item .link {
   display: block;
-  width: 100%;
+  flex-basis: 100%;
 }
 
 .heading {
@@ -44,17 +44,17 @@
 
 @media (max-width: 768px) {
   .item {
-    max-width: 45%;
+    flex-basis: 45%;
   }
 
   .item.rows {
-    max-width: 45%;
+    flex-basis: 45%;
     padding: 0.2rem;
   }
 }
 @media (max-width: 500px) {
   .item {
-    max-width: 100%;
+    flex-basis: 100%;
     margin-bottom: 1rem;
   }
 }
