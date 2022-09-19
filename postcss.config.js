@@ -4,6 +4,8 @@ module.exports = {
   plugins:
     process.env.NODE_ENV === 'production'
             ? [
+          'postcss-import',
+          'tailwindcss/nesting',
           'tailwindcss',
           'postcss-flexbugs-fixes',
           [
@@ -21,6 +23,8 @@ module.exports = {
         ]
       : [
           // No transformations in development
+          'postcss-import',
+          'tailwindcss/nesting',
           'tailwindcss'
         ],
 }

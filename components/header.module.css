@@ -1,13 +1,23 @@
 .header {
-  display: grid;
-  grid-template-columns: 1fr 90%;
-  grid-template-areas: 'logo nav';
+  display: flex;
+  align-items: center;
   grid-area: header;
   background-color: #222;
   position: sticky;
-  top: 0;
+  top: -2rem;
+  height: 6rem;
   z-index: 99;
+}
+
+.inner {
+  position: sticky;
+  height: 4rem;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: 'logo nav';
   padding: 0 1rem;
+  flex: 1;
 }
 
 .text {
@@ -19,4 +29,7 @@
   grid-area: logo;
   align-self: stretch;
   display: block;
+  width: 4em;
+  height: 4rem;
+  position: relative;
 }
