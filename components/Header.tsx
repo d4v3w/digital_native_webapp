@@ -8,7 +8,6 @@ import logoImage from '../public/images/logo/digital-native-logo-full.png'
 export interface HeaderProps {
   className?: string
 }
-const logoSize = 150
 
 export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
@@ -17,7 +16,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         <Link href="/" passHref className={styles.logo}>
           <a className={styles.logo}>
             <strong className={styles.text}>Digital Native UK</strong>
-            <Image src={logoImage} alt="" width={logoSize} height={logoSize} priority={true} layout="fill" />
+            <Image src={logoImage} alt="" priority={true} layout="fill" />
           </a>
         </Link>
         <Nav />

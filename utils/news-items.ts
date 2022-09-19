@@ -7,6 +7,7 @@ export const userData: User[] = [
 ]
 
 /** Dummy news data. */
+{/* prettier-ignore */}
 export const newsData: Content[] = [
   {
     id: 1,
