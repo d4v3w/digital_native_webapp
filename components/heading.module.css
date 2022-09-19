@@ -1,5 +1,6 @@
 .title {
-  font-weight: 500;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 400;
   font-size: large;
   color: rgba(236, 236, 236, 1);
   background-color: rgba(0, 0, 0, 0.3);
@@ -10,7 +11,8 @@
 }
 
 .heading {
-  font-weight: 500;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 300;
   font-size: large;
   color: rgba(236, 236, 236, 1);
   background-color: rgba(0, 0, 0, 0.3);
@@ -18,7 +20,8 @@
 }
 
 .subheading {
-  font-weight: 500;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 300;
   font-size: large;
   color: #222;
   line-height: 2rem;
