@@ -1,13 +1,13 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { userData } from '../../../utils/sample-data'
+import { newsData } from '../../../utils/news-items'
 
 const handler = (_req: NextApiRequest, res: NextApiResponse) => {
   try {
-    if (!Array.isArray(userData)) {
-      throw new Error('Cannot find user data')
+    if (!Array.isArray(newsData)) {
+      throw new Error('Cannot find news data')
     }
 
-    res.status(200).json(userData)
+    res.status(200).json(newsData)
   } catch (error) {
     let message
     if (error instanceof Error) message = error.message
