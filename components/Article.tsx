@@ -3,19 +3,33 @@ import Heading from '../components/Heading'
 import styles from './article.module.css'
 import classNames from 'classnames'
 
-const Article = ({ headingType = 'title', isInline = false, className = '', ...props }): JSX.Element => {
-  const getHeading = props.heading ? <Heading type={headingType}>{props.heading}</Heading> : null
+const Title = ({ heading = '', type = '' }): JSX.Element => {
+  if (!heading) {
+    return <></>
+  }
+  return <Heading type={type}>{heading}</Heading>
+}
 
-  const getChildren = props.children ? <div className={styles.innerContent}>{props.children}</div> : null
+const Children = ({ children = '' }): JSX.Element => {
+  if (!children) {
+    return <></>
+  }
+  return <div className={styles.innerContent}>{children}</div>
+}
 
-  const getContent =
-    props.heading || props.children ? (
-      <div className={styles.content}>
-        {getHeading}
-        {getChildren}
-      </div>
-    ) : null
+const Content = ({ heading = '', type = '', children = null }): JSX.Element => {
+  if (!heading || !children) {
+    return <></>
+  }
+  return (
+    <div className={styles.content}>
+      <Title heading={heading} type={type} />
+      <Children children={children} />
+    </div>
+  )
+}
 
+const Article = ({ heading = '', headingType = 'title', isInline = false, className = '', ...props }): JSX.Element => {
   const inlineStyle = isInline ? 'inline' : ''
   return (
     <article className={classNames(styles.article, styles[inlineStyle], styles[className])} role="article">
@@ -25,9 +39,10 @@ const Article = ({ headingType = 'title', isInline = false, className = '', ...p
         alt={props.heading}
         isBlock={true}
         priority={true}
-        layout="responsive"
+        layout="fill"
       />
-      {getContent}
+      <Content heading={heading} type={headingType} children={props.children} />
+      <Content heading="" />
     </article>
   )
 }
