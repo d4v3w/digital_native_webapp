@@ -4,9 +4,13 @@
   grid-area: header;
   background-color: #222;
   position: sticky;
-  top: -2rem;
-  height: 6rem;
+  top: 0rem;
   z-index: 99;
+  transition: top 0.5s ease;
+}
+
+.header.hidden {
+  top: -6rem;
 }
 
 .inner {
