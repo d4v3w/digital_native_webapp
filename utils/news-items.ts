@@ -25,7 +25,7 @@ export const newsData: Content[] = [
   },
   {
     id: 2,
-    type: 'release',
+    type: 'music',
     title: 'New Release Alert!',
     author: {
       name: 'Andy',
@@ -51,7 +51,7 @@ export const newsData: Content[] = [
   },
   {
     id: 4,
-    type: 'release',
+    type: 'music',
     title: 'New Release Alert!',
     author: {
       name: 'Andy',
@@ -77,7 +77,7 @@ export const newsData: Content[] = [
   },
   {
     id: 6,
-    type: 'release',
+    type: 'music',
     title: 'New Release Alert!',
     author: {
       name: 'Andy',
@@ -129,7 +129,7 @@ export const newsData: Content[] = [
   },
   {
     id: 10,
-    type: 'release',
+    type: 'music',
     title: 'New Release Alert!',
     author: {
       name: 'Andy',

@@ -27,7 +27,7 @@ const MusicPage = ({ items }: ListProps): JSX.Element => (
       <Hero />
     </Article>
     <Section className={'music'}>
-      <List items={items} filter="release" isHeadingHidden={true} isTextHidden={true} order="asc" className="small" />
+      <List items={items} filter="music" isHeadingHidden={true} isTextHidden={true} order="asc" className="small" />
     </Section>
   </Layout>
 )

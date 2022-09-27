@@ -38,7 +38,7 @@ const ListDetail = ({ item: item }: ListDetailProps) => (
       </Markdown>
     </div>
     <nav role="navigation">
-      <Link href="/news" title="Navigate to previous page" passHref>
+      <Link href={'/' + item.type} title="Navigate to previous page" passHref>
         <a className={styles.link}>
           <Markdown className="link">{`<< Back`}</Markdown>
         </a>

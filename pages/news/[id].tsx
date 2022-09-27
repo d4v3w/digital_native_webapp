@@ -31,7 +31,7 @@ const ListPage = ({ item, newsFeedItems, errors }: NewsPageProps) => {
     <Layout title={`${item ? item.title : 'News'} | ${SITE_NAME}`}>
       <ListDetail item={item} />
       <Section>
-        <List items={newsFeedItems} filter="" limit={20} className="small" />
+        <List items={newsFeedItems} filter={item.type} limit={3} className="small" />
       </Section>
     </Layout>
   )

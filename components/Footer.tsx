@@ -8,20 +8,24 @@ export interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ className = '' }) => {
+  const style = {
+    width: '2rem',
+    height: '2rem',
+  }
   return (
     <footer className={classNames(styles.footer, className)} role="">
       <ul className={styles.footerLinks}>
         <li className={styles.footerLink}>
-          <SocialIcon url="https://www.facebook.com/digitalnativeuk" />
+          <SocialIcon url="https://www.facebook.com/digitalnativeuk" style={style} />
         </li>
         <li className={styles.footerLink}>
-          <SocialIcon url="https://soundcloud.com/digitalnativeuk" />
+          <SocialIcon url="https://soundcloud.com/digitalnativeuk" style={style} />
         </li>
         <li className={styles.footerLink}>
-          <SocialIcon url="https://twitter.com/digitalnativeuk" />
+          <SocialIcon url="https://twitter.com/digitalnativeuk" style={style} />
         </li>
         <li className={styles.footerLink}>
-          <SocialIcon url="https://digitalnativeuk.bandcamp.com" />
+          <SocialIcon url="https://digitalnativeuk.bandcamp.com" style={style} />
         </li>
       </ul>
       <span>{SITE_COPYRIGHT}</span>
