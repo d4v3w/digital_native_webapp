@@ -10,7 +10,7 @@ import Article from '../../components/Article'
 const NewsPage = ({ items, className = '' }: ListProps): JSX.Element => (
   <Layout title="News" className="news">
     <Article heading="Digital Native News" className={classNames(styles.article, className)}>
-      <List items={items} filter="" order="desc" className="rows" isTextHidden={true} />
+      <List items={items} filter="news" order="desc" className="rows" isTextHidden={true} />
     </Article>
   </Layout>
 )
