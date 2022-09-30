@@ -17,10 +17,10 @@ type NewsPageProps = {
 const ListPage = ({ item, newsFeedItems, errors }: NewsPageProps) => {
   if (!item || errors) {
     return (
-      <Layout title="Error | Digital Native (UK)">
+      <Layout title={`${SITE_NAME} | Oops that's an Error :(`}>
         <Article heading="Error">
           <p>
-            <span style={{ color: 'red' }}>Error:</span>
+            <span style={{ color: 'red' }}> Oops that's an Error:</span>
           </p>
         </Article>
       </Layout>
@@ -28,7 +28,7 @@ const ListPage = ({ item, newsFeedItems, errors }: NewsPageProps) => {
   }
 
   return (
-    <Layout title={`${item ? item.title : 'News'} | ${SITE_NAME}`}>
+    <Layout title={`${SITE_NAME} | ${item.title}`}>
       <ListDetail item={item} />
       <Section>
         <List items={newsFeedItems} filter={item.type} limit={3} className="small" />
