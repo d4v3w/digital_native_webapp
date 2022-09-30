@@ -16,5 +16,3 @@ next.config.js
 
 postcss.config.js
 tailwind.config.js
-
-amplify/team-provider-info.json
