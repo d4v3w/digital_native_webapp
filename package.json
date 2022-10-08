@@ -16,12 +16,14 @@
     "stylelint": "npx stylelint '**/*.module.css'"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
     "next": "latest",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.3",
     "react-player": "^2.11.0",
+    "react-redux": "^8.0.4",
     "react-social-icons": "^5.15.0",
     "sharp": "^0.31.1"
   },
