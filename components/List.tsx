@@ -15,6 +15,10 @@ export type ListProps = {
   isTextHidden?: boolean
 }
 
+const getTime = (date: string) => {
+  return new Date(date).getTime()
+}
+
 export const List: React.FC<ListProps> = ({
   items,
   filter = '',
@@ -29,10 +33,10 @@ export const List: React.FC<ListProps> = ({
   let counter = -1
   if (order !== 'asc') {
     // Descending
-    sortedItems = items.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    sortedItems = items.sort((a, b) => getTime(b.date) - getTime(a.date))
   } else {
     // Ascending
-    sortedItems = items.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+    sortedItems = items.sort((a, b) => getTime(a.date) - getTime(b.date))
   }
   return (
     <ul className={classNames(styles.list, styles[className])}>
