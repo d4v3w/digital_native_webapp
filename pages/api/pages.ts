@@ -6,9 +6,13 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
   try {
     let result
     if (id) {
-      result = Object.values(pages).filter((v) => v.id.toString() === id)
+      result = Object.values(pages).filter((v) => {
+        v.id.toString() === id
+      })
     } else if (type) {
-      result = Object.values(pages).filter((v) => v.type.startsWith(`${type}`))
+      result = Object.values(pages).filter((v) => {
+        v.type.startsWith(`${type}`)
+      })
     }
     if (!result) {
       throw new Error('Invalid request. Try another query.')

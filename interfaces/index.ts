@@ -1,16 +1,17 @@
 export type User = {
-  id?: string
+  id: string
   name: string
 }
 
 export type Content = {
-  id: number
+  id: string
   type: string
   title: string
-  summary: string
-  story: string
+  date: string
+  summary?: string
+  story?: string
   image?: string
   link?: string
-  date: string
-  author: User
+  author?: string
+  children?: Array<Content>
 }
