@@ -1,62 +1,49 @@
-import classNames from 'classnames';
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import logoImage from '../public/images/logo/digital-native-logo-full.png';
-import styles from './header.module.css';
-import { Nav } from './Nav';
+import classNames from 'classnames'
+import Image from 'next/image'
+import Link from 'next/link'
+import React, { useEffect, useState } from 'react'
+import logoImage from '../public/images/logo/digital-native-logo-full.png'
+import styles from './header.module.css'
+import { Nav } from './Nav'
 
 export interface HeaderProps {
-  className?: string;
+  className?: string
 }
 
 export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [show, setShow] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') {
       if (window.scrollY > lastScrollY) {
         // if scroll up show the navbar
-        setShow(true);
+        setShow(true)
       } else {
         // if scroll down hide the navbar
-        setShow(false);
+        setShow(false)
       }
 
       // remember current page location to use in the next move
-      setLastScrollY(window.scrollY);
+      setLastScrollY(window.scrollY)
     }
-  };
+  }
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', controlNavbar);
+      window.addEventListener('scroll', controlNavbar)
 
       // cleanup function
       return () => {
-        window.removeEventListener('scroll', controlNavbar);
-      };
+        window.removeEventListener('scroll', controlNavbar)
+      }
     }
-  }, [lastScrollY]);
+  }, [lastScrollY])
 
   return (
-    <header
-      className={classNames(
-        styles.header,
-        styles[`${show && 'hidden'}`],
-        className
-      )}
-      role="menubar"
-    >
+    <header className={classNames(styles.header, styles[`${show && 'hidden'}`], className)}>
       <div className={styles.inner}>
-        <Link
-          href="/"
-          passHref
-          className={styles.logo}
-          role="navigation"
-          aria-label="Home Page"
-        >
+        <Link href="/" passHref className={styles.logo}>
           <a className={styles.logo}>
             <strong className={styles.text}>Digital Native UK</strong>
             <Image src={logoImage} alt="" priority={true} />
@@ -65,5 +52,5 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         <Nav />
       </div>
     </header>
-  );
-};
+  )
+}
