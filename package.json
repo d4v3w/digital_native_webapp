@@ -4,14 +4,14 @@
   "scripts": {
     "clean": "rm -rf ./node_modules/",
     "dev": "next",
-    "build": "next build",
+    "build": "jest && next build",
     "start": "next start",
-    "type-check": "tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint --ext .jsx,.js,.ts,.tsx",
     "lint-fix": "eslint --fix --ext .jsx,.js,.ts,.tsx",
-    "test": "jest --watch",
+    "test": "jest",
+    "test-watch": "jest --watch",
     "stylelint": "npx stylelint '**/*.module.css'"
   },
   "dependencies": {
