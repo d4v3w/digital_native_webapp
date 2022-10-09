@@ -1,5 +1,3351 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`All snapshots Components renders article unchanged 1`] = `
+<div>
+  <article
+    class="article"
+    role="article"
+  />
+</div>
+`;
+
+exports[`All snapshots Components renders button unchanged 1`] = `
+<div>
+  <button
+    class="storybook-button storybook-button--medium storybook-button--secondary"
+    type="button"
+  >
+    test
+  </button>
+</div>
+`;
+
+exports[`All snapshots Components renders footer unchanged 1`] = `
+<div>
+  <footer
+    class="footer"
+    role=""
+  >
+    <ul
+      class="footerLinks"
+    >
+      <li
+        class="footerLink"
+      >
+        <a
+          aria-label="facebook"
+          class="social-icon"
+          href="https://www.facebook.com/digitalnativeuk"
+          style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+        >
+          <div
+            class="social-container"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              class="social-svg"
+              style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+              viewBox="0 0 64 64"
+            >
+              <g
+                class="social-svg-background"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="31"
+                />
+              </g>
+              <g
+                class="social-svg-icon"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <path
+                  d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                />
+              </g>
+              <g
+                class="social-svg-mask"
+                style="transition: fill 170ms ease-in-out; fill: #3b5998;"
+              >
+                <path
+                  d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li
+        class="footerLink"
+      >
+        <a
+          aria-label="soundcloud"
+          class="social-icon"
+          href="https://soundcloud.com/digitalnativeuk"
+          style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+        >
+          <div
+            class="social-container"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              class="social-svg"
+              style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+              viewBox="0 0 64 64"
+            >
+              <g
+                class="social-svg-background"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="31"
+                />
+              </g>
+              <g
+                class="social-svg-icon"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <path
+                  d="M43.6,30c-0.6,0-1.2,0.1-1.7,0.3c-0.3-4-3.7-7.1-7.7-7.1c-1,0-2,0.2-2.8,0.5 C31.1,23.9,31,24,31,24.3v13.9c0,0.3,0.2,0.5,0.5,0.5c0,0,12.2,0,12.2,0c2.4,0,4.4-1.9,4.4-4.4C48,31.9,46,30,43.6,30z M27.2,25.1 c-0.7,0-1.2,0.5-1.2,1.1v11.3c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2V26.2C28.4,25.6,27.8,25.1,27.2,25.1z M22.2,27.8 c-0.7,0-1.2,0.5-1.2,1.1v8.5c0,0.7,0.6,1.2,1.2,1.2s1.2-0.6,1.2-1.2V29C23.4,28.3,22.9,27.8,22.2,27.8z M17.2,30.2 c-0.7,0-1.2,0.5-1.2,1.1v4.9c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2v-4.9C18.5,30.7,17.9,30.2,17.2,30.2z"
+                />
+              </g>
+              <g
+                class="social-svg-mask"
+                style="transition: fill 170ms ease-in-out; fill: #FF5700;"
+              >
+                <path
+                  d="M0,0v64h64V0H0z M18.5,36.3c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2v-4.9c0-0.6,0.6-1.1,1.2-1.1 c0.7,0,1.2,0.5,1.2,1.1V36.3z M23.4,37.5c0,0.7-0.6,1.2-1.2,1.2S21,38.2,21,37.5V29c0-0.6,0.6-1.1,1.2-1.1s1.2,0.5,1.2,1.1V37.5z  M28.4,37.5c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2V26.2c0-0.6,0.6-1.1,1.2-1.1c0.7,0,1.2,0.5,1.2,1.1V37.5z M43.6,38.7 c0,0-12.1,0-12.2,0c-0.3,0-0.5-0.2-0.5-0.5V24.3c0-0.3,0.1-0.4,0.4-0.5c0.9-0.3,1.8-0.5,2.8-0.5c4,0,7.4,3.1,7.7,7.1 c0.5-0.2,1.1-0.3,1.7-0.3c2.4,0,4.4,2,4.4,4.4C48,36.8,46,38.7,43.6,38.7z"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li
+        class="footerLink"
+      >
+        <a
+          aria-label="twitter"
+          class="social-icon"
+          href="https://twitter.com/digitalnativeuk"
+          style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+        >
+          <div
+            class="social-container"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              class="social-svg"
+              style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+              viewBox="0 0 64 64"
+            >
+              <g
+                class="social-svg-background"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="31"
+                />
+              </g>
+              <g
+                class="social-svg-icon"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <path
+                  d="m 48.1,22.1 c -1.223105,0.430685 -2.4,0.761371 -3.8,1 1.4,-0.8 2.4,-2.1 2.9,-3.6 -1.3,0.8 -2.7,1.3 -4.2,1.6 -1.2,-1.3 -3,-2.1 -4.8,-2.1 -3.6,0 -6.6,2.9 -6.6,6.6 0,0.5 0.1,1 0.2,1.5 -5.5,-0.3 -10.3,-2.9 -13.5,-6.9 -0.6,1 -0.9,2.1 -0.9,3.3 0,2.3 1.2,4.3 2.9,5.5 -1.1,0 -2.1,-0.3 -3,-0.8 v 0.1 c 0,3.2 2.3,5.8 5.3,6.4 -0.6,0.1 -1.1,0.2 -1.7,0.2 -0.4,0 -0.8,0 -1.2,-0.1 0.8,2.6 3.3,4.5 6.1,4.6 -2.2,1.8 -5.1,2.8 -8.2,2.8 -0.5,0 -1.1,0 -1.6,-0.1 C 18.9,44 22.4,45 26.1,45 38.2,45 44.43575,34.996634 44.67774,26.3 L 44.7,25.5 c 1.2,-1 2.5,-2.1 3.4,-3.4 z"
+                />
+              </g>
+              <g
+                class="social-svg-mask"
+                style="transition: fill 170ms ease-in-out; fill: #00aced;"
+              >
+                <path
+                  d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li
+        class="footerLink"
+      >
+        <a
+          aria-label="sharethis"
+          class="social-icon"
+          href="https://digitalnativeuk.bandcamp.com"
+          style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+        >
+          <div
+            class="social-container"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              class="social-svg"
+              style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+              viewBox="0 0 64 64"
+            >
+              <g
+                class="social-svg-background"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="31"
+                />
+              </g>
+              <g
+                class="social-svg-icon"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <path
+                  d="M28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                />
+              </g>
+              <g
+                class="social-svg-mask"
+                style="transition: fill 170ms ease-in-out; fill: #00BF00;"
+              >
+                <path
+                  d="M0,0L64,0L64,64L0,64L0,0ZM28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <span>
+      © Digital Native UK 2022. All rights reserved.
+    </span>
+  </footer>
+</div>
+`;
+
+exports[`All snapshots Components renders header unchanged 1`] = `
+<div>
+  <header
+    class="header hidden"
+    role="menubar"
+  >
+    <div
+      class="inner"
+    >
+      <a
+        class="logo"
+        href="/"
+      >
+        <strong
+          class="text"
+        >
+          Digital Native UK
+        </strong>
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+        >
+          <img
+            alt=""
+            data-nimg="fill"
+            decoding="async"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </span>
+      </a>
+      <nav
+        class="nav"
+        role="navigation"
+      >
+        <input
+          class="toggle"
+          id="menu-toggle"
+          title="menu"
+          type="checkbox"
+        />
+        <label
+          class="container"
+          for="menu-toggle"
+        >
+          <div
+            class="button"
+          />
+        </label>
+        <ul
+          class="menu"
+        >
+          <li
+            class="item active"
+          >
+            <a
+              class="link"
+              href="/"
+              role="link"
+              title="Home"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              href="/about"
+              role="link"
+              title="About"
+            >
+              About
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              href="/news"
+              role="link"
+              title="News"
+            >
+              News
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              href="/music"
+              role="link"
+              title="Music"
+            >
+              Music
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              href="/production"
+              role="link"
+              title="Production"
+            >
+              Production
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`All snapshots Components renders heading unchanged 1`] = `
+<div>
+  <h2
+    class="heading"
+    role="heading"
+  >
+    Test
+  </h2>
+</div>
+`;
+
+exports[`All snapshots Components renders hero unchanged 1`] = `
+<div>
+  <div
+    class="hero heroPlayer"
+  >
+    <iframe
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      frameborder="0"
+      height="80"
+      src="https://open.spotify.com/embed/playlist/5Ohs23L7Llqp2Z0ujz4i3O?utm_source=generator&theme=0"
+      width="100%"
+    />
+  </div>
+</div>
+`;
+
+exports[`All snapshots Components renders imageBox unchanged 1`] = `<div />`;
+
+exports[`All snapshots Components renders layout unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <header
+      class="header hidden top"
+      role="menubar"
+    >
+      <div
+        class="inner"
+      >
+        <a
+          class="logo"
+          href="/"
+        >
+          <strong
+            class="text"
+          >
+            Digital Native UK
+          </strong>
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              alt=""
+              data-nimg="fill"
+              decoding="async"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </span>
+        </a>
+        <nav
+          class="nav"
+          role="navigation"
+        >
+          <input
+            class="toggle"
+            id="menu-toggle"
+            title="menu"
+            type="checkbox"
+          />
+          <label
+            class="container"
+            for="menu-toggle"
+          >
+            <div
+              class="button"
+            />
+          </label>
+          <ul
+            class="menu"
+          >
+            <li
+              class="item active"
+            >
+              <a
+                class="link"
+                href="/"
+                role="link"
+                title="Home"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/about"
+                role="link"
+                title="About"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/news"
+                role="link"
+                title="News"
+              >
+                News
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/music"
+                role="link"
+                title="Music"
+              >
+                Music
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/production"
+                role="link"
+                title="Production"
+              >
+                Production
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="main"
+    />
+    <footer
+      class="footer bottom"
+      role=""
+    >
+      <ul
+        class="footerLinks"
+      >
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="facebook"
+            class="social-icon"
+            href="https://www.facebook.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #3b5998;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="soundcloud"
+            class="social-icon"
+            href="https://soundcloud.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M43.6,30c-0.6,0-1.2,0.1-1.7,0.3c-0.3-4-3.7-7.1-7.7-7.1c-1,0-2,0.2-2.8,0.5 C31.1,23.9,31,24,31,24.3v13.9c0,0.3,0.2,0.5,0.5,0.5c0,0,12.2,0,12.2,0c2.4,0,4.4-1.9,4.4-4.4C48,31.9,46,30,43.6,30z M27.2,25.1 c-0.7,0-1.2,0.5-1.2,1.1v11.3c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2V26.2C28.4,25.6,27.8,25.1,27.2,25.1z M22.2,27.8 c-0.7,0-1.2,0.5-1.2,1.1v8.5c0,0.7,0.6,1.2,1.2,1.2s1.2-0.6,1.2-1.2V29C23.4,28.3,22.9,27.8,22.2,27.8z M17.2,30.2 c-0.7,0-1.2,0.5-1.2,1.1v4.9c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2v-4.9C18.5,30.7,17.9,30.2,17.2,30.2z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #FF5700;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M18.5,36.3c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2v-4.9c0-0.6,0.6-1.1,1.2-1.1 c0.7,0,1.2,0.5,1.2,1.1V36.3z M23.4,37.5c0,0.7-0.6,1.2-1.2,1.2S21,38.2,21,37.5V29c0-0.6,0.6-1.1,1.2-1.1s1.2,0.5,1.2,1.1V37.5z  M28.4,37.5c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2V26.2c0-0.6,0.6-1.1,1.2-1.1c0.7,0,1.2,0.5,1.2,1.1V37.5z M43.6,38.7 c0,0-12.1,0-12.2,0c-0.3,0-0.5-0.2-0.5-0.5V24.3c0-0.3,0.1-0.4,0.4-0.5c0.9-0.3,1.8-0.5,2.8-0.5c4,0,7.4,3.1,7.7,7.1 c0.5-0.2,1.1-0.3,1.7-0.3c2.4,0,4.4,2,4.4,4.4C48,36.8,46,38.7,43.6,38.7z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="twitter"
+            class="social-icon"
+            href="https://twitter.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="m 48.1,22.1 c -1.223105,0.430685 -2.4,0.761371 -3.8,1 1.4,-0.8 2.4,-2.1 2.9,-3.6 -1.3,0.8 -2.7,1.3 -4.2,1.6 -1.2,-1.3 -3,-2.1 -4.8,-2.1 -3.6,0 -6.6,2.9 -6.6,6.6 0,0.5 0.1,1 0.2,1.5 -5.5,-0.3 -10.3,-2.9 -13.5,-6.9 -0.6,1 -0.9,2.1 -0.9,3.3 0,2.3 1.2,4.3 2.9,5.5 -1.1,0 -2.1,-0.3 -3,-0.8 v 0.1 c 0,3.2 2.3,5.8 5.3,6.4 -0.6,0.1 -1.1,0.2 -1.7,0.2 -0.4,0 -0.8,0 -1.2,-0.1 0.8,2.6 3.3,4.5 6.1,4.6 -2.2,1.8 -5.1,2.8 -8.2,2.8 -0.5,0 -1.1,0 -1.6,-0.1 C 18.9,44 22.4,45 26.1,45 38.2,45 44.43575,34.996634 44.67774,26.3 L 44.7,25.5 c 1.2,-1 2.5,-2.1 3.4,-3.4 z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00aced;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="sharethis"
+            class="social-icon"
+            href="https://digitalnativeuk.bandcamp.com"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00BF00;"
+                >
+                  <path
+                    d="M0,0L64,0L64,64L0,64L0,0ZM28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <span>
+        © Digital Native UK 2022. All rights reserved.
+      </span>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`All snapshots Pages renders about unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <header
+      class="header hidden top"
+      role="menubar"
+    >
+      <div
+        class="inner"
+      >
+        <a
+          class="logo"
+          href="/"
+        >
+          <strong
+            class="text"
+          >
+            Digital Native UK
+          </strong>
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              alt=""
+              data-nimg="fill"
+              decoding="async"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </span>
+        </a>
+        <nav
+          class="nav"
+          role="navigation"
+        >
+          <input
+            class="toggle"
+            id="menu-toggle"
+            title="menu"
+            type="checkbox"
+          />
+          <label
+            class="container"
+            for="menu-toggle"
+          >
+            <div
+              class="button"
+            />
+          </label>
+          <ul
+            class="menu"
+          >
+            <li
+              class="item active"
+            >
+              <a
+                class="link"
+                href="/"
+                role="link"
+                title="Home"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/about"
+                role="link"
+                title="About"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/news"
+                role="link"
+                title="News"
+              >
+                News
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/music"
+                role="link"
+                title="Music"
+              >
+                Music
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/production"
+                role="link"
+                title="Production"
+              >
+                Production
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="main about"
+    >
+      <article
+        class="article"
+        role="article"
+      >
+        <span
+          class="image block"
+        >
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+            />
+            <img
+              alt="About Digital Native"
+              class=""
+              data-nimg="responsive"
+              decoding="async"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </span>
+        </span>
+        <div
+          class="content"
+        >
+          <h1
+            class="title"
+            role="heading"
+          >
+            About Digital Native
+          </h1>
+          <div
+            class="innerContent"
+          >
+            <div
+              class="markdown summary"
+            >
+              <p>
+                Drum and Bass Producer from the Midlands, UK.
+              </p>
+            </div>
+            <div
+              class="markdown article"
+            >
+              <p>
+                Based in the UK, Digital Native is a Drum and Bass producer known mainly for soulful, melodic dnb with a string of releases with Goldfat Records, Beats in Mind and Glitch Audio. Growing up on a mix of 60s rock to big band and playing multiple instruments, Digital Native draws influence from a broad musical palette. Having crafted a sound leading more towards the liquid end of dnb, more recent releases have allowed Digital Native to delve into heavier, darker vibes and old school influences. Regardless, musicality, emotion and soul are the root of all his music.
+              </p>
+            </div>
+            <div
+              class="markdown article"
+            >
+              <p>
+                Aside from multiple releases on various labels the last couple of years have seen a remix for London Elekricity on Hospital Records and growing support including on Radio 1 and Kiss FM. Live shows, most notably at XOYO for the RAM30 celebrations, and guest mixes on the Hospital podcast and Rinse FM have also allowed Digital Native to dig deeper into the full spectrum of his Drum and Bass tastes and showcase his mixing talents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer
+      class="footer bottom"
+      role=""
+    >
+      <ul
+        class="footerLinks"
+      >
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="facebook"
+            class="social-icon"
+            href="https://www.facebook.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #3b5998;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="soundcloud"
+            class="social-icon"
+            href="https://soundcloud.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M43.6,30c-0.6,0-1.2,0.1-1.7,0.3c-0.3-4-3.7-7.1-7.7-7.1c-1,0-2,0.2-2.8,0.5 C31.1,23.9,31,24,31,24.3v13.9c0,0.3,0.2,0.5,0.5,0.5c0,0,12.2,0,12.2,0c2.4,0,4.4-1.9,4.4-4.4C48,31.9,46,30,43.6,30z M27.2,25.1 c-0.7,0-1.2,0.5-1.2,1.1v11.3c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2V26.2C28.4,25.6,27.8,25.1,27.2,25.1z M22.2,27.8 c-0.7,0-1.2,0.5-1.2,1.1v8.5c0,0.7,0.6,1.2,1.2,1.2s1.2-0.6,1.2-1.2V29C23.4,28.3,22.9,27.8,22.2,27.8z M17.2,30.2 c-0.7,0-1.2,0.5-1.2,1.1v4.9c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2v-4.9C18.5,30.7,17.9,30.2,17.2,30.2z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #FF5700;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M18.5,36.3c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2v-4.9c0-0.6,0.6-1.1,1.2-1.1 c0.7,0,1.2,0.5,1.2,1.1V36.3z M23.4,37.5c0,0.7-0.6,1.2-1.2,1.2S21,38.2,21,37.5V29c0-0.6,0.6-1.1,1.2-1.1s1.2,0.5,1.2,1.1V37.5z  M28.4,37.5c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2V26.2c0-0.6,0.6-1.1,1.2-1.1c0.7,0,1.2,0.5,1.2,1.1V37.5z M43.6,38.7 c0,0-12.1,0-12.2,0c-0.3,0-0.5-0.2-0.5-0.5V24.3c0-0.3,0.1-0.4,0.4-0.5c0.9-0.3,1.8-0.5,2.8-0.5c4,0,7.4,3.1,7.7,7.1 c0.5-0.2,1.1-0.3,1.7-0.3c2.4,0,4.4,2,4.4,4.4C48,36.8,46,38.7,43.6,38.7z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="twitter"
+            class="social-icon"
+            href="https://twitter.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="m 48.1,22.1 c -1.223105,0.430685 -2.4,0.761371 -3.8,1 1.4,-0.8 2.4,-2.1 2.9,-3.6 -1.3,0.8 -2.7,1.3 -4.2,1.6 -1.2,-1.3 -3,-2.1 -4.8,-2.1 -3.6,0 -6.6,2.9 -6.6,6.6 0,0.5 0.1,1 0.2,1.5 -5.5,-0.3 -10.3,-2.9 -13.5,-6.9 -0.6,1 -0.9,2.1 -0.9,3.3 0,2.3 1.2,4.3 2.9,5.5 -1.1,0 -2.1,-0.3 -3,-0.8 v 0.1 c 0,3.2 2.3,5.8 5.3,6.4 -0.6,0.1 -1.1,0.2 -1.7,0.2 -0.4,0 -0.8,0 -1.2,-0.1 0.8,2.6 3.3,4.5 6.1,4.6 -2.2,1.8 -5.1,2.8 -8.2,2.8 -0.5,0 -1.1,0 -1.6,-0.1 C 18.9,44 22.4,45 26.1,45 38.2,45 44.43575,34.996634 44.67774,26.3 L 44.7,25.5 c 1.2,-1 2.5,-2.1 3.4,-3.4 z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00aced;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="sharethis"
+            class="social-icon"
+            href="https://digitalnativeuk.bandcamp.com"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00BF00;"
+                >
+                  <path
+                    d="M0,0L64,0L64,64L0,64L0,0ZM28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <span>
+        © Digital Native UK 2022. All rights reserved.
+      </span>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`All snapshots Pages renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <header
+      class="header hidden top"
+      role="menubar"
+    >
+      <div
+        class="inner"
+      >
+        <a
+          class="logo"
+          href="/"
+        >
+          <strong
+            class="text"
+          >
+            Digital Native UK
+          </strong>
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              alt=""
+              data-nimg="fill"
+              decoding="async"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </span>
+        </a>
+        <nav
+          class="nav"
+          role="navigation"
+        >
+          <input
+            class="toggle"
+            id="menu-toggle"
+            title="menu"
+            type="checkbox"
+          />
+          <label
+            class="container"
+            for="menu-toggle"
+          >
+            <div
+              class="button"
+            />
+          </label>
+          <ul
+            class="menu"
+          >
+            <li
+              class="item active"
+            >
+              <a
+                class="link"
+                href="/"
+                role="link"
+                title="Home"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/about"
+                role="link"
+                title="About"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/news"
+                role="link"
+                title="News"
+              >
+                News
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/music"
+                role="link"
+                title="Music"
+              >
+                Music
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/production"
+                role="link"
+                title="Production"
+              >
+                Production
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="main home"
+    >
+      <section
+        class="section home"
+        role="complementary"
+      >
+        <ul
+          class="list feed"
+        />
+      </section>
+    </main>
+    <footer
+      class="footer bottom"
+      role=""
+    >
+      <ul
+        class="footerLinks"
+      >
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="facebook"
+            class="social-icon"
+            href="https://www.facebook.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #3b5998;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="soundcloud"
+            class="social-icon"
+            href="https://soundcloud.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M43.6,30c-0.6,0-1.2,0.1-1.7,0.3c-0.3-4-3.7-7.1-7.7-7.1c-1,0-2,0.2-2.8,0.5 C31.1,23.9,31,24,31,24.3v13.9c0,0.3,0.2,0.5,0.5,0.5c0,0,12.2,0,12.2,0c2.4,0,4.4-1.9,4.4-4.4C48,31.9,46,30,43.6,30z M27.2,25.1 c-0.7,0-1.2,0.5-1.2,1.1v11.3c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2V26.2C28.4,25.6,27.8,25.1,27.2,25.1z M22.2,27.8 c-0.7,0-1.2,0.5-1.2,1.1v8.5c0,0.7,0.6,1.2,1.2,1.2s1.2-0.6,1.2-1.2V29C23.4,28.3,22.9,27.8,22.2,27.8z M17.2,30.2 c-0.7,0-1.2,0.5-1.2,1.1v4.9c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2v-4.9C18.5,30.7,17.9,30.2,17.2,30.2z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #FF5700;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M18.5,36.3c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2v-4.9c0-0.6,0.6-1.1,1.2-1.1 c0.7,0,1.2,0.5,1.2,1.1V36.3z M23.4,37.5c0,0.7-0.6,1.2-1.2,1.2S21,38.2,21,37.5V29c0-0.6,0.6-1.1,1.2-1.1s1.2,0.5,1.2,1.1V37.5z  M28.4,37.5c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2V26.2c0-0.6,0.6-1.1,1.2-1.1c0.7,0,1.2,0.5,1.2,1.1V37.5z M43.6,38.7 c0,0-12.1,0-12.2,0c-0.3,0-0.5-0.2-0.5-0.5V24.3c0-0.3,0.1-0.4,0.4-0.5c0.9-0.3,1.8-0.5,2.8-0.5c4,0,7.4,3.1,7.7,7.1 c0.5-0.2,1.1-0.3,1.7-0.3c2.4,0,4.4,2,4.4,4.4C48,36.8,46,38.7,43.6,38.7z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="twitter"
+            class="social-icon"
+            href="https://twitter.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="m 48.1,22.1 c -1.223105,0.430685 -2.4,0.761371 -3.8,1 1.4,-0.8 2.4,-2.1 2.9,-3.6 -1.3,0.8 -2.7,1.3 -4.2,1.6 -1.2,-1.3 -3,-2.1 -4.8,-2.1 -3.6,0 -6.6,2.9 -6.6,6.6 0,0.5 0.1,1 0.2,1.5 -5.5,-0.3 -10.3,-2.9 -13.5,-6.9 -0.6,1 -0.9,2.1 -0.9,3.3 0,2.3 1.2,4.3 2.9,5.5 -1.1,0 -2.1,-0.3 -3,-0.8 v 0.1 c 0,3.2 2.3,5.8 5.3,6.4 -0.6,0.1 -1.1,0.2 -1.7,0.2 -0.4,0 -0.8,0 -1.2,-0.1 0.8,2.6 3.3,4.5 6.1,4.6 -2.2,1.8 -5.1,2.8 -8.2,2.8 -0.5,0 -1.1,0 -1.6,-0.1 C 18.9,44 22.4,45 26.1,45 38.2,45 44.43575,34.996634 44.67774,26.3 L 44.7,25.5 c 1.2,-1 2.5,-2.1 3.4,-3.4 z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00aced;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="sharethis"
+            class="social-icon"
+            href="https://digitalnativeuk.bandcamp.com"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00BF00;"
+                >
+                  <path
+                    d="M0,0L64,0L64,64L0,64L0,0ZM28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <span>
+        © Digital Native UK 2022. All rights reserved.
+      </span>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`All snapshots Pages renders music unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <header
+      class="header hidden top"
+      role="menubar"
+    >
+      <div
+        class="inner"
+      >
+        <a
+          class="logo"
+          href="/"
+        >
+          <strong
+            class="text"
+          >
+            Digital Native UK
+          </strong>
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              alt=""
+              data-nimg="fill"
+              decoding="async"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </span>
+        </a>
+        <nav
+          class="nav"
+          role="navigation"
+        >
+          <input
+            class="toggle"
+            id="menu-toggle"
+            title="menu"
+            type="checkbox"
+          />
+          <label
+            class="container"
+            for="menu-toggle"
+          >
+            <div
+              class="button"
+            />
+          </label>
+          <ul
+            class="menu"
+          >
+            <li
+              class="item active"
+            >
+              <a
+                class="link"
+                href="/"
+                role="link"
+                title="Home"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/about"
+                role="link"
+                title="About"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/news"
+                role="link"
+                title="News"
+              >
+                News
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/music"
+                role="link"
+                title="Music"
+              >
+                Music
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/production"
+                role="link"
+                title="Production"
+              >
+                Production
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="main music"
+    >
+      <article
+        class="article"
+        role="article"
+      >
+        <div
+          class="content"
+        >
+          <h1
+            class="title"
+            role="heading"
+          >
+            Digital Native UK Music
+          </h1>
+          <div
+            class="innerContent"
+          >
+            <div
+              class="markdown summary"
+            >
+              <p>
+                Drum and Bass Producer from the Midlands, UK.
+              </p>
+            </div>
+            <div
+              class="markdown summary"
+            >
+              <p>
+                With a sound on the deeper, liquid side of dnb, but not averse to more technical, jungly or darker styles and drawing influence from a broad musical taste, the focus is on creating a musical journey.
+              </p>
+            </div>
+            <div
+              class="markdown article"
+            >
+              <p>
+                Expect old breaks, musicality, emotion and soul at the core of anything you hear from Digital Native with attention to the details.
+              </p>
+            </div>
+            <div
+              class="markdown article"
+            >
+              <p>
+                Releases on Goldfat, Hospital, Glitch Audio, Beats In Mind, Silent Audio, Liquid Brilliants and SIMBAL Recordings. Self releases available to stream or download via Bandcamp and Soundcloud.
+              </p>
+            </div>
+            <div
+              class="hero heroPlayer"
+            >
+              <iframe
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                frameborder="0"
+                height="80"
+                src="https://open.spotify.com/embed/playlist/5Ohs23L7Llqp2Z0ujz4i3O?utm_source=generator&theme=0"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+      <section
+        class="section music"
+        role="complementary"
+      >
+        <ul
+          class="list small"
+        />
+      </section>
+    </main>
+    <footer
+      class="footer bottom"
+      role=""
+    >
+      <ul
+        class="footerLinks"
+      >
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="facebook"
+            class="social-icon"
+            href="https://www.facebook.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #3b5998;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="soundcloud"
+            class="social-icon"
+            href="https://soundcloud.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M43.6,30c-0.6,0-1.2,0.1-1.7,0.3c-0.3-4-3.7-7.1-7.7-7.1c-1,0-2,0.2-2.8,0.5 C31.1,23.9,31,24,31,24.3v13.9c0,0.3,0.2,0.5,0.5,0.5c0,0,12.2,0,12.2,0c2.4,0,4.4-1.9,4.4-4.4C48,31.9,46,30,43.6,30z M27.2,25.1 c-0.7,0-1.2,0.5-1.2,1.1v11.3c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2V26.2C28.4,25.6,27.8,25.1,27.2,25.1z M22.2,27.8 c-0.7,0-1.2,0.5-1.2,1.1v8.5c0,0.7,0.6,1.2,1.2,1.2s1.2-0.6,1.2-1.2V29C23.4,28.3,22.9,27.8,22.2,27.8z M17.2,30.2 c-0.7,0-1.2,0.5-1.2,1.1v4.9c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2v-4.9C18.5,30.7,17.9,30.2,17.2,30.2z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #FF5700;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M18.5,36.3c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2v-4.9c0-0.6,0.6-1.1,1.2-1.1 c0.7,0,1.2,0.5,1.2,1.1V36.3z M23.4,37.5c0,0.7-0.6,1.2-1.2,1.2S21,38.2,21,37.5V29c0-0.6,0.6-1.1,1.2-1.1s1.2,0.5,1.2,1.1V37.5z  M28.4,37.5c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2V26.2c0-0.6,0.6-1.1,1.2-1.1c0.7,0,1.2,0.5,1.2,1.1V37.5z M43.6,38.7 c0,0-12.1,0-12.2,0c-0.3,0-0.5-0.2-0.5-0.5V24.3c0-0.3,0.1-0.4,0.4-0.5c0.9-0.3,1.8-0.5,2.8-0.5c4,0,7.4,3.1,7.7,7.1 c0.5-0.2,1.1-0.3,1.7-0.3c2.4,0,4.4,2,4.4,4.4C48,36.8,46,38.7,43.6,38.7z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="twitter"
+            class="social-icon"
+            href="https://twitter.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="m 48.1,22.1 c -1.223105,0.430685 -2.4,0.761371 -3.8,1 1.4,-0.8 2.4,-2.1 2.9,-3.6 -1.3,0.8 -2.7,1.3 -4.2,1.6 -1.2,-1.3 -3,-2.1 -4.8,-2.1 -3.6,0 -6.6,2.9 -6.6,6.6 0,0.5 0.1,1 0.2,1.5 -5.5,-0.3 -10.3,-2.9 -13.5,-6.9 -0.6,1 -0.9,2.1 -0.9,3.3 0,2.3 1.2,4.3 2.9,5.5 -1.1,0 -2.1,-0.3 -3,-0.8 v 0.1 c 0,3.2 2.3,5.8 5.3,6.4 -0.6,0.1 -1.1,0.2 -1.7,0.2 -0.4,0 -0.8,0 -1.2,-0.1 0.8,2.6 3.3,4.5 6.1,4.6 -2.2,1.8 -5.1,2.8 -8.2,2.8 -0.5,0 -1.1,0 -1.6,-0.1 C 18.9,44 22.4,45 26.1,45 38.2,45 44.43575,34.996634 44.67774,26.3 L 44.7,25.5 c 1.2,-1 2.5,-2.1 3.4,-3.4 z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00aced;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="sharethis"
+            class="social-icon"
+            href="https://digitalnativeuk.bandcamp.com"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00BF00;"
+                >
+                  <path
+                    d="M0,0L64,0L64,64L0,64L0,0ZM28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <span>
+        © Digital Native UK 2022. All rights reserved.
+      </span>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`All snapshots Pages renders news unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <header
+      class="header hidden top"
+      role="menubar"
+    >
+      <div
+        class="inner"
+      >
+        <a
+          class="logo"
+          href="/"
+        >
+          <strong
+            class="text"
+          >
+            Digital Native UK
+          </strong>
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              alt=""
+              data-nimg="fill"
+              decoding="async"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </span>
+        </a>
+        <nav
+          class="nav"
+          role="navigation"
+        >
+          <input
+            class="toggle"
+            id="menu-toggle"
+            title="menu"
+            type="checkbox"
+          />
+          <label
+            class="container"
+            for="menu-toggle"
+          >
+            <div
+              class="button"
+            />
+          </label>
+          <ul
+            class="menu"
+          >
+            <li
+              class="item active"
+            >
+              <a
+                class="link"
+                href="/"
+                role="link"
+                title="Home"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/about"
+                role="link"
+                title="About"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/news"
+                role="link"
+                title="News"
+              >
+                News
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/music"
+                role="link"
+                title="Music"
+              >
+                Music
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/production"
+                role="link"
+                title="Production"
+              >
+                Production
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="main news"
+    >
+      <article
+        class="article article"
+        role="article"
+      >
+        <div
+          class="content"
+        >
+          <h1
+            class="title"
+            role="heading"
+          >
+            Digital Native News
+          </h1>
+          <div
+            class="innerContent"
+          >
+            <ul
+              class="list rows"
+            />
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer
+      class="footer bottom"
+      role=""
+    >
+      <ul
+        class="footerLinks"
+      >
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="facebook"
+            class="social-icon"
+            href="https://www.facebook.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #3b5998;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="soundcloud"
+            class="social-icon"
+            href="https://soundcloud.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M43.6,30c-0.6,0-1.2,0.1-1.7,0.3c-0.3-4-3.7-7.1-7.7-7.1c-1,0-2,0.2-2.8,0.5 C31.1,23.9,31,24,31,24.3v13.9c0,0.3,0.2,0.5,0.5,0.5c0,0,12.2,0,12.2,0c2.4,0,4.4-1.9,4.4-4.4C48,31.9,46,30,43.6,30z M27.2,25.1 c-0.7,0-1.2,0.5-1.2,1.1v11.3c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2V26.2C28.4,25.6,27.8,25.1,27.2,25.1z M22.2,27.8 c-0.7,0-1.2,0.5-1.2,1.1v8.5c0,0.7,0.6,1.2,1.2,1.2s1.2-0.6,1.2-1.2V29C23.4,28.3,22.9,27.8,22.2,27.8z M17.2,30.2 c-0.7,0-1.2,0.5-1.2,1.1v4.9c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2v-4.9C18.5,30.7,17.9,30.2,17.2,30.2z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #FF5700;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M18.5,36.3c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2v-4.9c0-0.6,0.6-1.1,1.2-1.1 c0.7,0,1.2,0.5,1.2,1.1V36.3z M23.4,37.5c0,0.7-0.6,1.2-1.2,1.2S21,38.2,21,37.5V29c0-0.6,0.6-1.1,1.2-1.1s1.2,0.5,1.2,1.1V37.5z  M28.4,37.5c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2V26.2c0-0.6,0.6-1.1,1.2-1.1c0.7,0,1.2,0.5,1.2,1.1V37.5z M43.6,38.7 c0,0-12.1,0-12.2,0c-0.3,0-0.5-0.2-0.5-0.5V24.3c0-0.3,0.1-0.4,0.4-0.5c0.9-0.3,1.8-0.5,2.8-0.5c4,0,7.4,3.1,7.7,7.1 c0.5-0.2,1.1-0.3,1.7-0.3c2.4,0,4.4,2,4.4,4.4C48,36.8,46,38.7,43.6,38.7z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="twitter"
+            class="social-icon"
+            href="https://twitter.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="m 48.1,22.1 c -1.223105,0.430685 -2.4,0.761371 -3.8,1 1.4,-0.8 2.4,-2.1 2.9,-3.6 -1.3,0.8 -2.7,1.3 -4.2,1.6 -1.2,-1.3 -3,-2.1 -4.8,-2.1 -3.6,0 -6.6,2.9 -6.6,6.6 0,0.5 0.1,1 0.2,1.5 -5.5,-0.3 -10.3,-2.9 -13.5,-6.9 -0.6,1 -0.9,2.1 -0.9,3.3 0,2.3 1.2,4.3 2.9,5.5 -1.1,0 -2.1,-0.3 -3,-0.8 v 0.1 c 0,3.2 2.3,5.8 5.3,6.4 -0.6,0.1 -1.1,0.2 -1.7,0.2 -0.4,0 -0.8,0 -1.2,-0.1 0.8,2.6 3.3,4.5 6.1,4.6 -2.2,1.8 -5.1,2.8 -8.2,2.8 -0.5,0 -1.1,0 -1.6,-0.1 C 18.9,44 22.4,45 26.1,45 38.2,45 44.43575,34.996634 44.67774,26.3 L 44.7,25.5 c 1.2,-1 2.5,-2.1 3.4,-3.4 z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00aced;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="sharethis"
+            class="social-icon"
+            href="https://digitalnativeuk.bandcamp.com"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00BF00;"
+                >
+                  <path
+                    d="M0,0L64,0L64,64L0,64L0,0ZM28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <span>
+        © Digital Native UK 2022. All rights reserved.
+      </span>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`All snapshots Pages renders production unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <header
+      class="header hidden top"
+      role="menubar"
+    >
+      <div
+        class="inner"
+      >
+        <a
+          class="logo"
+          href="/"
+        >
+          <strong
+            class="text"
+          >
+            Digital Native UK
+          </strong>
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              alt=""
+              data-nimg="fill"
+              decoding="async"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </span>
+        </a>
+        <nav
+          class="nav"
+          role="navigation"
+        >
+          <input
+            class="toggle"
+            id="menu-toggle"
+            title="menu"
+            type="checkbox"
+          />
+          <label
+            class="container"
+            for="menu-toggle"
+          >
+            <div
+              class="button"
+            />
+          </label>
+          <ul
+            class="menu"
+          >
+            <li
+              class="item active"
+            >
+              <a
+                class="link"
+                href="/"
+                role="link"
+                title="Home"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/about"
+                role="link"
+                title="About"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/news"
+                role="link"
+                title="News"
+              >
+                News
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/music"
+                role="link"
+                title="Music"
+              >
+                Music
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/production"
+                role="link"
+                title="Production"
+              >
+                Production
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="main production"
+    >
+      <article
+        class="article inline"
+        role="article"
+      >
+        <div
+          class="content"
+        >
+          <h1
+            class="title"
+            role="heading"
+          >
+            Digital Native Production Tutorials
+          </h1>
+          <div
+            class="innerContent"
+          >
+            <div
+              class="markdown summary"
+            >
+              <p>
+                In this section youll find tutorials, samples and resources that will hopefully help you in your own production journey. Check out the links below to navigate quickly to section you need.
+              </p>
+            </div>
+            <div
+              class="markdown article"
+            >
+              <p>
+                Steinberg Cubase | Native Instruments | Drum & Bass | Production
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article
+        class="article inline"
+        role="article"
+      >
+        <div
+          class="content"
+        >
+          <h2
+            class="heading"
+            role="heading"
+          >
+            Forever and Ever | Track Breakdown
+          </h2>
+          <div
+            class="innerContent"
+          >
+            <div
+              class="player"
+            >
+              <div
+                style="width: auto; height: auto;"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+      <article
+        class="article inline"
+        role="article"
+      >
+        <div
+          class="content"
+        >
+          <h2
+            class="heading"
+            role="heading"
+          >
+            London Elektricity - 'Possible Worlds' ft. Inja (Digital Native Remix)
+          </h2>
+          <div
+            class="innerContent"
+          >
+            <div
+              class="player"
+            >
+              <div
+                style="width: auto; height: auto;"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+      <article
+        class="article inline"
+        role="article"
+      >
+        <div
+          class="content"
+        >
+          <h2
+            class="heading"
+            role="heading"
+          >
+            Journey Through | Track Breakdown
+          </h2>
+          <div
+            class="innerContent"
+          >
+            <div
+              class="player"
+            >
+              <div
+                style="width: auto; height: auto;"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer
+      class="footer bottom"
+      role=""
+    >
+      <ul
+        class="footerLinks"
+      >
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="facebook"
+            class="social-icon"
+            href="https://www.facebook.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #3b5998;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="soundcloud"
+            class="social-icon"
+            href="https://soundcloud.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M43.6,30c-0.6,0-1.2,0.1-1.7,0.3c-0.3-4-3.7-7.1-7.7-7.1c-1,0-2,0.2-2.8,0.5 C31.1,23.9,31,24,31,24.3v13.9c0,0.3,0.2,0.5,0.5,0.5c0,0,12.2,0,12.2,0c2.4,0,4.4-1.9,4.4-4.4C48,31.9,46,30,43.6,30z M27.2,25.1 c-0.7,0-1.2,0.5-1.2,1.1v11.3c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2V26.2C28.4,25.6,27.8,25.1,27.2,25.1z M22.2,27.8 c-0.7,0-1.2,0.5-1.2,1.1v8.5c0,0.7,0.6,1.2,1.2,1.2s1.2-0.6,1.2-1.2V29C23.4,28.3,22.9,27.8,22.2,27.8z M17.2,30.2 c-0.7,0-1.2,0.5-1.2,1.1v4.9c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2v-4.9C18.5,30.7,17.9,30.2,17.2,30.2z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #FF5700;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M18.5,36.3c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2v-4.9c0-0.6,0.6-1.1,1.2-1.1 c0.7,0,1.2,0.5,1.2,1.1V36.3z M23.4,37.5c0,0.7-0.6,1.2-1.2,1.2S21,38.2,21,37.5V29c0-0.6,0.6-1.1,1.2-1.1s1.2,0.5,1.2,1.1V37.5z  M28.4,37.5c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2V26.2c0-0.6,0.6-1.1,1.2-1.1c0.7,0,1.2,0.5,1.2,1.1V37.5z M43.6,38.7 c0,0-12.1,0-12.2,0c-0.3,0-0.5-0.2-0.5-0.5V24.3c0-0.3,0.1-0.4,0.4-0.5c0.9-0.3,1.8-0.5,2.8-0.5c4,0,7.4,3.1,7.7,7.1 c0.5-0.2,1.1-0.3,1.7-0.3c2.4,0,4.4,2,4.4,4.4C48,36.8,46,38.7,43.6,38.7z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="twitter"
+            class="social-icon"
+            href="https://twitter.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="m 48.1,22.1 c -1.223105,0.430685 -2.4,0.761371 -3.8,1 1.4,-0.8 2.4,-2.1 2.9,-3.6 -1.3,0.8 -2.7,1.3 -4.2,1.6 -1.2,-1.3 -3,-2.1 -4.8,-2.1 -3.6,0 -6.6,2.9 -6.6,6.6 0,0.5 0.1,1 0.2,1.5 -5.5,-0.3 -10.3,-2.9 -13.5,-6.9 -0.6,1 -0.9,2.1 -0.9,3.3 0,2.3 1.2,4.3 2.9,5.5 -1.1,0 -2.1,-0.3 -3,-0.8 v 0.1 c 0,3.2 2.3,5.8 5.3,6.4 -0.6,0.1 -1.1,0.2 -1.7,0.2 -0.4,0 -0.8,0 -1.2,-0.1 0.8,2.6 3.3,4.5 6.1,4.6 -2.2,1.8 -5.1,2.8 -8.2,2.8 -0.5,0 -1.1,0 -1.6,-0.1 C 18.9,44 22.4,45 26.1,45 38.2,45 44.43575,34.996634 44.67774,26.3 L 44.7,25.5 c 1.2,-1 2.5,-2.1 3.4,-3.4 z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00aced;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="sharethis"
+            class="social-icon"
+            href="https://digitalnativeuk.bandcamp.com"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00BF00;"
+                >
+                  <path
+                    d="M0,0L64,0L64,64L0,64L0,0ZM28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <span>
+        © Digital Native UK 2022. All rights reserved.
+      </span>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Components renders article unchanged 1`] = `
+<div>
+  <article
+    class="article"
+    role="article"
+  />
+</div>
+`;
+
+exports[`Components renders button unchanged 1`] = `
+<div>
+  <button
+    class="storybook-button storybook-button--medium storybook-button--secondary"
+    type="button"
+  >
+    test
+  </button>
+</div>
+`;
+
+exports[`Components renders footer unchanged 1`] = `
+<div>
+  <footer
+    class="footer"
+    role=""
+  >
+    <ul
+      class="footerLinks"
+    >
+      <li
+        class="footerLink"
+      >
+        <a
+          aria-label="facebook"
+          class="social-icon"
+          href="https://www.facebook.com/digitalnativeuk"
+          style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+        >
+          <div
+            class="social-container"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              class="social-svg"
+              style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+              viewBox="0 0 64 64"
+            >
+              <g
+                class="social-svg-background"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="31"
+                />
+              </g>
+              <g
+                class="social-svg-icon"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <path
+                  d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                />
+              </g>
+              <g
+                class="social-svg-mask"
+                style="transition: fill 170ms ease-in-out; fill: #3b5998;"
+              >
+                <path
+                  d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li
+        class="footerLink"
+      >
+        <a
+          aria-label="soundcloud"
+          class="social-icon"
+          href="https://soundcloud.com/digitalnativeuk"
+          style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+        >
+          <div
+            class="social-container"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              class="social-svg"
+              style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+              viewBox="0 0 64 64"
+            >
+              <g
+                class="social-svg-background"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="31"
+                />
+              </g>
+              <g
+                class="social-svg-icon"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <path
+                  d="M43.6,30c-0.6,0-1.2,0.1-1.7,0.3c-0.3-4-3.7-7.1-7.7-7.1c-1,0-2,0.2-2.8,0.5 C31.1,23.9,31,24,31,24.3v13.9c0,0.3,0.2,0.5,0.5,0.5c0,0,12.2,0,12.2,0c2.4,0,4.4-1.9,4.4-4.4C48,31.9,46,30,43.6,30z M27.2,25.1 c-0.7,0-1.2,0.5-1.2,1.1v11.3c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2V26.2C28.4,25.6,27.8,25.1,27.2,25.1z M22.2,27.8 c-0.7,0-1.2,0.5-1.2,1.1v8.5c0,0.7,0.6,1.2,1.2,1.2s1.2-0.6,1.2-1.2V29C23.4,28.3,22.9,27.8,22.2,27.8z M17.2,30.2 c-0.7,0-1.2,0.5-1.2,1.1v4.9c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2v-4.9C18.5,30.7,17.9,30.2,17.2,30.2z"
+                />
+              </g>
+              <g
+                class="social-svg-mask"
+                style="transition: fill 170ms ease-in-out; fill: #FF5700;"
+              >
+                <path
+                  d="M0,0v64h64V0H0z M18.5,36.3c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2v-4.9c0-0.6,0.6-1.1,1.2-1.1 c0.7,0,1.2,0.5,1.2,1.1V36.3z M23.4,37.5c0,0.7-0.6,1.2-1.2,1.2S21,38.2,21,37.5V29c0-0.6,0.6-1.1,1.2-1.1s1.2,0.5,1.2,1.1V37.5z  M28.4,37.5c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2V26.2c0-0.6,0.6-1.1,1.2-1.1c0.7,0,1.2,0.5,1.2,1.1V37.5z M43.6,38.7 c0,0-12.1,0-12.2,0c-0.3,0-0.5-0.2-0.5-0.5V24.3c0-0.3,0.1-0.4,0.4-0.5c0.9-0.3,1.8-0.5,2.8-0.5c4,0,7.4,3.1,7.7,7.1 c0.5-0.2,1.1-0.3,1.7-0.3c2.4,0,4.4,2,4.4,4.4C48,36.8,46,38.7,43.6,38.7z"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li
+        class="footerLink"
+      >
+        <a
+          aria-label="twitter"
+          class="social-icon"
+          href="https://twitter.com/digitalnativeuk"
+          style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+        >
+          <div
+            class="social-container"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              class="social-svg"
+              style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+              viewBox="0 0 64 64"
+            >
+              <g
+                class="social-svg-background"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="31"
+                />
+              </g>
+              <g
+                class="social-svg-icon"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <path
+                  d="m 48.1,22.1 c -1.223105,0.430685 -2.4,0.761371 -3.8,1 1.4,-0.8 2.4,-2.1 2.9,-3.6 -1.3,0.8 -2.7,1.3 -4.2,1.6 -1.2,-1.3 -3,-2.1 -4.8,-2.1 -3.6,0 -6.6,2.9 -6.6,6.6 0,0.5 0.1,1 0.2,1.5 -5.5,-0.3 -10.3,-2.9 -13.5,-6.9 -0.6,1 -0.9,2.1 -0.9,3.3 0,2.3 1.2,4.3 2.9,5.5 -1.1,0 -2.1,-0.3 -3,-0.8 v 0.1 c 0,3.2 2.3,5.8 5.3,6.4 -0.6,0.1 -1.1,0.2 -1.7,0.2 -0.4,0 -0.8,0 -1.2,-0.1 0.8,2.6 3.3,4.5 6.1,4.6 -2.2,1.8 -5.1,2.8 -8.2,2.8 -0.5,0 -1.1,0 -1.6,-0.1 C 18.9,44 22.4,45 26.1,45 38.2,45 44.43575,34.996634 44.67774,26.3 L 44.7,25.5 c 1.2,-1 2.5,-2.1 3.4,-3.4 z"
+                />
+              </g>
+              <g
+                class="social-svg-mask"
+                style="transition: fill 170ms ease-in-out; fill: #00aced;"
+              >
+                <path
+                  d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li
+        class="footerLink"
+      >
+        <a
+          aria-label="sharethis"
+          class="social-icon"
+          href="https://digitalnativeuk.bandcamp.com"
+          style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+        >
+          <div
+            class="social-container"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              class="social-svg"
+              style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+              viewBox="0 0 64 64"
+            >
+              <g
+                class="social-svg-background"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="31"
+                />
+              </g>
+              <g
+                class="social-svg-icon"
+                style="transition: fill 170ms ease-in-out; fill: transparent;"
+              >
+                <path
+                  d="M28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                />
+              </g>
+              <g
+                class="social-svg-mask"
+                style="transition: fill 170ms ease-in-out; fill: #00BF00;"
+              >
+                <path
+                  d="M0,0L64,0L64,64L0,64L0,0ZM28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <span>
+      © Digital Native UK 2022. All rights reserved.
+    </span>
+  </footer>
+</div>
+`;
+
+exports[`Components renders header unchanged 1`] = `
+<div>
+  <header
+    class="header hidden"
+    role="menubar"
+  >
+    <div
+      class="inner"
+    >
+      <a
+        class="logo"
+        href="/"
+      >
+        <strong
+          class="text"
+        >
+          Digital Native UK
+        </strong>
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+        >
+          <img
+            alt=""
+            data-nimg="fill"
+            decoding="async"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </span>
+      </a>
+      <nav
+        class="nav"
+        role="navigation"
+      >
+        <input
+          class="toggle"
+          id="menu-toggle"
+          title="menu"
+          type="checkbox"
+        />
+        <label
+          class="container"
+          for="menu-toggle"
+        >
+          <div
+            class="button"
+          />
+        </label>
+        <ul
+          class="menu"
+        >
+          <li
+            class="item active"
+          >
+            <a
+              class="link"
+              href="/"
+              role="link"
+              title="Home"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              href="/about"
+              role="link"
+              title="About"
+            >
+              About
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              href="/news"
+              role="link"
+              title="News"
+            >
+              News
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              href="/music"
+              role="link"
+              title="Music"
+            >
+              Music
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              href="/production"
+              role="link"
+              title="Production"
+            >
+              Production
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Components renders heading unchanged 1`] = `
+<div>
+  <h2
+    class="heading"
+    role="heading"
+  >
+    Test
+  </h2>
+</div>
+`;
+
+exports[`Components renders hero unchanged 1`] = `
+<div>
+  <div
+    class="hero heroPlayer"
+  >
+    <iframe
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      frameborder="0"
+      height="80"
+      src="https://open.spotify.com/embed/playlist/5Ohs23L7Llqp2Z0ujz4i3O?utm_source=generator&theme=0"
+      width="100%"
+    />
+  </div>
+</div>
+`;
+
+exports[`Components renders imageBox unchanged 1`] = `<div />`;
+
+exports[`Components renders layout unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <header
+      class="header hidden top"
+      role="menubar"
+    >
+      <div
+        class="inner"
+      >
+        <a
+          class="logo"
+          href="/"
+        >
+          <strong
+            class="text"
+          >
+            Digital Native UK
+          </strong>
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              alt=""
+              data-nimg="fill"
+              decoding="async"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </span>
+        </a>
+        <nav
+          class="nav"
+          role="navigation"
+        >
+          <input
+            class="toggle"
+            id="menu-toggle"
+            title="menu"
+            type="checkbox"
+          />
+          <label
+            class="container"
+            for="menu-toggle"
+          >
+            <div
+              class="button"
+            />
+          </label>
+          <ul
+            class="menu"
+          >
+            <li
+              class="item active"
+            >
+              <a
+                class="link"
+                href="/"
+                role="link"
+                title="Home"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/about"
+                role="link"
+                title="About"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/news"
+                role="link"
+                title="News"
+              >
+                News
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/music"
+                role="link"
+                title="Music"
+              >
+                Music
+              </a>
+            </li>
+            <li
+              class="item"
+            >
+              <a
+                class="link"
+                href="/production"
+                role="link"
+                title="Production"
+              >
+                Production
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="main"
+    />
+    <footer
+      class="footer bottom"
+      role=""
+    >
+      <ul
+        class="footerLinks"
+      >
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="facebook"
+            class="social-icon"
+            href="https://www.facebook.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #3b5998;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="soundcloud"
+            class="social-icon"
+            href="https://soundcloud.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M43.6,30c-0.6,0-1.2,0.1-1.7,0.3c-0.3-4-3.7-7.1-7.7-7.1c-1,0-2,0.2-2.8,0.5 C31.1,23.9,31,24,31,24.3v13.9c0,0.3,0.2,0.5,0.5,0.5c0,0,12.2,0,12.2,0c2.4,0,4.4-1.9,4.4-4.4C48,31.9,46,30,43.6,30z M27.2,25.1 c-0.7,0-1.2,0.5-1.2,1.1v11.3c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2V26.2C28.4,25.6,27.8,25.1,27.2,25.1z M22.2,27.8 c-0.7,0-1.2,0.5-1.2,1.1v8.5c0,0.7,0.6,1.2,1.2,1.2s1.2-0.6,1.2-1.2V29C23.4,28.3,22.9,27.8,22.2,27.8z M17.2,30.2 c-0.7,0-1.2,0.5-1.2,1.1v4.9c0,0.7,0.6,1.2,1.2,1.2c0.7,0,1.2-0.6,1.2-1.2v-4.9C18.5,30.7,17.9,30.2,17.2,30.2z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #FF5700;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M18.5,36.3c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2v-4.9c0-0.6,0.6-1.1,1.2-1.1 c0.7,0,1.2,0.5,1.2,1.1V36.3z M23.4,37.5c0,0.7-0.6,1.2-1.2,1.2S21,38.2,21,37.5V29c0-0.6,0.6-1.1,1.2-1.1s1.2,0.5,1.2,1.1V37.5z  M28.4,37.5c0,0.7-0.6,1.2-1.2,1.2c-0.7,0-1.2-0.6-1.2-1.2V26.2c0-0.6,0.6-1.1,1.2-1.1c0.7,0,1.2,0.5,1.2,1.1V37.5z M43.6,38.7 c0,0-12.1,0-12.2,0c-0.3,0-0.5-0.2-0.5-0.5V24.3c0-0.3,0.1-0.4,0.4-0.5c0.9-0.3,1.8-0.5,2.8-0.5c4,0,7.4,3.1,7.7,7.1 c0.5-0.2,1.1-0.3,1.7-0.3c2.4,0,4.4,2,4.4,4.4C48,36.8,46,38.7,43.6,38.7z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="twitter"
+            class="social-icon"
+            href="https://twitter.com/digitalnativeuk"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="m 48.1,22.1 c -1.223105,0.430685 -2.4,0.761371 -3.8,1 1.4,-0.8 2.4,-2.1 2.9,-3.6 -1.3,0.8 -2.7,1.3 -4.2,1.6 -1.2,-1.3 -3,-2.1 -4.8,-2.1 -3.6,0 -6.6,2.9 -6.6,6.6 0,0.5 0.1,1 0.2,1.5 -5.5,-0.3 -10.3,-2.9 -13.5,-6.9 -0.6,1 -0.9,2.1 -0.9,3.3 0,2.3 1.2,4.3 2.9,5.5 -1.1,0 -2.1,-0.3 -3,-0.8 v 0.1 c 0,3.2 2.3,5.8 5.3,6.4 -0.6,0.1 -1.1,0.2 -1.7,0.2 -0.4,0 -0.8,0 -1.2,-0.1 0.8,2.6 3.3,4.5 6.1,4.6 -2.2,1.8 -5.1,2.8 -8.2,2.8 -0.5,0 -1.1,0 -1.6,-0.1 C 18.9,44 22.4,45 26.1,45 38.2,45 44.43575,34.996634 44.67774,26.3 L 44.7,25.5 c 1.2,-1 2.5,-2.1 3.4,-3.4 z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00aced;"
+                >
+                  <path
+                    d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          class="footerLink"
+        >
+          <a
+            aria-label="sharethis"
+            class="social-icon"
+            href="https://digitalnativeuk.bandcamp.com"
+            style="display: inline-block; width: 2rem; height: 2rem; position: relative; overflow: hidden; vertical-align: middle;"
+          >
+            <div
+              class="social-container"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+            >
+              <svg
+                class="social-svg"
+                style="border-radius: 50%; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill-rule: evenodd;"
+                viewBox="0 0 64 64"
+              >
+                <g
+                  class="social-svg-background"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="31"
+                  />
+                </g>
+                <g
+                  class="social-svg-icon"
+                  style="transition: fill 170ms ease-in-out; fill: transparent;"
+                >
+                  <path
+                    d="M28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+                <g
+                  class="social-svg-mask"
+                  style="transition: fill 170ms ease-in-out; fill: #00BF00;"
+                >
+                  <path
+                    d="M0,0L64,0L64,64L0,64L0,0ZM28.3875,32.0001C28.3875,32.0843 28.3683,32.1632 28.3633,32.2471L37.1647,36.6464C37.9182,36.0083 38.8823,35.61 39.9474,35.61C42.3418,35.6105 44.2821,37.5509 44.2821,39.945C44.2821,42.3418 42.3417,44.2821 39.9474,44.2821C37.551,44.2821 35.6127,42.3417 35.6127,39.945C35.6127,39.8587 35.6319,39.7816 35.6367,39.698L26.8353,35.2984C26.0795,35.9341 25.1177,36.3324 24.0526,36.3324C21.6584,36.3324 19.7179,34.3941 19.7179,32.0001C19.7179,29.6036 21.6584,27.6628 24.0526,27.6628C25.1176,27.6628 26.0798,28.0635 26.8353,28.6992L35.6367,24.2997C35.6319,24.2156 35.6127,24.1365 35.6127,24.0502C35.6127,21.6584 37.551,19.7179 39.9474,19.7179C42.3418,19.7179 44.2821,21.6584 44.2821,24.0502C44.2821,26.4466 42.3417,28.3875 39.9474,28.3875C38.88,28.3875 37.9178,27.9868 37.1647,27.3487L28.3633,31.7506C28.368,31.8347 28.3875,31.9138 28.3875,32.0001Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <span>
+        © Digital Native UK 2022. All rights reserved.
+      </span>
+    </footer>
+  </div>
+</div>
+`;
+
 exports[`Homepage renders homepage unchanged 1`] = `
 <div>
   <div
