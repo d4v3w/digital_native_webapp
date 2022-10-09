@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { Nav } from './Nav'
 import classNames from 'classnames'
-import styles from './header.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
+import React, { useEffect, useState } from 'react'
 import logoImage from '../public/images/logo/digital-native-logo-full.png'
+import styles from './header.module.css'
+import { Nav } from './Nav'
 
 export interface HeaderProps {
   className?: string
@@ -41,9 +41,9 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   }, [lastScrollY])
 
   return (
-    <header className={classNames(styles.header, styles[`${show && 'hidden'}`], className)}>
+    <header className={classNames(styles.header, styles[`${show && 'hidden'}`], className)} role="menubar">
       <div className={styles.inner}>
-        <Link href="/" passHref className={styles.logo}>
+        <Link href="/" passHref className={styles.logo} role="navigation" aria-label="Home Page">
           <a className={styles.logo}>
             <strong className={styles.text}>Digital Native UK</strong>
             <Image src={logoImage} alt="" priority={true} layout="fill" />

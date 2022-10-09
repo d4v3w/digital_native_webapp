@@ -1,6 +1,6 @@
+import classNames from 'classnames'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import classNames from 'classnames'
 import styles from './nav.module.css'
 
 export interface NavProps {
@@ -10,11 +10,11 @@ export interface NavProps {
 const navItems = ['Home', 'About', 'News', 'Music', 'Production']
 
 const getActiveClass = (path: string) => {
-  const router = useRouter()
-  if (router.pathname === '/' && path === 'Home') {
+  const pathname = useRouter().pathname ? useRouter().pathname : '/'
+  if (pathname === '/' && path === 'Home') {
     return styles.active
   }
-  return router.pathname.startsWith('/' + path.toLowerCase()) ? styles.active : null
+  return pathname.startsWith('/' + path.toLowerCase()) ? styles.active : null
 }
 
 export const Nav: React.FC<NavProps> = ({ className = '' }) => {
