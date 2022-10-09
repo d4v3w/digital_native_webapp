@@ -4,7 +4,8 @@
   "scripts": {
     "clean": "rm -rf ./node_modules/",
     "dev": "next",
-    "build": "jest && next build",
+    "build": "next build",
+    "check": "jest && next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
