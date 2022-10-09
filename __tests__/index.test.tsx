@@ -15,41 +15,43 @@ jest.mock('next/router', () => ({
   },
 }))
 
-describe('Article', () => {
-  it('renders a article', () => {
-    render(<Article />)
+describe('All tests', () => {
+  describe('Article', () => {
+    it('renders a article', () => {
+      render(<Article />)
 
-    const article = screen.getByRole('article')
+      const article = screen.getByRole('article')
 
-    expect(article).toBeInTheDocument()
+      expect(article).toBeInTheDocument()
+    })
   })
-})
 
-describe('Heading', () => {
-  it('does not render a heading', () => {
-    render(<Heading />)
-    const t = () => {
-      screen.getByRole('heading')
-    }
-    expect(t).toThrow(Error)
+  describe('Heading', () => {
+    it('does not render a heading', () => {
+      render(<Heading />)
+      const t = () => {
+        screen.getByRole('heading')
+      }
+      expect(t).toThrow(Error)
+    })
+    it('renders a heading', () => {
+      render(<Heading>Heading</Heading>)
+
+      const heading = screen.getByRole('heading')
+
+      expect(heading).toBeInTheDocument()
+    })
   })
-  it('renders a heading', () => {
-    render(<Heading>Heading</Heading>)
 
-    const heading = screen.getByRole('heading')
+  describe('Header', () => {
+    it('renders a header', () => {
+      render(<Header />)
 
-    expect(heading).toBeInTheDocument()
-  })
-})
+      const header = screen.getByRole('menubar')
+      const navigation = screen.getByRole('navigation')
 
-describe('Header', () => {
-  it('renders a header', () => {
-    render(<Header />)
-
-    const header = screen.getByRole('menubar')
-    const navigation = screen.getByRole('navigation')
-
-    expect(header).toBeInTheDocument()
-    expect(navigation).toBeInTheDocument()
+      expect(header).toBeInTheDocument()
+      expect(navigation).toBeInTheDocument()
+    })
   })
 })
