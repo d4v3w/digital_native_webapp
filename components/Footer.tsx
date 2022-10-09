@@ -1,7 +1,7 @@
 import classNames from 'classnames'
-import styles from './footer.module.css'
-import { SITE_COPYRIGHT } from '../utils/common'
 import { SocialIcon } from 'react-social-icons'
+import { SITE_COPYRIGHT } from '../utils/common'
+import styles from './footer.module.css'
 
 export interface FooterProps {
   className?: string

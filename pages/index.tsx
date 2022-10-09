@@ -1,9 +1,9 @@
+import { GetStaticProps } from 'next/types'
 import Layout from '../components/Layout'
 import { List, ListProps } from '../components/List'
-import { newsData } from '../utils/news-items'
-import { Content } from '../interfaces'
-import { GetStaticProps } from 'next/types'
 import Section from '../components/Section'
+import { Content } from '../interfaces'
+import { newsData } from '../utils/news-items'
 
 const IndexPage = ({ items }: ListProps): JSX.Element => (
   <Layout title="Home" className="home">
