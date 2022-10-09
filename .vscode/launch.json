@@ -23,6 +23,12 @@
             "name": "Storybook",
             "request": "launch",
             "type": "node-terminal"
+        },
+        {
+            "command": "npm run test",
+            "name": "Test",
+            "request": "launch",
+            "type": "node-terminal"
         }
     ]
 }
