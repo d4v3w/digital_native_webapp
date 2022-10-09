@@ -7,6 +7,7 @@ import Heading from '../components/Heading'
 import Hero from '../components/Hero'
 import ImageBox from '../components/ImageBox'
 import Layout from '../components/Layout'
+import List from '../components/List'
 import { Content } from '../interfaces'
 import AboutPage from '../pages/about'
 import IndexPage from '../pages/index'
@@ -82,6 +83,10 @@ describe('All snapshots', () => {
     })
     it('renders layout unchanged', () => {
       const { container } = render(<Layout />)
+      expect(container).toMatchSnapshot()
+    })
+    it('renders layout unchanged', () => {
+      const { container } = render(<List items={mockData} />)
       expect(container).toMatchSnapshot()
     })
   })

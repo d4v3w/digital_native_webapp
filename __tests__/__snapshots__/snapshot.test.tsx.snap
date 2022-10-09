@@ -709,6 +709,14 @@ exports[`All snapshots Components renders layout unchanged 1`] = `
 </div>
 `;
 
+exports[`All snapshots Components renders layout unchanged 2`] = `
+<div>
+  <ul
+    class="list"
+  />
+</div>
+`;
+
 exports[`All snapshots Pages renders about unchanged 1`] = `
 <div>
   <div
