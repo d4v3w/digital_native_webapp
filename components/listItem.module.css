@@ -34,12 +34,12 @@
   color: #2f4f4f;
 }
 
-.shortText,
-.shortText p {
-  display: block;
-  white-space: nowrap;
+.shortText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2:
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
