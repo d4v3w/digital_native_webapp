@@ -1,5 +1,4 @@
 {
-    "githubPullRequests.ignoredPullRequestBranches": [
-        "main"
-    ]
+  "githubPullRequests.ignoredPullRequestBranches": ["main"],
+  "jest.jestCommandLine": "npm run test"
 }
