@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import { newsData as pages } from '../../utils/news-items'
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
-  const { type, id } = req.query
+  const { type = 'news', id = '' } = req.query
   try {
     let result
     if (id) {
