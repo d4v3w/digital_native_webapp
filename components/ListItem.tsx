@@ -1,10 +1,10 @@
+import classNames from 'classnames'
 import Link from 'next/link'
 import { Content } from '../interfaces'
-import styles from './listItem.module.css'
-import Markdown from './Markdown'
-import classNames from 'classnames'
 import Article from './Article'
 import Heading from './Heading'
+import styles from './listItem.module.css'
+import Markdown from './Markdown'
 
 type ListItemProps = {
   id: number
@@ -42,19 +42,17 @@ const ListItem = ({
 
   return (
     <li className={classNames(styles.item, styles[className])}>
-      <Link href="/news/[id]" as={`/news/${item.id}`}>
-        <a className={styles.link} title={item.title}>
-          <Article
-            heading={item.title}
-            src={item.image}
-            isInline={true}
-            className={className}
-            data-index={id}
-            data-id={item.id.toString()}
-          >
-            {text}
-          </Article>
-        </a>
+      <Link href="/news/[id]" as={`/news/${item.id}`} className={styles.link} title={item.title}>
+        <Article
+          heading={item.title}
+          src={item.image}
+          isInline={true}
+          className={className}
+          data-index={id}
+          data-id={item.id.toString()}
+        >
+          {text}
+        </Article>
       </Link>
     </li>
   )

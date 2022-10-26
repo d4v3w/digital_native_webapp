@@ -1,10 +1,10 @@
-import { Story, Meta } from '@storybook/react'
+import { Story } from '@storybook/react'
 import Markdown from '../components/Markdown'
 
 export default {
   title: 'Shared/Component/Markdown',
   component: Markdown,
-} as Meta
+}
 
 const Template: Story = (args) => <Markdown {...args} />
 
