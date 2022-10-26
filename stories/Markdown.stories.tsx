@@ -1,12 +1,12 @@
-import { Story } from '@storybook/react'
+import { StoryFn } from '@storybook/react'
 import Markdown from '../components/Markdown'
+
+const Template: StoryFn = (args) => <Markdown {...args} />
 
 export default {
   title: 'Shared/Component/Markdown',
   component: Markdown,
 }
-
-const Template: Story = (args) => <Markdown {...args} />
 
 export const Simple = Template.bind({})
 Simple.args = {
@@ -19,7 +19,7 @@ Simple.args = {
         1. Numbered List Item 2
 
         ## Heading 2
-
+@story
         Some more text
 
         * List un-ordered 3
