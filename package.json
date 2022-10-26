@@ -11,8 +11,7 @@
     "build-storybook": "build-storybook",
     "lint": "eslint --ext .jsx,.js,.ts,.tsx",
     "lint-fix": "eslint --fix --ext .jsx,.js,.ts,.tsx",
-    "test": "jest",
-    "test-watch": "jest --watch",
+    "test": "jest --watch",
     "stylelint": "npx stylelint '**/*.module.css'"
   },
   "dependencies": {
