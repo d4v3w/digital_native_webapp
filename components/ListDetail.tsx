@@ -1,10 +1,10 @@
-import { Content } from '../interfaces'
+import classNames from 'classnames'
+import Link from 'next/link'
 import layoutStyles from '../components/layout.module.css'
 import styles from '../components/listDetail.module.css'
-import Markdown from './Markdown'
-import Link from 'next/link'
-import classNames from 'classnames'
+import { Content } from '../interfaces'
 import Article from './Article'
+import Markdown from './Markdown'
 
 type ListDetailProps = {
   item: Content
@@ -15,10 +15,8 @@ const newsLink = (link: string | undefined) => {
     return null
   }
   return (
-    <Link href={link} passHref>
-      <a className={styles.link}>
-        <Markdown>{link}</Markdown>
-      </a>
+    <Link href={link} className={styles.link}>
+      <Markdown>{link}</Markdown>
     </Link>
   )
 }
@@ -38,10 +36,8 @@ const ListDetail = ({ item: item }: ListDetailProps) => (
       </Markdown>
     </div>
     <nav role="navigation">
-      <Link href={'/' + item.type} title="Navigate to previous page" passHref>
-        <a className={styles.link}>
-          <Markdown className="link">{`<< Back`}</Markdown>
-        </a>
+      <Link href={'/' + item.type} className={styles.link} title="Navigate to previous page">
+        <Markdown className="link">{`<< Back`}</Markdown>
       </Link>
     </nav>
   </Article>

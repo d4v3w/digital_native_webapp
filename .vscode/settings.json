@@ -1,5 +1,8 @@
 {
-  "githubPullRequests.ignoredPullRequestBranches": ["main"],
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "main"
+  ],
   "jest.jestCommandLine": "npm run test",
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

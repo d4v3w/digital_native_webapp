@@ -27,10 +27,13 @@ export const Nav: React.FC<NavProps> = ({ className = '' }) => {
       <ul className={classNames(styles.menu)} role="menu">
         {navItems.map((name, index) => (
           <li key={`nav-${index}`} className={classNames(styles.item, getActiveClass(name))} role="menuitem">
-            <Link href={name === 'Home' ? '/' : '/' + name.toLowerCase()} passHref>
-              <a title={name} className={styles.link} role="link">
-                {name}
-              </a>
+            <Link
+              href={name === 'Home' ? '/' : '/' + name.toLowerCase()}
+              title={name}
+              className={styles.link}
+              role="link"
+            >
+              {name}
             </Link>
           </li>
         ))}
