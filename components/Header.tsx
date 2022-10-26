@@ -41,10 +41,10 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   }, [lastScrollY])
 
   return (
-    <header className={classNames(styles.header, styles[`${show && 'hidden'}`], className)} role="menubar">
-      <div className={styles.inner}>
+    <header className={classNames(styles.header, styles[`${show && 'hidden'}`], className)}>
+      <div className={styles.inner} role="menubar">
         <Link href="/" passHref className={styles.logo} role="navigation" aria-label="Home Page">
-          <a className={styles.logo}>
+          <a className={styles.logo} role="menuitem">
             <strong className={styles.text}>Digital Native UK</strong>
             <Image src={logoImage} alt="" priority={true} layout="fill" />
           </a>

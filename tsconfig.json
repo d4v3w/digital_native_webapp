@@ -6,10 +6,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -24,14 +21,6 @@
     "incremental": true,
     "tsBuildInfoFile": "./buildcache/tsconfig.tsbuildinfo"
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "postcss.config.js",
-    "next.config.js",
-    "tailwind.config.js"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "postcss.config.js", "next.config.js", "tailwind.config.js"]
 }

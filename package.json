@@ -11,8 +11,7 @@
     "build-storybook": "build-storybook",
     "lint": "eslint --ext .jsx,.js,.ts,.tsx",
     "lint-fix": "eslint --fix --ext .jsx,.js,.ts,.tsx",
-    "test": "jest",
-    "test-watch": "jest --watch",
+    "test": "jest --watch",
     "stylelint": "npx stylelint '**/*.module.css'"
   },
   "dependencies": {
@@ -53,7 +52,6 @@
     "babel-loader": "^8.2.5",
     "classnames": "^2.3.2",
     "eslint": "^8.25.0",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
