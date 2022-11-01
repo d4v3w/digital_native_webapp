@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import logoImage from '../public/images/logo/digital-native-logo-full.png'

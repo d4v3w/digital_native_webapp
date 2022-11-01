@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import styles from './imageBox.module.css'
 
 const ImageBox = ({ width = 500, height = 500, alt = '', isBlock = false, ...props }) => {
