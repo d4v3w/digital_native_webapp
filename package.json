@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
-    "next": "latest",
+    "eslint-config-next": "^13.0.1",
+    "next": "^13.0.1",
     "next-redux-wrapper": "^8.0.0",
     "next-themes": "^0.2.1",
     "postcss-flexbugs-fixes": "^5.0.2",
