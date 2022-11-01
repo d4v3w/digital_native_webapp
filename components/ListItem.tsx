@@ -42,7 +42,7 @@ const ListItem = ({
 
   return (
     <li className={classNames(styles.item, styles[className])}>
-      <Link href="/news/[id]" as={`/news/${item.id}`} className={styles.link} title={item.title}>
+      <Link href="/news/[id]" as={`/news/${item.id}`} className={styles.link} title={item.title} legacyBehavior>
         <Article
           heading={item.title}
           src={item.image}

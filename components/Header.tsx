@@ -43,7 +43,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
     <header className={classNames(styles.header, styles[`${show && 'hidden'}`], className)}>
       <div className={styles.inner} role="menubar">
-        <Link href="/" className={styles.logo} role="navigation" aria-label="Home Page">
+        <Link href="/" className={styles.logo} role="navigation" aria-label="Home Page" legacyBehavior>
           <strong className={styles.text}>Digital Native UK</strong>
           <Image src={logoImage} alt="" priority={true} />
         </Link>

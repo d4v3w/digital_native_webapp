@@ -32,6 +32,7 @@ export const Nav: React.FC<NavProps> = ({ className = '' }) => {
               title={name}
               className={styles.link}
               role="link"
+              legacyBehavior
             >
               {name}
             </Link>

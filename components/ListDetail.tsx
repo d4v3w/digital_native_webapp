@@ -14,8 +14,9 @@ const newsLink = (link: string | undefined) => {
   if (!link) {
     return null
   }
+
   return (
-    <Link href={link} className={styles.link}>
+    <Link href={link} className={styles.link} legacyBehavior>
       <Markdown>{link}</Markdown>
     </Link>
   )
@@ -36,7 +37,7 @@ const ListDetail = ({ item: item }: ListDetailProps) => (
       </Markdown>
     </div>
     <nav role="navigation">
-      <Link href={'/' + item.type} className={styles.link} title="Navigate to previous page">
+      <Link href={'/' + item.type} className={styles.link} title="Navigate to previous page" legacyBehavior>
         <Markdown className="link">{`<< Back`}</Markdown>
       </Link>
     </nav>
