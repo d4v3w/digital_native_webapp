@@ -1,13 +1,13 @@
+import classNames from 'classnames'
 import { GetStaticProps } from 'next/types'
-import { Content } from '../../interfaces'
-import { newsData } from '../../utils/news-items'
-import { List, ListProps } from '../../components/List'
+import Article from '../../components/Article'
 import Layout from '../../components/Layout'
 import styles from '../../components/layout.module.css'
-import classNames from 'classnames'
-import Article from '../../components/Article'
+import { List, ListProps } from '../../components/List'
+import { Content } from '../../interfaces'
+import { newsData } from '../../utils/news-items'
 
-const NewsPage = ({ items, className = '' }: ListProps): JSX.Element => (
+const NewsPage = ({ items, className = '' }: ListProps) => (
   <Layout title="News" className="news">
     <Article heading="Digital Native News" className={classNames(styles.article, className)}>
       <List items={items} filter="news" order="desc" className="rows" isTextHidden={true} />

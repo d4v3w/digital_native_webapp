@@ -18,7 +18,7 @@ jest.mock('next/router', () => ({
 describe('All tests', () => {
   describe('Article', () => {
     it('renders a article', () => {
-      render(<Article />)
+      render(<Article heading={'heading'} />)
 
       const article = screen.getByRole('article')
 
@@ -28,14 +28,22 @@ describe('All tests', () => {
 
   describe('Heading', () => {
     it('does not render a heading', () => {
-      render(<Heading />)
+      render(
+        <Heading type={'title'} className={''}>
+          <></>
+        </Heading>,
+      )
       const t = () => {
         screen.getByRole('heading')
       }
       expect(t).toThrow(Error)
     })
     it('renders a heading', () => {
-      render(<Heading>Heading</Heading>)
+      render(
+        <Heading type={'title'} className={''}>
+          <>Heading</>
+        </Heading>,
+      )
 
       const heading = screen.getByRole('heading')
 

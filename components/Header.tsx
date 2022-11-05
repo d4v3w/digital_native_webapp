@@ -44,10 +44,8 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
     <header className={classNames(styles.header, styles[`${show && 'hidden'}`], className)}>
       <div className={styles.inner}>
         <Link href="/" passHref className={styles.logo}>
-          <a className={styles.logo}>
-            <strong className={styles.text}>Digital Native UK</strong>
-            <Image src={logoImage} alt="" priority={true} />
-          </a>
+          <strong className={styles.text}>Digital Native UK</strong>
+          <Image src={logoImage} alt="" priority={true} />
         </Link>
         <Nav />
       </div>

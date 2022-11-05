@@ -1,26 +1,31 @@
-import styles from './heading.module.css'
 import classNames from 'classnames'
+import styles from './heading.module.css'
 
-const Heading = ({ type = 'heading', className = '', ...props }) => {
-  if (!props.children) {
-    return null
-  }
+export declare type HeadingType = 'title' | 'heading' | 'subheading'
+
+export type HeadingProps = {
+  type: HeadingType
+  className: string
+  children: JSX.Element
+}
+
+const Heading = ({ children, type = 'heading', className = '' }: HeadingProps) => {
   if (type === 'title') {
     return (
       <h1 className={classNames(styles.title, className)} role="heading">
-        {props.children}
+        {children}
       </h1>
     )
   } else if (type === 'subheading') {
     return (
       <h3 className={classNames(styles.subheading, className)} role="heading">
-        {props.children}
+        {children}
       </h3>
     )
   }
   return (
     <h2 className={classNames(styles.heading, className)} role="heading">
-      {props.children}
+      {children}
     </h2>
   )
 }

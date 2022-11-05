@@ -1,10 +1,23 @@
-import ImageBox from '../components/ImageBox'
-import Heading from '../components/Heading'
-import styles from './article.module.css'
 import classNames from 'classnames'
+import Heading, { HeadingType } from '../components/Heading'
+import ImageBox from '../components/ImageBox'
+import styles from './article.module.css'
 
-const Article = ({ headingType = 'title', isInline = false, className = '', ...props }): JSX.Element => {
-  const getHeading = props.heading ? <Heading type={headingType}>{props.heading}</Heading> : null
+export declare type ArticleProps = {
+  heading: string | JSX.Element
+  headingType?: HeadingType
+  className?: string
+  isInline?: boolean
+  src?: string
+  children?: JSX.Element
+}
+
+const Article = ({ headingType = 'title', isInline = false, className = '', src = '', ...props }: ArticleProps) => {
+  const getHeading = props.heading ? (
+    <Heading type={headingType} className={''}>
+      {<>{props.heading}</>}
+    </Heading>
+  ) : null
 
   const getChildren = props.children ? <div className={styles.innerContent}>{props.children}</div> : null
 
@@ -21,8 +34,8 @@ const Article = ({ headingType = 'title', isInline = false, className = '', ...p
     <article className={classNames(styles.article, styles[inlineStyle], styles[className])} role="article">
       <ImageBox
         className={classNames(className)}
-        src={props.src}
-        alt={props.heading}
+        src={src}
+        alt={props.heading ? props.heading.toString() : ''}
         isBlock={true}
         priority={true}
         layout="responsive"

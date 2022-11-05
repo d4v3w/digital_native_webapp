@@ -1,22 +1,24 @@
-import Layout from '../components/Layout'
 import Article from '../components/Article'
-import Player from '../components/Player'
+import Layout from '../components/Layout'
 import Markdown from '../components/Markdown'
+import Player from '../components/Player'
 
-const ProductionPage = (): JSX.Element => (
+const ProductionPage = () => (
   <Layout title="Production" className="production">
     <Article heading="Digital Native Production Tutorials" isInline={true}>
-      <Markdown className="summary">
-        In this section youll find tutorials, samples and resources that will hopefully help you in your own production
-        journey. Check out the links below to navigate quickly to section you need.
-      </Markdown>
-      {/* prettier-ignore */}
-      <Markdown className="article">
+      <>
+        <Markdown className="summary">
+          In this section youll find tutorials, samples and resources that will hopefully help you in your own
+          production journey. Check out the links below to navigate quickly to section you need.
+        </Markdown>
+        {/* prettier-ignore */}
+        <Markdown className="article">
          Steinberg Cubase
         | Native Instruments
         | Drum & Bass
         | Production
-      </Markdown>
+        </Markdown>
+      </>
     </Article>
     <Article heading="Forever and Ever | Track Breakdown" headingType="heading" isInline={true}>
       <Player url="https://www.youtube.com/watch?v=KIdN4IszoVE&t" />
