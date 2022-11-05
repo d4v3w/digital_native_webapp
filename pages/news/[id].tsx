@@ -1,12 +1,12 @@
-import { GetStaticPaths, GetStaticProps } from 'next'
-import Article from '../../components/Article'
-import Layout from '../../components/Layout'
+import { GetStaticProps, GetStaticPaths } from 'next'
 import { List } from '../../components/List'
-import ListDetail from '../../components/ListDetail'
-import Section from '../../components/Section'
 import { Content } from '../../interfaces'
-import { SITE_NAME } from '../../utils/common'
 import { newsData } from '../../utils/news-items'
+import Layout from '../../components/Layout'
+import ListDetail from '../../components/ListDetail'
+import { SITE_NAME } from '../../utils/common'
+import Article from '../../components/Article'
+import Section from '../../components/Section'
 
 type NewsPageProps = {
   item?: Content
