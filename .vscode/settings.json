@@ -1,5 +1,4 @@
 {
   "githubPullRequests.ignoredPullRequestBranches": ["main"],
-  "jest.jestCommandLine": "npm run test",
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "jest.jestCommandLine": "npm run test"
 }

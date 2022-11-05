@@ -1,6 +1,4 @@
 import { render } from '@testing-library/react'
-import ReactDOM from 'react-dom/client'
-import { act } from 'react-dom/test-utils'
 import Article from '../components/Article'
 import { Button } from '../components/Button'
 import { Footer } from '../components/Footer'
@@ -30,70 +28,45 @@ jest.mock('next/router', () => ({
   },
 }))
 
-let container: Element | DocumentFragment
-
-beforeEach(() => {
-  container = document.createElement('div')
-  document.body.appendChild(container)
-})
-
-afterEach(() => {
-  document.body.removeChild(container)
-})
-
 describe('All snapshots', () => {
   describe('Pages', () => {
     it('renders homepage unchanged', () => {
-      act(() => {
-        ReactDOM.createRoot(container).render(<IndexPage items={mockData} />)
-      })
+      const { container } = render(<IndexPage items={mockData} />)
       expect(container).toMatchSnapshot()
     })
     it('renders about unchanged', () => {
-      act(() => {
-        ReactDOM.createRoot(container).render(<AboutPage />)
-      })
+      const { container } = render(<AboutPage />)
       expect(container).toMatchSnapshot()
     })
     it('renders news unchanged', () => {
-      act(() => {
-        ReactDOM.createRoot(container).render(<NewsPage items={mockData} />)
-      })
+      const { container } = render(<NewsPage items={mockData} />)
       expect(container).toMatchSnapshot()
     })
     it('renders music unchanged', () => {
-      act(() => {
-        ReactDOM.createRoot(container).render(<MusicPage items={mockData} />)
-      })
+      const { container } = render(<MusicPage items={mockData} />)
       expect(container).toMatchSnapshot()
     })
     it('renders production unchanged', () => {
-      act(() => {
-        ReactDOM.createRoot(container).render(<ProductionPage />)
-      })
+      const { container } = render(<ProductionPage />)
       expect(container).toMatchSnapshot()
     })
   })
 
   describe('Components', () => {
-    it('renders layout unchanged', () => {
-      const { container } = render(<Layout title="test" />)
-      expect(container).toMatchSnapshot()
-    })
     it('renders article unchanged', () => {
       const { container } = render(<Article />)
       expect(container).toMatchSnapshot()
     })
-    it('renders header unchanged', () => {
-      const { container } = render(<Header />)
+    it('renders button unchanged', () => {
+      const { container } = render(<Button label="test" />)
       expect(container).toMatchSnapshot()
     })
     it('renders footer unchanged', () => {
       const { container } = render(<Footer />)
       expect(container).toMatchSnapshot()
     })
-    it('renders button unchanged', () => {
-      const { container } = render(<Button label="test" />)
+    it('renders header unchanged', () => {
+      const { container } = render(<Header />)
       expect(container).toMatchSnapshot()
     })
     it('renders heading unchanged', () => {
@@ -106,6 +79,10 @@ describe('All snapshots', () => {
     })
     it('renders imageBox unchanged', () => {
       const { container } = render(<ImageBox />)
+      expect(container).toMatchSnapshot()
+    })
+    it('renders layout unchanged', () => {
+      const { container } = render(<Layout />)
       expect(container).toMatchSnapshot()
     })
     it('renders layout unchanged', () => {

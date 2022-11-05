@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2020: true,
+    es2021: true,
   },
   extends: [
     'eslint:recommended',
@@ -21,6 +21,7 @@ module.exports = {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off",
     "quotes": "off",
+    
     "@typescript-eslint/ban-types": [
       "error",
       {

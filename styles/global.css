@@ -6,15 +6,14 @@
 @tailwind utilities;
 /* purgecss end ignore */
 
-:root {
-  color-scheme: dark;
+html {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.2rem;
 }
 
 @media (max-width: 768px) {
-  :root {
+  html {
     font-size: 0.8rem;
   }
 }

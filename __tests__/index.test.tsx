@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom'
-import { act, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Article from '../components/Article'
 import { Header } from '../components/Header'
 import Heading from '../components/Heading'
@@ -17,13 +17,10 @@ jest.mock('next/router', () => ({
 
 describe('All tests', () => {
   describe('Article', () => {
-    it('renders a article', async () => {
+    it('renders a article', () => {
       render(<Article />)
 
-      let article
-      await act(async () => {
-        article = screen.getByRole('article')
-      })
+      const article = screen.getByRole('article')
 
       expect(article).toBeInTheDocument()
     })
@@ -32,7 +29,6 @@ describe('All tests', () => {
   describe('Heading', () => {
     it('does not render a heading', () => {
       render(<Heading />)
-
       const t = () => {
         screen.getByRole('heading')
       }
@@ -48,15 +44,11 @@ describe('All tests', () => {
   })
 
   describe('Header', () => {
-    it('renders a header', async () => {
+    it('renders a header', () => {
       render(<Header />)
 
-      let header
-      let navigation
-      await act(async () => {
-        header = screen.getByRole('menubar')
-        navigation = screen.getByRole('navigation')
-      })
+      const header = screen.getByRole('menubar')
+      const navigation = screen.getByRole('navigation')
 
       expect(header).toBeInTheDocument()
       expect(navigation).toBeInTheDocument()
