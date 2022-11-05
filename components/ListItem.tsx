@@ -6,7 +6,7 @@ import Heading from './Heading'
 import styles from './listItem.module.css'
 import Markdown from './Markdown'
 
-type ListItemProps = {
+export interface ListItemProps {
   id: number
   item: Content
   className?: string
@@ -15,7 +15,7 @@ type ListItemProps = {
   isTextHidden?: boolean
 }
 
-const ListItem = ({
+const ListItem: React.FC<ListItemProps> = ({
   id,
   item,
   className = 'default',
@@ -34,13 +34,13 @@ const ListItem = ({
       <Heading type="subheading" className={classNames(styles.heading, styles.shortText)}>
         <>{item.summary}</>
       </Heading>
-      <Markdown className={classNames(styles.summary, styles.shortText)} isInline={false}>
-        {item.story}
-      </Markdown>
+      <Markdown className={classNames(styles.summary, styles.shortText)}>{item.story}</Markdown>
     </>
-  ) : null
+  ) : (
+    ''
+  )
 
-  return (
+  return item.title || item.image || text ? (
     <li className={classNames(styles.item, styles[className])}>
       <Link href="/news/[id]" as={`/news/${item.id}`} className={styles.link} title={item.title}>
         <Article
@@ -51,11 +51,11 @@ const ListItem = ({
           data-index={id}
           data-id={item.id.toString()}
         >
-          <>{text}</>
+          {text}
         </Article>
       </Link>
     </li>
-  )
+  ) : null
 }
 
 export default ListItem

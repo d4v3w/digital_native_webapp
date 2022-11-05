@@ -3,13 +3,13 @@ import styles from './heading.module.css'
 
 export declare type HeadingType = 'title' | 'heading' | 'subheading'
 
-export type HeadingProps = {
+export interface HeadingProps {
   type: HeadingType
   className: string
   children: JSX.Element
 }
 
-const Heading = ({ children, type = 'heading', className = '' }: HeadingProps) => {
+const Heading: React.FC<HeadingProps> = ({ children, type = 'heading', className = '' }: HeadingProps) => {
   if (type === 'title') {
     return (
       <h1 className={classNames(styles.title, className)} role="heading">

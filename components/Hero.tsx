@@ -2,9 +2,6 @@ import classNames from 'classnames'
 import styles from '../components/hero.module.css'
 
 export interface HeroProps {
-  /**
-   * CSS class to add to block element. (isInline must also be false)
-   */
   className?: string
 }
 

@@ -13,6 +13,7 @@
     "lint-fix": "eslint --fix --ext .jsx,.js,.ts,.tsx",
     "test": "jest",
     "test-watch": "jest --watch",
+    "test-update": "jest --updateSnapshot ",
     "stylelint": "npx stylelint '**/*.module.css'"
   },
   "dependencies": {

@@ -3,26 +3,33 @@ import Heading, { HeadingType } from '../components/Heading'
 import ImageBox from '../components/ImageBox'
 import styles from './article.module.css'
 
-export declare type ArticleProps = {
+export interface ArticleProps {
   heading: string | JSX.Element
   headingType?: HeadingType
   className?: string
   isInline?: boolean
   src?: string
-  children?: JSX.Element
+  children: string | JSX.Element | undefined
 }
 
-const Article = ({ headingType = 'title', isInline = false, className = '', src = '', ...props }: ArticleProps) => {
+const Article: React.FC<ArticleProps> = ({
+  children,
+  headingType = 'title',
+  isInline = false,
+  className = '',
+  src = '',
+  ...props
+}: ArticleProps) => {
   const getHeading = props.heading ? (
     <Heading type={headingType} className={''}>
       {<>{props.heading}</>}
     </Heading>
   ) : null
 
-  const getChildren = props.children ? <div className={styles.innerContent}>{props.children}</div> : null
+  const getChildren = children ? <div className={styles.innerContent}>{children}</div> : null
 
   const getContent =
-    props.heading || props.children ? (
+    props.heading || children ? (
       <div className={styles.content}>
         {getHeading}
         {getChildren}

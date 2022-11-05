@@ -1,10 +1,16 @@
-import styles from './section.module.css'
 import classNames from 'classnames'
+import { ReactNode } from 'react'
+import styles from './section.module.css'
 
-const Section = ({ className = '', ...props }) => {
+export interface SectionProps {
+  className?: string
+  children: ReactNode
+}
+
+const Section: React.FC<SectionProps> = ({ children, className = '' }: SectionProps) => {
   return (
     <section className={classNames(styles.section, className)} role="complementary">
-      {props.children}
+      {children}
     </section>
   )
 }

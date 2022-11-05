@@ -6,8 +6,8 @@ import { Content } from '../interfaces'
 import Article from './Article'
 import Markdown from './Markdown'
 
-type ListDetailProps = {
-  item: Content
+export interface ListDetailProps extends Content {
+  title: string
 }
 
 const newsLink = (link: string | undefined) => {
@@ -21,20 +21,14 @@ const newsLink = (link: string | undefined) => {
   )
 }
 
-const ListDetail = ({ item: item }: ListDetailProps) => (
+const ListDetail: React.FC<ListDetailProps> = ({ ...item }: ListDetailProps) => (
   <Article heading={item.title} src={item.image} className={classNames(layoutStyles.article, styles.detail)}>
     <>
       <div className={styles.content}>
-        <Markdown isInline={false} className="summary">
-          {item.summary}
-        </Markdown>
-        <Markdown isInline={false} className="article">
-          {item.story}
-        </Markdown>
+        <Markdown className="summary">{item.summary}</Markdown>
+        <Markdown className="article">{item.story}</Markdown>
         {newsLink(item.link)}
-        <Markdown isInline={false} className="footnote">
-          {item.date}
-        </Markdown>
+        <Markdown className="footnote">{item.date}</Markdown>
       </div>
       <nav role="navigation">
         <Link href={'/' + item.type} className={styles.link} title="Navigate to previous page" passHref>

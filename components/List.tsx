@@ -1,10 +1,10 @@
-import ListItem from './ListItem'
-import styles from './list.module.css'
 import classNames from 'classnames'
+import styles from './list.module.css'
+import ListItem from './ListItem'
 
 import type { Content } from '../interfaces'
 
-export type ListProps = {
+export interface ListProps {
   items: Content[]
   filter?: string
   order?: string

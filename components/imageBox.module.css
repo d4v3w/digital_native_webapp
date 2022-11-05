@@ -2,7 +2,7 @@
 }
 
 .image.inline {
-  display: inline;
+  display: inline-flex;
 }
 
 .image.block {

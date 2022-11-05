@@ -1,14 +1,13 @@
-import React from 'react'
-import type { ReactNode } from 'react'
-import Head from 'next/head'
-import { SITE_NAME } from '../utils/common'
-import styles from './layout.module.css'
 import classNames from 'classnames'
-import { Header } from './Header'
-import { Footer } from './Footer'
+import Head from 'next/head'
+import React, { ReactNode } from 'react'
 import siteImage from '../public/images/hero/digital_native-journey_through---understated---gfr027.jpg'
+import { SITE_NAME } from '../utils/common'
+import { Footer } from './Footer'
+import { Header } from './Header'
+import styles from './layout.module.css'
 
-type Props = {
+export interface LayoutProps {
   children?: ReactNode
   title?: string
   className?: string
@@ -20,7 +19,7 @@ const pageTitle = (title: string) => {
   return title ? title + ' | ' + siteTitle : siteTitle
 }
 
-const Layout = ({ children, title = '', className = '' }: Props): JSX.Element => (
+const Layout: React.FC<LayoutProps> = ({ children, title = '', className = '' }: LayoutProps) => (
   <div className={styles.container}>
     <Head>
       <title>{pageTitle(title)}</title>

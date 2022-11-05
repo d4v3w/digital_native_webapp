@@ -17,7 +17,7 @@ const getActiveClass = (path: string) => {
   return pathname.startsWith('/' + path.toLowerCase()) ? styles.active : null
 }
 
-export const Nav: React.FC<NavProps> = ({ className = '' }) => {
+export const Nav: React.FC<NavProps> = ({ className = '' }: NavProps) => {
   return (
     <nav className={classNames(styles.nav, className)} role="navigation">
       <input type="checkbox" id="menu-toggle" className={classNames(styles.toggle)} title="menu" />
