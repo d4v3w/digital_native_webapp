@@ -6,11 +6,10 @@
 
 .list.feed {
   display: flex;
-  flex-flow: coloumn;
+  flex-flow: column;
 }
 
 .list.rows {
-  flex-flow: row wrap;
 }
 
 .list.small {

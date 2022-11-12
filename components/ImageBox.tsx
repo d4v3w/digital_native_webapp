@@ -9,14 +9,25 @@ export interface ImageBoxProps extends ImageProps {
 const ImageBox: React.FC<ImageBoxProps> = ({
   src,
   alt = '',
-  width = 300,
-  height = 300,
+  width = 800,
+  height = 800,
   isBlock = false,
   ...props
 }: ImageBoxProps) => {
   return src ? (
     <span className={classNames(styles.image, isBlock ? styles.block : styles.inline)}>
-      <Image alt={alt} width={width} height={height} src={src} {...props} />
+      <Image
+        alt={alt}
+        width={width}
+        height={height}
+        src={src}
+        quality={80}
+        {...props}
+        style={{
+          maxWidth: '100%',
+          height: 'auto',
+        }}
+      />
     </span>
   ) : null
 }

@@ -2,10 +2,12 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .article.inline {
-  display: block;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 .article.small {
@@ -17,7 +19,10 @@
 }
 
 .content {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  flex: 2;
 }
 
 .article.small .content {
@@ -27,6 +32,8 @@
 
 .innerContent {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .article.feed .innerContent {

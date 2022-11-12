@@ -1,4 +1,5 @@
 .item {
+  display: flex;
   border: 1px solid #ccc;
   padding: 1em;
   border-radius: 5px;
@@ -16,8 +17,7 @@
 }
 
 .item .link {
-  display: block;
-  flex-basis: 100%;
+  display: flex;
 }
 
 .heading {
@@ -43,18 +43,21 @@
 }
 
 @media (max-width: 768px) {
-  .item {
+  .item,
+  .item.rows {
     flex-basis: 45%;
   }
 
   .item.rows {
-    flex-basis: 45%;
     padding: 0.2rem;
   }
 }
 @media (max-width: 500px) {
   .item {
-    flex-basis: 100%;
     margin-bottom: 1rem;
+  }
+  .item,
+  .item.rows {
+    flex-basis: 100%;
   }
 }

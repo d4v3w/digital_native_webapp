@@ -16,7 +16,7 @@ const Article: React.FC<ArticleProps> = ({
   children,
   headingType = 'title',
   isInline = false,
-  className = '',
+  className = 'default',
   src = '',
   ...props
 }: ArticleProps) => {
@@ -36,16 +36,17 @@ const Article: React.FC<ArticleProps> = ({
       </div>
     ) : null
 
-  const inlineStyle = isInline ? 'inline' : ''
+  const inlineStyle: string = isInline ? 'inline' : ''
+  const imageSize: number = isInline ? 500 : 800
   return (
     <article className={classNames(styles.article, styles[inlineStyle], styles[className])} role="article">
       <ImageBox
-        className={classNames(className)}
         src={src}
         alt={props.heading ? props.heading.toString() : ''}
-        isBlock={true}
-        priority={true}
-        layout="responsive"
+        isBlock={!isInline}
+        priority={!isInline}
+        width={imageSize}
+        height={imageSize}
       />
       {getContent}
     </article>

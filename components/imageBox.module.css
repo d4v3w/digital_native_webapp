@@ -1,22 +1,24 @@
 .image {
+  display: flex;
 }
 
-.image.inline {
-  display: inline-flex;
-}
-
-.image.block {
-  display: block;
+.inline {
   flex: 1;
 }
 
-.image.small {
-  display: block;
+.block {
+  flex: 2;
+}
+
+.small {
+  display: inline-flex;
   border-radius: 2px;
 }
 
 @media (max-width: 768px) {
-  .image.block {
+  .inline {
+  }
+  .block {
     flex-basis: 100%;
   }
 }

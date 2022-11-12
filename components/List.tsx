@@ -42,7 +42,7 @@ export const List: React.FC<ListProps> = ({
     <ul className={classNames(styles.list, styles[className])}>
       {sortedItems.map((item, index) => {
         // Limit based on counter
-        if (limit && counter === limit) {
+        if (limit && counter === limit - 1) {
           return
         }
         // Filter by type

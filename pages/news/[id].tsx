@@ -1,12 +1,12 @@
-import { GetStaticProps, GetStaticPaths } from 'next'
-import { List } from '../../components/List'
-import { Content } from '../../interfaces'
-import { newsData } from '../../utils/news-items'
-import Layout from '../../components/Layout'
-import ListDetail from '../../components/ListDetail'
-import { SITE_NAME } from '../../utils/common'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import Article from '../../components/Article'
+import Layout from '../../components/Layout'
+import { List } from '../../components/List'
+import ListDetail from '../../components/ListDetail'
 import Section from '../../components/Section'
+import { Content } from '../../interfaces'
+import { SITE_NAME } from '../../utils/common'
+import { newsData } from '../../utils/news-items'
 
 type NewsPageProps = {
   item?: Content
@@ -31,7 +31,7 @@ const ListPage = ({ item, newsFeedItems, errors }: NewsPageProps) => {
     <Layout title={`${SITE_NAME} | ${item.title}`}>
       <ListDetail {...item} />
       <Section>
-        <List items={newsFeedItems} filter={item.type} limit={3} className="small" />
+        <List items={newsFeedItems} filter={item.type} limit={4} className="small" />
       </Section>
     </Layout>
   )

@@ -11,7 +11,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint --ext .jsx,.js,.ts,.tsx",
-    "lint-fix": "eslint --fix --ext .jsx,.js,.ts,.tsx",
+    "lint-fix": "eslint --fix --ext .jsx,.js,.ts,.tsx .",
     "test": "jest",
     "test-watch": "jest --watch",
     "test-update": "jest --updateSnapshot ",

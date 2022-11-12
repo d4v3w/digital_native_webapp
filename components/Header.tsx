@@ -45,7 +45,15 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
       <div className={styles.inner}>
         <Link href="/" passHref className={styles.logo}>
           <strong className={styles.text}>Digital Native UK</strong>
-          <Image src={logoImage} alt="" priority={true} />
+          <Image
+            src={logoImage}
+            alt=""
+            priority={true}
+            style={{
+              maxWidth: '100%',
+              height: 'auto',
+            }}
+          />
         </Link>
         <Nav />
       </div>
