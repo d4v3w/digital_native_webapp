@@ -5,6 +5,7 @@
     "clean": "rm -rf ./node_modules/",
     "dev": "next",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "check": "jest && next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",

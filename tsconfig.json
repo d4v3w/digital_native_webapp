@@ -22,7 +22,12 @@
     "strict": true,
     "target": "es2020",
     "incremental": true,
-    "tsBuildInfoFile": "./buildcache/tsconfig.tsbuildinfo"
+    "tsBuildInfoFile": "./buildcache/tsconfig.tsbuildinfo",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "exclude": [
     "node_modules"
@@ -32,6 +37,7 @@
     "**/*.tsx",
     "postcss.config.js",
     "next.config.js",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    ".next/types/**/*.ts"
   ]
 }
