@@ -9,8 +9,8 @@ export interface ImageBoxProps extends ImageProps {
 const ImageBox: React.FC<ImageBoxProps> = ({
   src,
   alt = '',
-  width = 300,
-  height = 300,
+  width = 800,
+  height = 800,
   isBlock = false,
   ...props
 }: ImageBoxProps) => {
@@ -21,6 +21,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({
         width={width}
         height={height}
         src={src}
+        quality={80}
         {...props}
         style={{
           maxWidth: '100%',

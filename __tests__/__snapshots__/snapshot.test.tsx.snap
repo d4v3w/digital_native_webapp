@@ -3,7 +3,7 @@
 exports[`All snapshots Components renders article unchanged 1`] = `
 <div>
   <article
-    class="article"
+    class="article default"
     role="article"
   />
 </div>
@@ -253,7 +253,7 @@ exports[`All snapshots Components renders header unchanged 1`] = `
           height="40"
           src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
           srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-          style="color: transparent;"
+          style="color: transparent; max-width: 100%; height: auto;"
           width="40"
         />
       </a>
@@ -401,7 +401,7 @@ exports[`All snapshots Components renders layout unchanged 1`] = `
             height="40"
             src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
             srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; max-width: 100%; height: auto;"
             width="40"
           />
         </a>
@@ -736,7 +736,7 @@ exports[`All snapshots Pages renders about unchanged 1`] = `
             height="40"
             src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
             srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; max-width: 100%; height: auto;"
             width="40"
           />
         </a>
@@ -829,7 +829,7 @@ exports[`All snapshots Pages renders about unchanged 1`] = `
       class="main about"
     >
       <article
-        class="article"
+        class="article default"
         role="article"
       >
         <span
@@ -837,15 +837,13 @@ exports[`All snapshots Pages renders about unchanged 1`] = `
         >
           <img
             alt="About Digital Native"
-            class=""
             data-nimg="1"
             decoding="async"
-            height="300"
-            sizes="100vw"
-            src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-            style="color: transparent; width: 100%; height: auto;"
-            width="300"
+            height="800"
+            src="/_next/image?url=%2Fimg.jpg&w=1920&q=80"
+            srcset="/_next/image?url=%2Fimg.jpg&w=828&q=80 1x, /_next/image?url=%2Fimg.jpg&w=1920&q=80 2x"
+            style="color: transparent; max-width: 100%; height: auto;"
+            width="800"
           />
         </span>
         <div
@@ -1120,7 +1118,7 @@ exports[`All snapshots Pages renders homepage unchanged 1`] = `
             height="40"
             src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
             srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; max-width: 100%; height: auto;"
             width="40"
           />
         </a>
@@ -1456,7 +1454,7 @@ exports[`All snapshots Pages renders music unchanged 1`] = `
             height="40"
             src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
             srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; max-width: 100%; height: auto;"
             width="40"
           />
         </a>
@@ -1549,7 +1547,7 @@ exports[`All snapshots Pages renders music unchanged 1`] = `
       class="main music"
     >
       <article
-        class="article"
+        class="article default"
         role="article"
       >
         <div
@@ -1850,7 +1848,7 @@ exports[`All snapshots Pages renders news unchanged 1`] = `
             height="40"
             src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
             srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; max-width: 100%; height: auto;"
             width="40"
           />
         </a>
@@ -1943,7 +1941,7 @@ exports[`All snapshots Pages renders news unchanged 1`] = `
       class="main news"
     >
       <article
-        class="article article"
+        class="article"
         role="article"
       >
         <div
@@ -2200,7 +2198,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
             height="40"
             src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
             srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; max-width: 100%; height: auto;"
             width="40"
           />
         </a>
@@ -2293,7 +2291,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
       class="main production"
     >
       <article
-        class="article inline"
+        class="article inline default"
         role="article"
       >
         <div
@@ -2326,7 +2324,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
         </div>
       </article>
       <article
-        class="article inline"
+        class="article inline default"
         role="article"
       >
         <div
@@ -2352,7 +2350,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
         </div>
       </article>
       <article
-        class="article inline"
+        class="article inline default"
         role="article"
       >
         <div
@@ -2378,7 +2376,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
         </div>
       </article>
       <article
-        class="article inline"
+        class="article inline default"
         role="article"
       >
         <div
