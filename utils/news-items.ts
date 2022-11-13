@@ -73,7 +73,7 @@ export const newsData: Content[] = [
   {
     id: 'production',
     type: 'page',
-    title: 'New Digital Native Website is Live',
+    title: 'New Digital Native Website',
     author: 'andy',
     summary: 'Digital Native UK',
     story:
