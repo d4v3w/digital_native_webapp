@@ -1,22 +1,22 @@
-import { Content, User } from '../interfaces'
+import { Content, User } from '../interfaces';
 
 /** Dummy user data. */
 export const userData: User[] = [
   { id: 'andy', name: 'Andy Williams' },
   { id: 'dave', name: 'Dave Williams' },
-]
+];
 
 export const getUser = (id: string) => {
   return userData.find((obj) => {
-    return obj.id === id
-  })
-}
+    return obj.id === id;
+  });
+};
 
 export const getChildren = (type: string) => {
   return newsData.filter((obj) => {
-    return obj.type === type
-  })
-}
+    return obj.type === type;
+  });
+};
 
 /** Dummy news data. */
 export const newsData: Content[] = [
@@ -50,7 +50,8 @@ export const newsData: Content[] = [
     type: 'page',
     title: 'Digital Native Drum and Bass News Updates',
     author: 'andy',
-    summary: 'Digital Native UK Drum and Bass - News, Events, Updates, Exclusives',
+    summary:
+      'Digital Native UK Drum and Bass - News, Events, Updates, Exclusives',
     date: '2022-10-01',
     story: '',
     link: '',
@@ -73,7 +74,7 @@ export const newsData: Content[] = [
   {
     id: 'production',
     type: 'page',
-    title: 'New Digital Native Website is Live',
+    title: 'New Digital Native Website',
     author: 'andy',
     summary: 'Digital Native UK',
     story:
@@ -101,7 +102,8 @@ export const newsData: Content[] = [
     title: 'New Release Alert!',
     author: 'andy',
     summary: 'Journey Through / Understated',
-    story: 'New Release - Journey Through / Understated. The New Digital Native Release **Out Now!**',
+    story:
+      'New Release - Journey Through / Understated. The New Digital Native Release **Out Now!**',
     date: '2022-09-10',
     image: '/images/artwork/GFR027-Artwork.jpg',
     link: 'https://www.digitalnativeuk.com/',
@@ -113,7 +115,8 @@ export const newsData: Content[] = [
     title: 'Digital Native DJ Set',
     author: 'andy',
     summary: 'Digital Native DJ set at XOYO, London!',
-    story: 'Digital Native UKs will be playhing a show at XOYO. Come down and show some love for the Gldfat crew...',
+    story:
+      'Digital Native UKs will be playhing a show at XOYO. Come down and show some love for the Gldfat crew...',
     date: '2022-04-15',
     image: '/images/news/goldfat-xoyo-london-digital-native.jpg',
     link: 'https://www.digitalnativeuk.com/',
@@ -125,7 +128,8 @@ export const newsData: Content[] = [
     title: 'New Release Alert!',
     author: 'andy',
     summary: 'Goldfat Full Fat **Out Now!**',
-    story: 'New Release - Full Fat Release **Out Now!** - Get your copy from all your usual outlets.',
+    story:
+      'New Release - Full Fat Release **Out Now!** - Get your copy from all your usual outlets.',
     date: '2022-09-10',
     image: '/images/artwork/ARTWORK.jpg',
     link: 'https://goldfat.bandcamp.com/album/full-fat-01',
@@ -137,7 +141,8 @@ export const newsData: Content[] = [
     title: 'Happy Birthday Digital Native',
     author: 'andy',
     summary: 'Digital Native UKs Birthday!',
-    story: 'Digital Native UKs Birthday today! Stream a few tracks on Spotify to show some love.',
+    story:
+      'Digital Native UKs Birthday today! Stream a few tracks on Spotify to show some love.',
     date: '2022-07-01',
     image: '/images/hero/digital_native_profile_portrait.jpg',
     link: 'https://www.digitalnativeuk.com/',
@@ -149,7 +154,8 @@ export const newsData: Content[] = [
     title: 'New Release Alert!',
     author: 'andy',
     summary: 'Distant E.P. **Out Now!**',
-    story: 'New Release - Distant E.P. **Out Now!** - Stream on Spotify, iTunes, YouTube Music.',
+    story:
+      'New Release - Distant E.P. **Out Now!** - Stream on Spotify, iTunes, YouTube Music.',
     date: '2022-05-10',
     image: '/images/artwork/SR001-Distant-EP-Cover-white.png',
     link: 'https://goldfat.bandcamp.com/album/full-fat-01',
@@ -197,7 +203,8 @@ export const newsData: Content[] = [
     title: 'New Release Alert!',
     author: 'andy',
     summary: 'Rabbit Hole EP',
-    story: 'New Release - Rabbit Hole EP. The New Digital Native Release **Out Now!**',
+    story:
+      'New Release - Rabbit Hole EP. The New Digital Native Release **Out Now!**',
     date: '2022-02-25',
     image: '/images/artwork/036Cover.jpg',
     link: 'https://goldfat.bandcamp.com/album/rabbit-hole-ep',
@@ -239,4 +246,4 @@ export const newsData: Content[] = [
     image: '',
     children: [],
   },
-]
+];
