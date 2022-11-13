@@ -9,12 +9,12 @@ import { SITE_NAME } from '../../utils/common'
 import ContentfulApi from '../../utils/ContentfulApi'
 
 type NewsPageProps = {
-  item?: Content
-  newsFeedItems: Content[]
+  item: Content
+  items: Content[]
   errors?: string
 }
 
-const ListPage = ({ item, newsFeedItems, errors }: NewsPageProps) => {
+const ListPage = ({ item, items, errors }: NewsPageProps) => {
   if (!item || errors) {
     return (
       <Layout title={`${SITE_NAME} | Oops that's an Error :(`}>
@@ -31,7 +31,7 @@ const ListPage = ({ item, newsFeedItems, errors }: NewsPageProps) => {
     <Layout title={`${SITE_NAME} | ${item.title}`}>
       <ListDetail {...item} type="news" />
       <Section>
-        <List items={newsFeedItems} className="small" />
+        <List items={items} className="small" />
       </Section>
     </Layout>
   )
@@ -50,7 +50,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
-  return { paths, fallback: false }
+  return { paths, fallback: true }
 }
 
 // This function gets called at build time on server-side.
