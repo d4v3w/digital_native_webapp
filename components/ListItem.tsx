@@ -12,7 +12,8 @@ export interface ListItemProps {
   className?: string
   isHeadingHidden?: boolean
   isImageHidden?: boolean
-  isTextHidden?: boolean
+  isSummaryHidden?: boolean
+  isStoryHidden?: boolean
 }
 
 const ListItem: React.FC<ListItemProps> = ({
@@ -20,8 +21,9 @@ const ListItem: React.FC<ListItemProps> = ({
   item,
   className = 'default',
   isImageHidden = false,
-  isHeadingHidden,
-  isTextHidden,
+  isHeadingHidden = false,
+  isSummaryHidden = false,
+  isStoryHidden = false,
 }: ListItemProps) => {
   if (isImageHidden) {
     item.image = ''
@@ -29,29 +31,35 @@ const ListItem: React.FC<ListItemProps> = ({
   if (isHeadingHidden) {
     item.title = ''
   }
-  const text = !isTextHidden ? (
-    <>
-      <Heading type="subheading" className={classNames(styles.heading, styles.shortText)}>
-        <>{item.summary}</>
-      </Heading>
-      <Markdown className={classNames(styles.summary, styles.shortText)}>{item.story}</Markdown>
-    </>
+  const summary = !isSummaryHidden ? (
+    <Heading type="subheading" className={classNames(styles.heading, styles.shortText)}>
+      <>{item.summary}</>
+    </Heading>
   ) : (
     ''
   )
 
-  return item.title || item.image || text ? (
+  const story = !isStoryHidden ? (
+    <Markdown className={classNames(styles.summary, styles.shortText)}>{item.story}</Markdown>
+  ) : (
+    ''
+  )
+
+  return item.title || item.image || summary || story ? (
     <li className={classNames(styles.item, styles[className])}>
-      <Link href="/news/[id]" as={`/news/${item.id}`} className={styles.link} title={item.title}>
+      <Link href="/news/[id]" as={`/news/${item.slug}`} className={styles.link} title={item.title}>
         <Article
           heading={item.title}
           src={item.image}
           isInline={true}
           className={className}
           data-index={id}
-          data-id={item.id.toString()}
+          data-id={item.sys.id}
         >
-          {text}
+          <>
+            {summary}
+            {story}
+          </>
         </Article>
       </Link>
     </li>

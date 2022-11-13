@@ -15,44 +15,22 @@ export interface ListProps {
   isTextHidden?: boolean
 }
 
-const getTime = (date: string) => {
-  return new Date(date).getTime()
-}
-
 export const List: React.FC<ListProps> = ({
   items,
-  filter = '',
-  order = 'asc',
-  limit = 999,
   className = '',
   isHeadingHidden,
   isImageHidden,
   isTextHidden,
 }: ListProps) => {
-  let sortedItems: Content[]
+  console.log(items)
+
   let counter = -1
-  if (order !== 'asc') {
-    // Descending
-    sortedItems = items.sort((a, b) => getTime(b.date) - getTime(a.date))
-  } else {
-    // Ascending
-    sortedItems = items.sort((a, b) => getTime(a.date) - getTime(b.date))
-  }
   return (
     <ul className={classNames(styles.list, styles[className])}>
-      {sortedItems.map((item, index) => {
-        // Limit based on counter
-        if (limit && counter === limit - 1) {
-          return
-        }
-        // Filter by type
-        if (filter && item.type !== filter) {
-          return
-        }
+      {items.map((item, index) => {
         // Increment counter
         ++counter
-        const key =
-          `${className}-item-${index.toString()}-${item.id.toString()}` || `${index.toString()}-${counter.toString()}`
+        const key = `${className}-item-${index.toString()}-${item.slug}` || `${index.toString()}-${counter.toString()}`
         return (
           <ListItem
             key={key}

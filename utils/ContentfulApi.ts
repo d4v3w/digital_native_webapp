@@ -1,3 +1,4 @@
+import { ApiResponse } from '../interfaces'
 import { Config } from './Config'
 
 export default class ContentfulApi {
@@ -46,7 +47,7 @@ export default class ContentfulApi {
     return totalPosts
   }
 
-  static async getPaginatedContent(type = 'news', page: number) {
+  static getPaginatedContent = async (type = 'news', page: number): Promise<ApiResponse> => {
     const skipMultiplier = page === 1 ? 0 : page - 1
     const skip = skipMultiplier > 0 ? Config.pagination.pageSize * skipMultiplier : 0
 
@@ -79,15 +80,14 @@ export default class ContentfulApi {
       }`
 
     // Call out to the API
-    const response = await this.callContentful(query)
-    return getData(response)
+    const apiResponse = { total: 0, items: [] }
+    try {
+      const response = await this.callContentful(query)
+      apiResponse.items = response.data.contentTypeCollection.items[0].linkedFrom.contentCollection.items
+      apiResponse.total = response.data.contentTypeCollection.items[0].linkedFrom.contentCollection.total
+    } catch (e) {
+      console.log(e)
+    }
+    return apiResponse
   }
-}
-
-const getData = (response: {
-  data: { contentTypeCollection: { items: { linkedFrom: { contentCollection: any } }[] } }
-}) => {
-  return response.data.contentTypeCollection.items[0]
-    ? response.data.contentTypeCollection.items[0].linkedFrom.contentCollection
-    : { total: 0, items: [] }
 }

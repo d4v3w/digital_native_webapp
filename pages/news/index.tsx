@@ -4,7 +4,7 @@ import Article from '../../components/Article'
 import Layout from '../../components/Layout'
 import { List, ListProps } from '../../components/List'
 import { Content } from '../../interfaces'
-import { newsData } from '../../utils/news-items'
+import ContentfulApi from '../../utils/ContentfulApi'
 
 const NewsPage = ({ items, className = '' }: ListProps) => (
   <Layout title="News" className="news">
@@ -15,7 +15,8 @@ const NewsPage = ({ items, className = '' }: ListProps) => (
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  const items: Content[] = newsData
+  const content = await ContentfulApi.getPaginatedContent('news', 1)
+  const items: Content[] = content.items ?? []
   return { props: { items } }
 }
 
