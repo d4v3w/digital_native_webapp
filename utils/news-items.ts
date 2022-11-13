@@ -1,4 +1,4 @@
-import { Content, User } from '../interfaces'
+import { ContentOld, User } from '../interfaces'
 
 /** Dummy user data. */
 export const userData: User[] = [
@@ -19,7 +19,7 @@ export const getChildren = (type: string) => {
 }
 
 /** Dummy news data. */
-export const newsData: Content[] = [
+export const newsData: ContentOld[] = [
   {
     id: 'home',
     type: 'page',

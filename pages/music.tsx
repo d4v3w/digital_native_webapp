@@ -5,8 +5,8 @@ import Layout from '../components/Layout'
 import { List, ListProps } from '../components/List'
 import Markdown from '../components/Markdown'
 import Section from '../components/Section'
-import { Content } from '../interfaces'
-import { newsData } from '../utils/news-items'
+import { ApiResponse, Content } from '../interfaces'
+import ContentfulApi from '../utils/ContentfulApi'
 
 const MusicPage = ({ items }: ListProps) => (
   <Layout title="Music" className="music">
@@ -29,14 +29,16 @@ const MusicPage = ({ items }: ListProps) => (
       </>
     </Article>
     <Section className={'music'}>
-      <List items={items} filter="music" isHeadingHidden={true} isTextHidden={true} order="asc" className="small" />
+      <List items={items} isHeadingHidden={true} isSummaryHidden={true} isStoryHidden={true} className="small" />
     </Section>
   </Layout>
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  const items: Content[] = newsData
-  return { props: { items } }
+  const content: ApiResponse = await ContentfulApi.getPaginatedContent('music', 1)
+  const items: Content[] = content.items ?? []
+  const total = content.total
+  return { props: { items, total } }
 }
 
 export default MusicPage

@@ -4,9 +4,9 @@ import Layout from '../../components/Layout'
 import { List } from '../../components/List'
 import ListDetail from '../../components/ListDetail'
 import Section from '../../components/Section'
-import { Content } from '../../interfaces'
+import { ApiResponse, Content } from '../../interfaces'
 import { SITE_NAME } from '../../utils/common'
-import { newsData } from '../../utils/news-items'
+import ContentfulApi from '../../utils/ContentfulApi'
 
 type NewsPageProps = {
   item?: Content
@@ -29,9 +29,9 @@ const ListPage = ({ item, newsFeedItems, errors }: NewsPageProps) => {
 
   return (
     <Layout title={`${SITE_NAME} | ${item.title}`}>
-      <ListDetail {...item} />
+      <ListDetail {...item} type="news" />
       <Section>
-        <List items={newsFeedItems} filter={item.type} limit={4} className="small" />
+        <List items={newsFeedItems} className="small" />
       </Section>
     </Layout>
   )
@@ -41,8 +41,11 @@ export default ListPage
 
 export const getStaticPaths: GetStaticPaths = async () => {
   // Get the paths we want to pre-render based on users
-  const paths = newsData.map((item) => ({
-    params: { id: item.id.toString() },
+  const content: ApiResponse = await ContentfulApi.getPaginatedContent('news', 1)
+  const items: Content[] = content.items ?? []
+
+  const paths = items.map((item) => ({
+    params: { slug: item.slug },
   }))
 
   // We'll pre-render only these paths at build time.
@@ -55,12 +58,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 // direct database queries.
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
-    const newsFeedItems: Content[] = newsData
-    const id = params?.id
-    const item = newsData.find((data) => data.id === id)
+    const item: ApiResponse = await ContentfulApi.getContentBySlug(params?.slug)
+    const content: ApiResponse = await ContentfulApi.getPaginatedContent('news', 1)
+    const items: Content[] = content.items ?? []
+
     // By returning { props: item }, the StaticPropsDetail component
     // will receive `item` as a prop at build time
-    return { props: { item, newsFeedItems } }
+    return { props: { item, items } }
   } catch (error) {
     let message
     if (error instanceof Error) message = error.message

@@ -6,24 +6,15 @@ import type { Content } from '../interfaces'
 
 export interface ListProps {
   items: Content[]
-  filter?: string
-  order?: string
-  limit?: number
+  total?: number | undefined
   className?: string
   isHeadingHidden?: boolean
   isImageHidden?: boolean
-  isTextHidden?: boolean
+  isSummaryHidden?: boolean
+  isStoryHidden?: boolean
 }
 
-export const List: React.FC<ListProps> = ({
-  items,
-  className = '',
-  isHeadingHidden,
-  isImageHidden,
-  isTextHidden,
-}: ListProps) => {
-  console.log(items)
-
+export const List: React.FC<ListProps> = ({ items, className = '', ...props }: ListProps) => {
   let counter = -1
   return (
     <ul className={classNames(styles.list, styles[className])}>
@@ -31,17 +22,7 @@ export const List: React.FC<ListProps> = ({
         // Increment counter
         ++counter
         const key = `${className}-item-${index.toString()}-${item.slug}` || `${index.toString()}-${counter.toString()}`
-        return (
-          <ListItem
-            key={key}
-            id={counter}
-            item={item}
-            className={className}
-            isHeadingHidden={isHeadingHidden}
-            isImageHidden={isImageHidden}
-            isTextHidden={isTextHidden}
-          />
-        )
+        return <ListItem key={key} id={counter} item={item} className={className} {...props} />
       })}
     </ul>
   )

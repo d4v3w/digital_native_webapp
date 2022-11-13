@@ -47,7 +47,44 @@ export default class ContentfulApi {
     return totalPosts
   }
 
-  static getPaginatedContent = async (type = 'news', page: number): Promise<ApiResponse> => {
+  static getContentBySlug = async (slug: string | string[] | undefined): Promise<ApiResponse> => {
+    const query = `{
+      contentCollection(
+        where: { slug_in: "${slug}" }
+        limit: 1
+      ) {
+        total
+        items {
+          sys {
+            id
+            publishedAt
+          }
+          title
+          slug
+          summary
+          story
+          image
+          link
+        }
+      }
+    }`
+
+    // Call out to the API
+    const apiResponse = { total: 0, items: [] }
+    try {
+      const response = await this.callContentful(query)
+      apiResponse.items = response.data.contentCollection.items
+      apiResponse.total = response.data.contentCollection.total
+    } catch (e) {
+      console.log(e)
+    }
+    return apiResponse
+  }
+
+  static getPaginatedContent = async (
+    type: string | string[] | undefined = 'news',
+    page: number,
+  ): Promise<ApiResponse> => {
     const skipMultiplier = page === 1 ? 0 : page - 1
     const skip = skipMultiplier > 0 ? Config.pagination.pageSize * skipMultiplier : 0
 
