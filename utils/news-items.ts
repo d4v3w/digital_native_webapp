@@ -1,22 +1,22 @@
-import { Content, User } from '../interfaces';
+import { Content, User } from '../interfaces'
 
 /** Dummy user data. */
 export const userData: User[] = [
   { id: 'andy', name: 'Andy Williams' },
   { id: 'dave', name: 'Dave Williams' },
-];
+]
 
 export const getUser = (id: string) => {
   return userData.find((obj) => {
-    return obj.id === id;
-  });
-};
+    return obj.id === id
+  })
+}
 
 export const getChildren = (type: string) => {
   return newsData.filter((obj) => {
-    return obj.type === type;
-  });
-};
+    return obj.type === type
+  })
+}
 
 /** Dummy news data. */
 export const newsData: Content[] = [
@@ -246,4 +246,4 @@ export const newsData: Content[] = [
     image: '',
     children: [],
   },
-];
+]
