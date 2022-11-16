@@ -22,21 +22,28 @@ const newsLink = (link: string | undefined) => {
   )
 }
 
-const ListDetail: React.FC<ListDetailProps> = ({ type, ...item }: ListDetailProps) => (
-  <Article heading={item.title} src={item.image} className={classNames(layoutStyles.article, styles.detail)}>
-    <>
-      <div className={styles.content}>
-        <Markdown className="summary">{item.summary}</Markdown>
-        <Markdown className="article">{item.story}</Markdown>
-        {newsLink(item.link)}
-      </div>
-      <nav role="navigation">
-        <Link href={'/' + type} className={styles.link} title="Navigate to previous page" passHref>
-          <Markdown className="link">{`<< Back`}</Markdown>
-        </Link>
-      </nav>
-    </>
-  </Article>
-)
+const ListDetail: React.FC<ListDetailProps> = ({ type, ...item }: ListDetailProps) => {
+  return (
+    <Article
+      heading={item.title}
+      src={item.image}
+      className={classNames(layoutStyles.article, styles.detail)}
+      type={type}
+    >
+      <>
+        <div className={styles.content}>
+          <Markdown className="summary">{item.summary}</Markdown>
+          <Markdown className="article">{item.story}</Markdown>
+          {newsLink(item.link)}
+        </div>
+        <nav role="navigation">
+          <Link href={'/' + type} className={styles.link} title="Navigate to previous page" passHref>
+            <Markdown className="link">{`<< Back`}</Markdown>
+          </Link>
+        </nav>
+      </>
+    </Article>
+  )
+}
 
 export default ListDetail

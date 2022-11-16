@@ -9,6 +9,7 @@ export interface ArticleProps {
   className?: string
   isInline?: boolean
   src?: string
+  type?: string
   children: string | JSX.Element | undefined
 }
 
@@ -17,6 +18,7 @@ const Article: React.FC<ArticleProps> = ({
   headingType = 'title',
   isInline = false,
   className = 'default',
+  type = 'default',
   src = '',
   ...props
 }: ArticleProps) => {
@@ -38,10 +40,15 @@ const Article: React.FC<ArticleProps> = ({
 
   const inlineStyle: string = isInline ? 'inline' : ''
   const imageSize: number = isInline ? 500 : 800
+  const imgSrc = type === 'news' ? '' : src
   return (
-    <article className={classNames(styles.article, styles[inlineStyle], styles[className])} role="article">
+    <article
+      className={classNames(styles.article, styles[inlineStyle], styles[className])}
+      role="article"
+      data-content-type={type}
+    >
       <ImageBox
-        src={src}
+        src={imgSrc}
         alt={props.heading ? props.heading.toString() : ''}
         isBlock={!isInline}
         priority={!isInline}

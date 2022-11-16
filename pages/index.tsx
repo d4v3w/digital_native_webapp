@@ -2,7 +2,6 @@ import { GetStaticProps } from 'next/types'
 import Layout from '../components/Layout'
 import { List, ListProps } from '../components/List'
 import Section from '../components/Section'
-import { ApiResponse, Content } from '../interfaces'
 import ContentfulApi from '../utils/ContentfulApi'
 
 const IndexPage = ({ items }: ListProps): JSX.Element => (
@@ -14,10 +13,7 @@ const IndexPage = ({ items }: ListProps): JSX.Element => (
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  const content: ApiResponse = await ContentfulApi.getPaginatedContent('news', 1)
-  const items: Content[] = content.items ?? []
-  const total = content.total
-  return { props: { items, total } }
+  return await ContentfulApi.getPaginatedContent('news', 1)
 }
 
 export default IndexPage

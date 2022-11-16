@@ -16,6 +16,7 @@ export interface ListProps {
 
 export const List: React.FC<ListProps> = ({ items, className = '', ...props }: ListProps) => {
   let counter = -1
+  console.log(items[0])
   return (
     <ul className={classNames(styles.list, styles[className])}>
       {items.map((item, index) => {

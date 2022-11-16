@@ -5,7 +5,6 @@ import Layout from '../components/Layout'
 import { List, ListProps } from '../components/List'
 import Markdown from '../components/Markdown'
 import Section from '../components/Section'
-import { ApiResponse, Content } from '../interfaces'
 import ContentfulApi from '../utils/ContentfulApi'
 
 const MusicPage = ({ items }: ListProps) => (
@@ -35,10 +34,7 @@ const MusicPage = ({ items }: ListProps) => (
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  const content: ApiResponse = await ContentfulApi.getPaginatedContent('music', 1)
-  const items: Content[] = content.items ?? []
-  const total = content.total
-  return { props: { items, total } }
+  return await ContentfulApi.getPaginatedContent('music', 1)
 }
 
 export default MusicPage
