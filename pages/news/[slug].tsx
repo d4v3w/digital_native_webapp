@@ -45,9 +45,6 @@ const ArticlePage = ({ item, items, type }: ArticlePageProps) => {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const singleItem = await ContentfulApi.getContentBySlug(context.params?.slug)
-
-  console.log('singleItem')
-  console.log(singleItem)
   const item = singleItem.props.items.at(0) || undefined
   const type = item ? item.type : null
 

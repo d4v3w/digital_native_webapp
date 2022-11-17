@@ -2,7 +2,6 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = async (phase, { defaultConfig }) => {
-  console.log(`Phase: ${phase}`)
   const config = {
     env: {
       CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
@@ -34,7 +33,6 @@ const nextConfig = async (phase, { defaultConfig }) => {
       defaultLocale: 'en',
     },
   }
-  console.log(`Config: ${JSON.stringify({ config, defaultConfig }, undefined, 2)}`)
   return config
 }
 
