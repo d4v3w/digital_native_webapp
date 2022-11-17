@@ -7,5 +7,5 @@ export type Media = {
 }
 export interface MediaCollection {
   total: number
-  items: Media[]
+  items: Array<Media>
 }

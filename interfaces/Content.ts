@@ -5,12 +5,12 @@ export type Content = {
   sys: SysProps
   title: string
   slug: string
-  summary?: string | undefined
-  story?: string | undefined
-  link?: string | undefined
-  location?: string | undefined
-  mediaCollection?: MediaCollection
-  relatedCollection?: ContentCollection
+  summary: string
+  story: string
+  link: string
+  location: string
+  mediaCollection: MediaCollection
+  relatedCollection: ContentCollection
 }
 
 export interface ContentCollection {

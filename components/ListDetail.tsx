@@ -3,6 +3,7 @@ import Link from 'next/link'
 import layoutStyles from '../components/layout.module.css'
 import styles from '../components/listDetail.module.css'
 import { Content } from '../interfaces/Content'
+import { Media } from '../interfaces/Media'
 import Article from './Article'
 import { Gallery } from './Gallery'
 import Markdown from './Markdown'
@@ -24,10 +25,13 @@ const newsLink = (link: string | undefined) => {
 }
 
 const ListDetail: React.FC<ListDetailProps> = ({ type, ...item }: ListDetailProps) => {
+  const images: Array<Media> = [...item.mediaCollection.items]
+  const mainImage: Media | undefined = images.shift()
+
   return (
     <Article
       heading={item.title}
-      image={item.mediaCollection?.total ? item.mediaCollection.items.at(0) : undefined}
+      image={mainImage}
       className={classNames(layoutStyles.article, styles.detail)}
       type={type}
     >
@@ -35,7 +39,7 @@ const ListDetail: React.FC<ListDetailProps> = ({ type, ...item }: ListDetailProp
         <div className={styles.content}>
           <Markdown className="summary">{item.summary}</Markdown>
           <Markdown className="article">{item.story}</Markdown>
-          <Gallery items={item.mediaCollection?.items} />
+          <Gallery items={images} />
           {newsLink(item.link)}
         </div>
         <nav role="navigation">
