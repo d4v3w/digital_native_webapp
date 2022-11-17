@@ -23,7 +23,6 @@ const nextConfig = async (phase, { defaultConfig }) => {
           hostname: 'images.ctfassets.net',
         },
       ],
-      domains: ['images.ctfassets.net', 'www.digitalnativeuk.com'],
     },
     compiler: {
       styledComponents: true,
