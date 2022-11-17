@@ -3,7 +3,8 @@ import Image, { ImageProps } from 'next/image'
 import styles from './imageBox.module.css'
 
 export interface ImageBoxProps extends ImageProps {
-  isBlock: boolean
+  isBlock?: boolean
+  index?: number
 }
 
 const ImageBox: React.FC<ImageBoxProps> = ({

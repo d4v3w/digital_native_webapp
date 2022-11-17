@@ -4,6 +4,7 @@ exports[`All snapshots Components renders article unchanged 1`] = `
 <div>
   <article
     class="article default"
+    data-content-type="default"
     role="article"
   />
 </div>
@@ -830,6 +831,7 @@ exports[`All snapshots Pages renders about unchanged 1`] = `
     >
       <article
         class="article default"
+        data-content-type="default"
         role="article"
       >
         <span
@@ -839,11 +841,11 @@ exports[`All snapshots Pages renders about unchanged 1`] = `
             alt="About Digital Native"
             data-nimg="1"
             decoding="async"
-            height="800"
-            src="/_next/image?url=%2Fimg.jpg&w=1920&q=80"
-            srcset="/_next/image?url=%2Fimg.jpg&w=828&q=80 1x, /_next/image?url=%2Fimg.jpg&w=1920&q=80 2x"
+            height="40"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=80"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=80 1x, /_next/image?url=%2Fimg.jpg&w=96&q=80 2x"
             style="color: transparent; max-width: 100%; height: auto;"
-            width="800"
+            width="40"
           />
         </span>
         <div
@@ -1548,6 +1550,7 @@ exports[`All snapshots Pages renders music unchanged 1`] = `
     >
       <article
         class="article default"
+        data-content-type="default"
         role="article"
       >
         <div
@@ -1942,6 +1945,7 @@ exports[`All snapshots Pages renders news unchanged 1`] = `
     >
       <article
         class="article"
+        data-content-type="default"
         role="article"
       >
         <div
@@ -2292,6 +2296,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
     >
       <article
         class="article inline default"
+        data-content-type="default"
         role="article"
       >
         <div
@@ -2325,6 +2330,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
       </article>
       <article
         class="article inline default"
+        data-content-type="default"
         role="article"
       >
         <div
@@ -2351,6 +2357,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
       </article>
       <article
         class="article inline default"
+        data-content-type="default"
         role="article"
       >
         <div
@@ -2377,6 +2384,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
       </article>
       <article
         class="article inline default"
+        data-content-type="default"
         role="article"
       >
         <div

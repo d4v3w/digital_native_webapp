@@ -1,9 +1,4 @@
-export interface User {
-  id: string
-  name: string
-}
-
-export interface Content {
+export type ContentOld = {
   id: string
   type: string
   title: string
@@ -13,5 +8,5 @@ export interface Content {
   image?: string | undefined
   link?: string | undefined
   author?: string
-  children?: Array<Content>
+  children?: Array<ContentOld>
 }

@@ -3,20 +3,18 @@ import { GetStaticProps } from 'next/types'
 import Article from '../../components/Article'
 import Layout from '../../components/Layout'
 import { List, ListProps } from '../../components/List'
-import { Content } from '../../interfaces'
-import { newsData } from '../../utils/news-items'
+import ContentfulApi from '../../utils/ContentfulApi'
 
-const NewsPage = ({ items, className = '' }: ListProps) => (
+const NewsPage = ({ items, total, className = '' }: ListProps) => (
   <Layout title="News" className="news">
     <Article heading="Digital Native News" className={classNames(className)}>
-      <List items={items} filter="news" order="desc" className="rows" isImageHidden={true} />
+      <List items={items} total={total} className="rows" isImageHidden={true} isStoryHidden={true} />
     </Article>
   </Layout>
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  const items: Content[] = newsData
-  return { props: { items } }
+  return await ContentfulApi.getPaginatedContent(['news', 'event'], 1)
 }
 
 export default NewsPage
