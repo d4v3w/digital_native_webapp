@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 import { List } from '../../components/List'
 import ListDetail from '../../components/ListDetail'
 import Section from '../../components/Section'
-import { Content } from '../../interfaces'
+import { Content } from '../../interfaces/Content'
 import { SITE_NAME } from '../../utils/common'
 import ContentfulApi from '../../utils/ContentfulApi'
 
@@ -26,8 +26,6 @@ const ArticlePage = ({ item, items, type }: ArticlePageProps) => {
       break
   }
 
-  console.log(`TYPE: ${type}`)
-
   return (
     <Layout title={`${SITE_NAME} | ${item.title}`}>
       <ListDetail {...item} type={type} />
@@ -45,10 +43,13 @@ const ArticlePage = ({ item, items, type }: ArticlePageProps) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
-  const singleItem = await ContentfulApi.getContentBySlug(params?.slug)
-  const item = singleItem.props.items[0]
-  const type = item.type.name
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const singleItem = await ContentfulApi.getContentBySlug(context.params?.slug)
+
+  console.log('singleItem')
+  console.log(singleItem)
+  const item = singleItem.props.items.at(0) || undefined
+  const type = item ? item.type : null
 
   // Get related items by type
   const items = await ContentfulApi.getPaginatedContent(type, 1)

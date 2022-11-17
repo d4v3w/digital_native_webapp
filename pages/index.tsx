@@ -13,7 +13,7 @@ const IndexPage = ({ items }: ListProps): JSX.Element => (
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  return await ContentfulApi.getPaginatedContent('news', 1)
+  return await ContentfulApi.getPaginatedContent(['news', 'event', 'music'], 1)
 }
 
 export default IndexPage

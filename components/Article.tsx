@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import Heading, { HeadingType } from '../components/Heading'
 import ImageBox from '../components/ImageBox'
+import { Media } from '../interfaces/Media'
 import styles from './article.module.css'
 
 export interface ArticleProps {
@@ -8,7 +9,7 @@ export interface ArticleProps {
   headingType?: HeadingType
   className?: string
   isInline?: boolean
-  src?: string
+  image?: Media
   type?: string
   children: string | JSX.Element | undefined
 }
@@ -19,7 +20,7 @@ const Article: React.FC<ArticleProps> = ({
   isInline = false,
   className = 'default',
   type = 'default',
-  src = '',
+  image,
   ...props
 }: ArticleProps) => {
   const getHeading = props.heading ? (
@@ -39,8 +40,6 @@ const Article: React.FC<ArticleProps> = ({
     ) : null
 
   const inlineStyle: string = isInline ? 'inline' : ''
-  const imageSize: number = isInline ? 500 : 800
-  const imgSrc = type === 'news' ? '' : src
   return (
     <article
       className={classNames(styles.article, styles[inlineStyle], styles[className])}
@@ -48,12 +47,12 @@ const Article: React.FC<ArticleProps> = ({
       data-content-type={type}
     >
       <ImageBox
-        src={imgSrc}
+        src={image?.url || ''}
         alt={props.heading ? props.heading.toString() : ''}
         isBlock={!isInline}
         priority={!isInline}
-        width={imageSize}
-        height={imageSize}
+        width={image?.width}
+        height={image?.height}
       />
       {getContent}
     </article>

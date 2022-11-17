@@ -1,11 +1,20 @@
 import Article from '../components/Article'
 import Layout from '../components/Layout'
 import Markdown from '../components/Markdown'
+import { Media } from '../interfaces/Media'
 import portrait from '../public/images/hero/digital_native_profile_portrait.jpg'
+
+const image: Media = {
+  url: portrait.src,
+  title: 'Digital Native',
+  description: 'Portrait of Andy Williams a.k.a. Digital Native',
+  width: portrait.width,
+  height: portrait.height,
+}
 
 const AboutPage = () => (
   <Layout title="About" className="about">
-    <Article heading="About Digital Native" src={portrait.src}>
+    <Article heading="About Digital Native" image={image}>
       <>
         <Markdown className="summary">Drum and Bass Producer from the Midlands, UK.</Markdown>
         <Markdown className="article">

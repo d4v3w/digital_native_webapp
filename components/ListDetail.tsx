@@ -2,8 +2,9 @@ import classNames from 'classnames'
 import Link from 'next/link'
 import layoutStyles from '../components/layout.module.css'
 import styles from '../components/listDetail.module.css'
-import { Content } from '../interfaces'
+import { Content } from '../interfaces/Content'
 import Article from './Article'
+import { Gallery } from './Gallery'
 import Markdown from './Markdown'
 
 export interface ListDetailProps extends Content {
@@ -26,7 +27,7 @@ const ListDetail: React.FC<ListDetailProps> = ({ type, ...item }: ListDetailProp
   return (
     <Article
       heading={item.title}
-      src={item.image}
+      image={item.mediaCollection?.total ? item.mediaCollection.items.at(0) : undefined}
       className={classNames(layoutStyles.article, styles.detail)}
       type={type}
     >
@@ -34,6 +35,7 @@ const ListDetail: React.FC<ListDetailProps> = ({ type, ...item }: ListDetailProp
         <div className={styles.content}>
           <Markdown className="summary">{item.summary}</Markdown>
           <Markdown className="article">{item.story}</Markdown>
+          <Gallery items={item.mediaCollection?.items} />
           {newsLink(item.link)}
         </div>
         <nav role="navigation">

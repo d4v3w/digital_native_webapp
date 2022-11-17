@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import Link from 'next/link'
-import { Content } from '../interfaces'
+import { Content } from '../interfaces/Content'
+import { Media } from '../interfaces/Media'
 import Article from './Article'
 import Heading from './Heading'
 import styles from './listItem.module.css'
@@ -25,8 +26,9 @@ const ListItem: React.FC<ListItemProps> = ({
   isSummaryHidden = false,
   isStoryHidden = false,
 }: ListItemProps) => {
-  if (isImageHidden) {
-    item.image = ''
+  let image: Media | undefined
+  if (!isImageHidden && item.mediaCollection?.total) {
+    image = item.mediaCollection.items.at(0)
   }
   if (isHeadingHidden) {
     item.title = ''
@@ -45,12 +47,12 @@ const ListItem: React.FC<ListItemProps> = ({
     ''
   )
 
-  return item.title || item.image || summary || story ? (
+  return item.title || image || summary || story ? (
     <li className={classNames(styles.item, styles[className])}>
       <Link href="/news/[id]" as={`/news/${item.slug}`} className={styles.link} title={item.title}>
         <Article
           heading={item.title}
-          src={item.image}
+          image={image}
           isInline={true}
           className={className}
           data-index={id}

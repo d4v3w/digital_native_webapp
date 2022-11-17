@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import styles from './list.module.css'
 import ListItem from './ListItem'
 
-import type { Content } from '../interfaces'
+import { Content } from '../interfaces/Content'
 
 export interface ListProps {
   items: Content[]
@@ -16,7 +16,6 @@ export interface ListProps {
 
 export const List: React.FC<ListProps> = ({ items, className = '', ...props }: ListProps) => {
   let counter = -1
-  console.log(items[0])
   return (
     <ul className={classNames(styles.list, styles[className])}>
       {items.map((item, index) => {
