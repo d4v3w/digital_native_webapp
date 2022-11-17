@@ -7,7 +7,7 @@ const nextConfig = async (phase, { defaultConfig }) => {
     env: {
       CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
       CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
-      STAGE: phase === 'phase-development-server' ? 'DEV' : '',
+      STAGE: phase === 'phase-development-server' ? 'DEV' : 'PROD',
     },
     experimental: {
       appDir: true,
@@ -34,7 +34,7 @@ const nextConfig = async (phase, { defaultConfig }) => {
       defaultLocale: 'en',
     },
   }
-  //console.log(`Config: ${JSON.stringify({ config, defaultConfig }, undefined, 2)}`)
+  console.log(`Config: ${JSON.stringify({ config, defaultConfig }, undefined, 2)}`)
   return config
 }
 
