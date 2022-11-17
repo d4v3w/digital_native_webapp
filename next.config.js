@@ -4,7 +4,7 @@ module.exports = {
     },
     reactStrictMode: true,
     images: {
-        domains: ['www.digitalnativeuk.com'],
+        domains: ['www.digitalnativeuk.com', 'images.ctfassets.net'],
     },
     compiler: {
         styledComponents: true,
