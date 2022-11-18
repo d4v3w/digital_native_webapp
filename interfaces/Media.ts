@@ -1,10 +1,7 @@
-export type Media = {
-  title: string
-  description: string
-  url: string
-  width: number
-  height: number
-}
+import { Asset } from 'contentful'
+
+export type Media = Asset
+
 export interface MediaCollection {
   total: number
   items: Array<Media>

@@ -5,15 +5,16 @@ import { Config } from './Config'
 export default class ContentfulApi {
   static async callContentful(query: RequestDocument) {
     const endpoint = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`
-
+    console.log(endpoint)
     const graphQLClient = await new GraphQLClient(endpoint, {
       headers: {
         Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
         'Content-Type': 'application/json',
       },
     })
-
+    console.log(query)
     const data = await graphQLClient.request(query)
+    console.log(data)
     return data
   }
 

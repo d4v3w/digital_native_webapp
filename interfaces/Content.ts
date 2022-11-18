@@ -1,17 +1,6 @@
-import { MediaCollection } from './Media'
-import { SysProps } from './SysProps'
+import { IContentFields } from './contentful'
 
-export type Content = {
-  sys: SysProps
-  title: string
-  slug: string
-  summary: string
-  story: string
-  link: string
-  location: string
-  mediaCollection: MediaCollection
-  relatedCollection: ContentCollection
-}
+export type Content = IContentFields
 
 export interface ContentCollection {
   total: number

@@ -15,7 +15,8 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "test-update": "jest --updateSnapshot ",
-    "stylelint": "npx stylelint '**/*.module.css'"
+    "stylelint": "npx stylelint '**/*.module.css'",
+    "generate": "contentful-typescript-codegen --output ./interfaces/contentful.ts"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
+    "@contentful/rich-text-types": "^15.14.1",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@next/eslint-plugin-next": "^13.0.3",
     "@storybook/addon-actions": "^6.5.13",
@@ -56,6 +58,9 @@
     "@typescript-eslint/parser": "^5.43.0",
     "babel-loader": "^9.0.0",
     "classnames": "^2.3.2",
+    "contentful": "^9.2.12",
+    "contentful-management": "^10.21.0",
+    "contentful-typescript-codegen": "^3.2.3",
     "eslint": "^8.27.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",

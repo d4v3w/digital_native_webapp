@@ -39,5 +39,5 @@
     "next.config.js",
     "tailwind.config.js",
     ".next/types/**/*.ts"
-  ]
+, "getContentfulEnvironment.js"  ]
 }
