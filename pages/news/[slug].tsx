@@ -21,6 +21,9 @@ const ArticlePage = ({ item, media, items, type }: ArticlePageProps) => {
   const isSummaryHidden = false
   let isStoryHidden = false
 
+  console.log('tosser')
+  console.log(items)
+
   switch (type) {
     case 'music':
       isStoryHidden = true

@@ -9,7 +9,6 @@ import Markdown from './Markdown'
 export interface ListItemProps {
   id: number
   item: Content
-  media: Array<Media>
   className?: string
   isHeadingHidden?: boolean
   isSummaryHidden?: boolean
@@ -19,7 +18,6 @@ export interface ListItemProps {
 const ListItem: React.FC<ListItemProps> = ({
   id,
   item,
-  media,
   className = 'default',
   isHeadingHidden = false,
   isSummaryHidden = false,
@@ -42,9 +40,9 @@ const ListItem: React.FC<ListItemProps> = ({
     ''
   )
 
-  const image: Media | undefined = typeof media !== undefined ? media[0] : undefined
+  const image: Media | undefined = item.mediaCollection.items[0]
 
-  return item.title || media || summary || story ? (
+  return item.title || image || summary || story ? (
     <li className={classNames(styles.item, styles[className])}>
       <Link href="/news/[id]" as={`/news/${item.slug}`} className={styles.link} title={item.title}>
         <Article

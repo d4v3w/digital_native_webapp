@@ -11,9 +11,9 @@
 }
 
 .item.small {
-  flex-basis: 20%;
+  flex: 1 1 150px;
   padding: 0.2rem;
-  max-width: 200px;
+  margin: 0.5rem;
 }
 
 .item .link {

@@ -1,3 +1,4 @@
+import { Asset } from 'contentful'
 import { IContentFields } from './contentful'
 
 export type Content = IContentFields & {
@@ -9,7 +10,7 @@ export type MediaCollection = Array<Media> & {
   items: Media[]
 }
 
-export type Media = {
+export type Media = Asset & {
   title: string
   description: string
   url: string

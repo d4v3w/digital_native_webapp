@@ -5,10 +5,10 @@ import Layout from '../../components/Layout'
 import { List, ListProps } from '../../components/List'
 import ContentfulApi from '../../utils/ContentfulApi'
 
-const NewsPage = ({ items, total, className = '' }: ListProps) => (
+const NewsPage = ({ items, className = '' }: ListProps) => (
   <Layout title="News" className="news">
     <Article heading="Digital Native News" className={classNames(className)}>
-      <List items={items} total={total} className="rows" isImageHidden={true} isStoryHidden={true} />
+      <List items={items} className="rows" isStoryHidden={true} />
     </Article>
   </Layout>
 )
