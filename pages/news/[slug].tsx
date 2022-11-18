@@ -3,18 +3,19 @@ import Layout from '../../components/Layout'
 import { List } from '../../components/List'
 import ListDetail from '../../components/ListDetail'
 import Section from '../../components/Section'
-import { Content } from '../../interfaces/Content'
+import { Content, Media } from '../../interfaces'
 import { SITE_NAME } from '../../utils/common'
 import ContentfulApi from '../../utils/ContentfulApi'
 
 type ArticlePageProps = {
   item: Content
+  media: Media[]
   items: Content[]
   errors?: string
   type: string
 }
 
-const ArticlePage = ({ item, items, type }: ArticlePageProps) => {
+const ArticlePage = ({ item, media, items, type }: ArticlePageProps) => {
   const isHeadingHidden = false
   const isImageHidden = false
   const isSummaryHidden = false
@@ -28,7 +29,7 @@ const ArticlePage = ({ item, items, type }: ArticlePageProps) => {
 
   return (
     <Layout title={`${SITE_NAME} | ${item.title}`}>
-      <ListDetail {...item} type={type} />
+      <ListDetail item={item} media={media} />
       <Section className={'news'}>
         <List
           items={items}
@@ -45,7 +46,8 @@ const ArticlePage = ({ item, items, type }: ArticlePageProps) => {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const singleItem = await ContentfulApi.getContentBySlug(context.params?.slug)
-  const item = singleItem.props.items.at(0) || undefined
+  const item = singleItem.props.item
+  const media = singleItem.props.media
   const type = item ? item.type : null
 
   // Get related items by type
@@ -54,6 +56,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       item: item,
+      media: media,
       items: items.props.items,
       type: type,
     },

@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import Heading, { HeadingType } from '../components/Heading'
 import ImageBox from '../components/ImageBox'
-import { Media } from '../interfaces/Media'
+import { Media } from '../interfaces'
 import styles from './article.module.css'
 
 export interface ArticleProps {
@@ -40,6 +40,7 @@ const Article: React.FC<ArticleProps> = ({
     ) : null
 
   const inlineStyle: string = isInline ? 'inline' : ''
+
   return (
     <article
       className={classNames(styles.article, styles[inlineStyle], styles[className])}

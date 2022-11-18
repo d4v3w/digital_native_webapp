@@ -2,15 +2,14 @@ import classNames from 'classnames'
 import Link from 'next/link'
 import layoutStyles from '../components/layout.module.css'
 import styles from '../components/listDetail.module.css'
-import { Content } from '../interfaces/Content'
-import { Media } from '../interfaces/Media'
+import { Content, Media } from '../interfaces'
 import Article from './Article'
 import { Gallery } from './Gallery'
 import Markdown from './Markdown'
 
-export interface ListDetailProps extends Content {
-  title: string
-  type: string
+export type ListDetailProps = {
+  item: Content
+  media: Array<Media>
 }
 
 const newsLink = (link: string | undefined) => {
@@ -24,26 +23,23 @@ const newsLink = (link: string | undefined) => {
   )
 }
 
-const ListDetail: React.FC<ListDetailProps> = ({ type, ...item }: ListDetailProps) => {
-  const images: Array<Media> = [...item.mediaCollection.items]
-  const mainImage: Media | undefined = images.shift()
-
+const ListDetail: React.FC<ListDetailProps> = ({ item, media }: ListDetailProps) => {
   return (
     <Article
       heading={item.title}
-      image={mainImage}
+      image={media.at(0)}
       className={classNames(layoutStyles.article, styles.detail)}
-      type={type}
+      type={item.type}
     >
       <>
         <div className={styles.content}>
           <Markdown className="summary">{item.summary}</Markdown>
           <Markdown className="article">{item.story}</Markdown>
-          <Gallery items={images} />
+          <Gallery items={item.media} />
           {newsLink(item.link)}
         </div>
         <nav role="navigation">
-          <Link href={'/' + type} className={styles.link} title="Navigate to previous page" passHref>
+          <Link href={'/' + item.type} className={styles.link} title="Navigate to previous page" passHref>
             <Markdown className="link">{`<< Back`}</Markdown>
           </Link>
         </nav>
