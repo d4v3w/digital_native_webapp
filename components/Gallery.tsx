@@ -1,8 +1,8 @@
-import { Media } from '../interfaces/Media'
+import { Asset } from 'contentful'
 import ImageBox from './ImageBox'
 
 export interface GalleryProps {
-  items: Media[] | undefined
+  items: Asset[] | undefined
   className?: string
 }
 

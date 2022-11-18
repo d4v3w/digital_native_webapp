@@ -4,7 +4,7 @@ import { List, ListProps } from '../components/List'
 import Section from '../components/Section'
 import ContentfulApi from '../utils/ContentfulApi'
 
-const IndexPage = ({ items }: ListProps): JSX.Element => (
+const IndexPage = ({ items }: ListProps) => (
   <Layout title="Home" className="home">
     <Section className={'home'}>
       <List items={items} className="feed" isStoryHidden={true} />
