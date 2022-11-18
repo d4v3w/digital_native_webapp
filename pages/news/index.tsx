@@ -5,16 +5,16 @@ import Layout from '../../components/Layout'
 import { List, ListProps } from '../../components/List'
 import ContentfulApi from '../../utils/ContentfulApi'
 
-const NewsPage = ({ items, total, className = '' }: ListProps) => (
+const NewsPage = ({ items, className = '' }: ListProps) => (
   <Layout title="News" className="news">
     <Article heading="Digital Native News" className={classNames(className)}>
-      <List items={items} total={total} className="rows" isImageHidden={true} isStoryHidden={true} />
+      <List items={items} className="rows" isStoryHidden={true} />
     </Article>
   </Layout>
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  return await ContentfulApi.getPaginatedContent(['news', 'event'], 1)
+  return await ContentfulApi.getPaginatedContent(['news', 'event', 'gallery'], 1)
 }
 
 export default NewsPage
