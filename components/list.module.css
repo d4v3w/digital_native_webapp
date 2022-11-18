@@ -1,18 +1,17 @@
 .list {
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .list.feed {
-  display: flex;
-  flex-flow: column;
+  flex-direction: column;
 }
 
 .list.rows {
 }
 
 .list.small {
-  flex-flow: row wrap;
+  flex-direction: row;
   margin: 0 1rem;
 }

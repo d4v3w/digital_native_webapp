@@ -1,7 +1,6 @@
 import classNames from 'classnames'
 import Link from 'next/link'
-import { Content } from '../interfaces/Content'
-import { Media } from '../interfaces/Media'
+import { Content, Media } from '../interfaces'
 import Article from './Article'
 import Heading from './Heading'
 import styles from './listItem.module.css'
@@ -12,7 +11,6 @@ export interface ListItemProps {
   item: Content
   className?: string
   isHeadingHidden?: boolean
-  isImageHidden?: boolean
   isSummaryHidden?: boolean
   isStoryHidden?: boolean
 }
@@ -21,15 +19,10 @@ const ListItem: React.FC<ListItemProps> = ({
   id,
   item,
   className = 'default',
-  isImageHidden = false,
   isHeadingHidden = false,
   isSummaryHidden = false,
   isStoryHidden = false,
 }: ListItemProps) => {
-  let image: Media | undefined
-  if (!isImageHidden && item.mediaCollection?.total) {
-    image = item.mediaCollection.items.at(0)
-  }
   if (isHeadingHidden) {
     item.title = ''
   }
@@ -47,6 +40,8 @@ const ListItem: React.FC<ListItemProps> = ({
     ''
   )
 
+  const image: Media | undefined = item.mediaCollection.items[0]
+
   return item.title || image || summary || story ? (
     <li className={classNames(styles.item, styles[className])}>
       <Link href="/news/[id]" as={`/news/${item.slug}`} className={styles.link} title={item.title}>
@@ -56,7 +51,7 @@ const ListItem: React.FC<ListItemProps> = ({
           isInline={true}
           className={className}
           data-index={id}
-          data-id={item.sys.id}
+          data-id={item.slug}
         >
           <>
             {summary}

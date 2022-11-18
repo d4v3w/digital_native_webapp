@@ -20,7 +20,7 @@ const nextConfig = async (phase, { defaultConfig }) => {
         },
         {
           protocol: 'https',
-          hostname: 'images.ctfassets.net',
+          hostname: '**.ctfassets.net',
         },
       ],
     },

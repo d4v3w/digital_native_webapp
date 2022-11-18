@@ -1,20 +1,21 @@
 import { gql, GraphQLClient, RequestDocument } from 'graphql-request'
-import { PageType } from '../interfaces/PageType'
+import { Content, Media } from '../interfaces'
+import { PageType } from '../interfaces/index'
 import { Config } from './Config'
 
 export default class ContentfulApi {
   static async callContentful(query: RequestDocument) {
     const endpoint = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`
-    console.log(endpoint)
+    //console.log(endpoint)
     const graphQLClient = await new GraphQLClient(endpoint, {
       headers: {
         Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
         'Content-Type': 'application/json',
       },
     })
-    console.log(query)
+    //console.log(query)
     const data = await graphQLClient.request(query)
-    console.log(data)
+    //console.log(JSON.stringify(data, undefined, 2))
     return data
   }
 
@@ -40,7 +41,7 @@ export default class ContentfulApi {
           slug
           summary
           story
-          story
+          link
           mediaCollection(limit: 10) {
             total
             items {
@@ -71,8 +72,8 @@ export default class ContentfulApi {
 
     return {
       props: {
-        items: response.contentCollection.items,
-        total: response.contentCollection.total,
+        items: response.contentCollection.items as Content[],
+        total: response.contentCollection.total as number,
         type: type,
       },
     }
@@ -93,8 +94,8 @@ export default class ContentfulApi {
 
     return {
       props: {
-        total: response.contentTypeCollection.items[0].linkedFrom.contentCollection.total,
-        type: response.contentTypeCollection.items[0].name,
+        total: response.contentCollection.total as number,
+        type: type,
       },
     }
   }
@@ -116,7 +117,7 @@ export default class ContentfulApi {
           slug
           summary
           story
-          story
+          link
           mediaCollection(limit: 10) {
             total
             items {
@@ -145,10 +146,14 @@ export default class ContentfulApi {
 
     const response = await this.callContentful(query)
 
+    const item = response.contentCollection.items.at(0)
+    const itemContent = item as Content
+    const media: Array<Media> = Array.from(item.mediaCollection.items)
+
     return {
       props: {
-        items: response.contentCollection.items,
-        total: response.contentCollection.total,
+        item: itemContent as Content,
+        media: media,
       },
     }
   }
