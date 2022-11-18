@@ -41,8 +41,6 @@ const Article: React.FC<ArticleProps> = ({
 
   const inlineStyle: string = isInline ? 'inline' : ''
 
-  console.log(image)
-
   return (
     <article
       className={classNames(styles.article, styles[inlineStyle], styles[className])}
