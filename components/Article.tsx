@@ -47,12 +47,12 @@ const Article: React.FC<ArticleProps> = ({
       data-content-type={type}
     >
       <ImageBox
-        src={image?.url || ''}
+        src={image.fields.url}
         alt={props.heading ? props.heading.toString() : ''}
         isBlock={!isInline}
         priority={!isInline}
-        width={image?.width}
-        height={image?.height}
+        width={image.fields.file.details.image?.width}
+        height={image.fields.file.details.image?.height}
       />
       {getContent}
     </article>
