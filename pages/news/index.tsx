@@ -14,7 +14,7 @@ const NewsPage = ({ items, className = '' }: ListProps) => (
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  return await ContentfulApi.getPaginatedContent(['news', 'event'], 1)
+  return await ContentfulApi.getPaginatedContent(['news', 'event', 'gallery'], 1)
 }
 
 export default NewsPage

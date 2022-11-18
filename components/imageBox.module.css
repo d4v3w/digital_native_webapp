@@ -1,13 +1,10 @@
 .image {
   display: flex;
+  flex: 0 0 40%;
 }
 
 .inline {
-  flex: 1;
-}
-
-.block {
-  flex: 2;
+  flex: 1 1 30%;
 }
 
 .small {
@@ -16,9 +13,7 @@
 }
 
 @media (max-width: 768px) {
-  .inline {
-  }
-  .block {
-    flex-basis: 100%;
+  .image {
+    flex: 1 1 100%;
   }
 }
