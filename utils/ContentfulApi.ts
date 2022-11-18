@@ -40,7 +40,7 @@ export default class ContentfulApi {
           slug
           summary
           story
-          story
+          link
           mediaCollection(limit: 10) {
             total
             items {
