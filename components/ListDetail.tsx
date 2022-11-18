@@ -35,7 +35,7 @@ const ListDetail: React.FC<ListDetailProps> = ({ item, media }: ListDetailProps)
         <div className={styles.content}>
           <Markdown className="summary">{item.summary}</Markdown>
           <Markdown className="article">{item.story}</Markdown>
-          <Gallery items={item.media} />
+          <Gallery items={item.mediaCollection.items} />
           {newsLink(item.link)}
         </div>
         <nav role="navigation">
