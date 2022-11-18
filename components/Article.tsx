@@ -47,7 +47,7 @@ const Article: React.FC<ArticleProps> = ({
       data-content-type={type}
     >
       <ImageBox
-        src={image?.fields.file.url}
+        src={image?.fields.file.url || ''}
         alt={props.heading ? props.heading.toString() : ''}
         isBlock={!isInline}
         priority={!isInline}
