@@ -12,11 +12,11 @@ export const Gallery: React.FC<GalleryProps> = ({ items = [] }) => {
       {items.map((item, index) => {
         return (
           <ImageBox
-            src={item.url}
-            width={item.width}
-            height={item.height}
-            title={item.title}
-            alt={item.description}
+            src={item?.fields.file.url || ''}
+            width={item?.fields.file.details.image?.width}
+            height={item?.fields.file.details.image?.height}
+            title={item?.fields.title}
+            alt={item?.fields.title}
             isBlock={true}
             index={index}
           />
