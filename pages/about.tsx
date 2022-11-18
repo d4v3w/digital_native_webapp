@@ -10,8 +10,6 @@ type PageProps = {
 }
 
 const AboutPage = ({ item, media }: PageProps) => {
-  console.log('item')
-  console.log(item)
   return (
     <Layout title="About" className="about">
       <ListDetail item={item} media={media} />
