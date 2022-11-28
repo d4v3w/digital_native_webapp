@@ -9,7 +9,7 @@ export interface ArticleProps {
   headingType?: HeadingType
   className?: string
   isInline?: boolean
-  image?: Media
+  image?: Media | undefined
   type?: string
   children: string | JSX.Element | undefined
 }
@@ -51,7 +51,7 @@ const Article: React.FC<ArticleProps> = ({
         src={image?.url || ''}
         alt={props.heading ? props.heading.toString() : ''}
         isBlock={!isInline}
-        priority={!isInline}
+        priority={true}
         width={image?.width}
         height={image?.height}
       />

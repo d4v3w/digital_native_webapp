@@ -9,7 +9,7 @@ import ContentfulApi from '../../utils/ContentfulApi'
 
 type ArticlePageProps = {
   item: Content
-  media: Media[]
+  media: Array<Media>
   items: Content[]
   errors?: string
   type: string
@@ -47,17 +47,22 @@ const ArticlePage = ({ item, media, items, type }: ArticlePageProps) => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const singleItem = await ContentfulApi.getContentBySlug(context.params?.slug)
   const item = singleItem.props.item
-  const media = singleItem.props.media
+  const media = item.media
   const type = item ? item.type : null
 
   // Get related items by type
-  const items = await ContentfulApi.getPaginatedContent(type, 1)
+  let realtedItems: Content[] = []
+
+  if (type !== 'page') {
+    const items = await ContentfulApi.getPaginatedContent(type, 1)
+    if (items.props !== undefined) realtedItems = items.props.items
+  }
 
   return {
     props: {
       item: item,
       media: media,
-      items: items.props.items,
+      items: realtedItems,
       type: type,
     },
   }

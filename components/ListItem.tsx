@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import Link from 'next/link'
 import { Content, Media } from '../interfaces'
+import { getMediaItem, MediaAsset } from '../utils/mediaUtils'
 import Article from './Article'
 import Heading from './Heading'
 import styles from './listItem.module.css'
@@ -40,7 +41,8 @@ const ListItem: React.FC<ListItemProps> = ({
     ''
   )
 
-  const image: Media | undefined = item.mediaCollection.items[0]
+  const itemMedia = item.media?.at(0) as MediaAsset //item.mediaCollection.items[0]
+  const image: Media | undefined = getMediaItem(itemMedia)
 
   return item.title || image || summary || story ? (
     <li className={classNames(styles.item, styles[className])}>
