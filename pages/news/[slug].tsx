@@ -51,13 +51,18 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const type = item ? item.type : null
 
   // Get related items by type
-  const items = await ContentfulApi.getPaginatedContent(type, 1)
+  let realtedItems: Content[] = []
+
+  if (type !== 'page') {
+    const items = await ContentfulApi.getPaginatedContent(type, 1)
+    if (items.props !== undefined) realtedItems = items.props.items
+  }
 
   return {
     props: {
       item: item,
       media: media,
-      items: items.props.items,
+      items: realtedItems,
       type: type,
     },
   }

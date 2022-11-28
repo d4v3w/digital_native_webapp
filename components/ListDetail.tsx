@@ -3,7 +3,7 @@ import Link from 'next/link'
 import layoutStyles from '../components/layout.module.css'
 import styles from '../components/listDetail.module.css'
 import { Content, Media } from '../interfaces'
-import { getMediaItem } from '../utils/mediaUtils'
+import { getMediaItem, MediaAsset } from '../utils/mediaUtils'
 import Article from './Article'
 import { Gallery } from './Gallery'
 import Markdown from './Markdown'
@@ -38,12 +38,10 @@ const backLink = (item: Content) => {
   )
 }
 
-const ListDetail: React.FC<ListDetailProps> = ({ item, media }: ListDetailProps) => {
-  console.log(media)
-  const itemMedia = item.media?.at(0)
-  const image: Media | undefined = getMediaItem(itemMedia)
+const ListDetail: React.FC<ListDetailProps> = ({ item }: ListDetailProps) => {
+  const itemMedia = item.media?.at(0) as MediaAsset
 
-  console.log(item.media)
+  const image: Media | undefined = getMediaItem(itemMedia)
 
   return (
     <Article

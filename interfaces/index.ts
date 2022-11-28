@@ -8,10 +8,10 @@ export type ApiContent = IContentFields & {
 }
 
 export type Media = {
-  title: string
-  description: string
+  title?: string
+  description?: string
   url: string
-  tags: TagLink[]
+  tags?: TagLink[]
   type: string
   height?: number | undefined
   width?: number | undefined

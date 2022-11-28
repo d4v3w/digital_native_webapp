@@ -7,9 +7,15 @@ export interface GalleryProps {
 }
 
 export const Gallery: React.FC<GalleryProps> = ({ items = [] }) => {
+  if (items.length === 0) {
+    return null
+  }
   return (
     <>
       {items.map((item, index) => {
+        if (item.fields?.file.contentType !== 'image') {
+          return null
+        }
         return (
           <ImageBox
             src={item?.fields.file.url || ''}

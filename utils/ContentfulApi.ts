@@ -1,6 +1,5 @@
 import { gql, GraphQLClient, RequestDocument } from 'graphql-request'
 import { ApiContent, Content } from '../interfaces'
-import { IContentFields } from '../interfaces/contentful'
 import { PageType } from '../interfaces/index'
 import { Config } from './Config'
 
@@ -16,7 +15,7 @@ export default class ContentfulApi {
     })
     //console.log(query)
     const data = await graphQLClient.request(query)
-    console.log(JSON.stringify(data, undefined, 2))
+    //console.log(JSON.stringify(data, undefined, 2))
     return data
   }
 
@@ -73,10 +72,10 @@ export default class ContentfulApi {
 
     const items = response.contentCollection.items
 
-    items.map((item: IContentFields) => {
-      const itemContent = item as IContentFields
+    items.map((item: ApiContent) => {
+      const itemContent = item
       itemContent.media = item.mediaCollection.items
-      item = itemContent as IContentFields
+      item = itemContent
     })
 
     return {
