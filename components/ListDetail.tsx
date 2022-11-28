@@ -24,6 +24,20 @@ const newsLink = (link: string | undefined) => {
   )
 }
 
+const backLink = (item: Content) => {
+  const link = item.type.match(/news|music|production/) ? '/' + item.type : undefined
+  if (!link) {
+    return null
+  }
+  return (
+    <nav role="navigation">
+      <Link href={link} className={styles.link} title="Navigate to previous page" passHref>
+        <Markdown className="link">{`<< Back`}</Markdown>
+      </Link>
+    </nav>
+  )
+}
+
 const ListDetail: React.FC<ListDetailProps> = ({ item, media }: ListDetailProps) => {
   console.log(media)
   const itemMedia = item.media?.at(0)
@@ -45,11 +59,7 @@ const ListDetail: React.FC<ListDetailProps> = ({ item, media }: ListDetailProps)
           <Gallery items={item.media} />
           {newsLink(item.link)}
         </div>
-        <nav role="navigation">
-          <Link href={'/' + item.type} className={styles.link} title="Navigate to previous page" passHref>
-            <Markdown className="link">{`<< Back`}</Markdown>
-          </Link>
-        </nav>
+        {backLink(item)}
       </>
     </Article>
   )
