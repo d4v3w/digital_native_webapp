@@ -40,7 +40,7 @@ const ListItem: React.FC<ListItemProps> = ({
     ''
   )
 
-  const image: Media | undefined = item.mediaCollection.items[0]
+  const image: Media | undefined = {} as Media //item.mediaCollection.items[0]
 
   return item.title || image || summary || story ? (
     <li className={classNames(styles.item, styles[className])}>
