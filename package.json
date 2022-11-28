@@ -38,7 +38,7 @@
     "@babel/core": "^7.19.6",
     "@contentful/rich-text-types": "^15.14.1",
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "@next/eslint-plugin-next": "^13.0.3",
+    "@next/eslint-plugin-next": "^13.0.4",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-docs": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
