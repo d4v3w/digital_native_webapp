@@ -35,7 +35,7 @@
     "sharp": "^0.31.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.6",
+    "@babel/core": "^7.20.5",
     "@contentful/rich-text-types": "^15.14.1",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@next/eslint-plugin-next": "^13.0.4",
