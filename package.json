@@ -19,7 +19,7 @@
     "generate": "contentful-typescript-codegen --output ./interfaces/contentful.ts"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.8.5",
+    "@reduxjs/toolkit": "^1.9.1",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
     "next": "latest",
