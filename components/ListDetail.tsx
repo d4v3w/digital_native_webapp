@@ -54,7 +54,7 @@ const ListDetail: React.FC<ListDetailProps> = ({ item }: ListDetailProps) => {
         <div className={styles.content}>
           <Markdown className="summary">{item.summary}</Markdown>
           <Markdown className="article">{item.story}</Markdown>
-          <Gallery items={item.media} />
+          <Gallery items={item.media.length > 1 ? item.media : []} />
           {newsLink(item.link)}
         </div>
         {backLink(item)}
