@@ -1,4 +1,6 @@
 import { Asset } from 'contentful'
+import { Media } from '../interfaces'
+import styles from './gallery.module.css'
 import ImageBox from './ImageBox'
 
 export interface GalleryProps {
@@ -10,24 +12,25 @@ export const Gallery: React.FC<GalleryProps> = ({ items = [] }) => {
   if (items.length === 0) {
     return null
   }
+  console.log(items)
   return (
-    <>
+    <div className={styles.gallery}>
       {items.map((item, index) => {
-        if (item.fields?.file.contentType !== 'image') {
-          return null
-        }
+        const image: Media = item as unknown as Media
         return (
-          <ImageBox
-            src={item?.fields.file.url || ''}
-            width={item?.fields.file.details.image?.width}
-            height={item?.fields.file.details.image?.height}
-            title={item?.fields.title}
-            alt={item?.fields.title}
-            isBlock={true}
-            index={index}
-          />
+          <div className={styles.galleryItem}>
+            <ImageBox
+              src={image.url}
+              width={image.width}
+              height={image.height}
+              title={image.title}
+              alt={image.description || image.title || ''}
+              isBlock={false}
+              index={index}
+            />
+          </div>
         )
       })}
-    </>
+    </div>
   )
 }
