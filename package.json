@@ -61,7 +61,7 @@
     "contentful": "^9.2.13",
     "contentful-management": "^10.21.1",
     "contentful-typescript-codegen": "^3.3.0",
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
