@@ -3,6 +3,10 @@
 Profile website for producer and DJ *Digital Native*.
 Website: https://www.digitalnativeuk.com
 
+## Description
+
+Personal website project.
+
 ## Tech stack
 
 Next.js with TypeScript.
