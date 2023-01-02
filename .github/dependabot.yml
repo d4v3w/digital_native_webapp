@@ -6,7 +6,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "weekly"
     # Specify labels for npm pull requests
     labels:
       - "npm"
