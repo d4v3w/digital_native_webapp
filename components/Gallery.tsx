@@ -9,7 +9,7 @@ export interface GalleryProps {
 }
 
 export const Gallery: React.FC<GalleryProps> = ({ items = [] }) => {
-  if (items.length === 0) {
+  if (items.length < 2) {
     return null
   }
   console.log(items)
