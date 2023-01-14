@@ -32,7 +32,7 @@ const Article: React.FC<ArticleProps> = ({
   const getChildren = children ? <div className={styles.innerContent}>{children}</div> : null
 
   const getContent =
-    getHeading || getChildren ? (
+    getHeading !== null || getChildren !== null ? (
       <div className={styles.content}>
         {getHeading}
         {getChildren}
