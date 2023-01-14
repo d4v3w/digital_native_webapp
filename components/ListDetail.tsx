@@ -7,6 +7,7 @@ import { getMediaItem, MediaAsset } from '../utils/mediaUtils'
 import Article from './Article'
 import { Gallery } from './Gallery'
 import Markdown from './Markdown'
+import Player from './Player'
 
 export type ListDetailProps = {
   item: Content
@@ -19,14 +20,18 @@ const generateLink = (item: Content) => {
     return null
   }
 
-  const bandCampLink = link.match(/bandcamp.com\/EmbeddedPlayer/) ? link : undefined
-  if (bandCampLink) {
+  if (link.match(/bandcamp.com\/EmbeddedPlayer/)) {
     return (
       <>
         <iframe className={styles.iframe} src={link} seamless></iframe>
       </>
     )
   }
+
+  if (link.match(/soundcloud|youtube|facebook|dailymotion|vimeo|file|wistia|mixcloud|vidyard|twitch/)) {
+    return <Player url={link} />
+  }
+
   return (
     <Link href={link} className={styles.link} passHref>
       <Markdown>{link}</Markdown>
