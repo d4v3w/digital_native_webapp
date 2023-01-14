@@ -13,7 +13,8 @@ export type ListDetailProps = {
   media: Array<Media>
 }
 
-const newsLink = (link: string | undefined) => {
+const newsLink = (item: Content) => {
+  const link = item.link && item.type.match(/news|production/) ? '/' + item.type : undefined
   if (!link) {
     return null
   }
@@ -30,11 +31,23 @@ const backLink = (item: Content) => {
     return null
   }
   return (
-    <nav role="navigation">
+    <nav>
       <Link href={link} className={styles.link} title="Navigate to previous page" passHref>
         <Markdown className="link">{`<< Back`}</Markdown>
       </Link>
     </nav>
+  )
+}
+
+const bandCampPlayer = (item: Content) => {
+  const link = item.link && item.link.match(/bandcamp.com/) && item.type.match(/music/) ? item.link : undefined
+  if (!link) {
+    return null
+  }
+  return (
+    <>
+      <iframe className={styles.iframe} src={link} seamless></iframe>
+    </>
   )
 }
 
@@ -55,7 +68,8 @@ const ListDetail: React.FC<ListDetailProps> = ({ item }: ListDetailProps) => {
           <Markdown className="summary">{item.summary}</Markdown>
           <Markdown className="article">{item.story}</Markdown>
           <Gallery items={item?.media?.length ?? 0 > 1 ? item.media : []} />
-          {newsLink(item.link)}
+          {bandCampPlayer(item)}
+          {newsLink(item)}
         </div>
         {backLink(item)}
       </>
