@@ -60,7 +60,7 @@
 }
 
 @media (min-width: 768px) {
-  .content {
+  .article span ~ .content {
     max-width: 50%;
   }
 }
