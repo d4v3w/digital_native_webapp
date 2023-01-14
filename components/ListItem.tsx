@@ -24,9 +24,6 @@ const ListItem: React.FC<ListItemProps> = ({
   isSummaryHidden = false,
   isStoryHidden = false,
 }: ListItemProps) => {
-  if (isHeadingHidden) {
-    item.title = ''
-  }
   const summary = !isSummaryHidden ? (
     <Heading type="subheading" className={classNames(styles.heading, styles.shortText)}>
       <>{item.summary}</>
@@ -48,7 +45,7 @@ const ListItem: React.FC<ListItemProps> = ({
     <li className={classNames(styles.item, styles[className])}>
       <Link href="/news/[id]" as={`/news/${item.slug}`} className={styles.link} title={item.title}>
         <Article
-          heading={item.title}
+          heading={isHeadingHidden ? '' : item.title}
           image={image}
           isInline={true}
           className={className}
