@@ -1,8 +1,7 @@
 .markdown {
   color: rgba(41, 43, 45, 0.9);
-  display: inline;
   font-size: 1.1rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 
 .markdown.default {
@@ -10,19 +9,17 @@
 
 .markdown.article {
   font-size: 1.1rem;
-  line-height: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .markdown.summary {
   font-size: 1.2rem;
-  line-height: 1.3rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .markdown.large {
   font-size: 1.4rem;
-  line-height: 1.4rem;
 }
 
 .markdown.footnote {
