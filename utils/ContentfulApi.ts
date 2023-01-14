@@ -26,7 +26,7 @@ export default class ContentfulApi {
     const query = gql`query {
       contentCollection(
         where: { type_in: ${JSON.stringify(type)} }
-        order: sys_createdAt_DESC
+        order: sys_firstPublishedAt_DESC
         limit: ${pageSize}
         skip: ${skip}
       ) {
@@ -35,6 +35,7 @@ export default class ContentfulApi {
           sys {
             id
             publishedAt
+            firstPublishedAt
           }
           type
           title
@@ -61,6 +62,7 @@ export default class ContentfulApi {
               sys {
                 id
                 publishedAt
+                firstPublishedAt
               }
             }
           }
@@ -119,6 +121,7 @@ export default class ContentfulApi {
           sys {
             id
             publishedAt
+            firstPublishedAt
           }
           type
           title
@@ -145,6 +148,7 @@ export default class ContentfulApi {
               sys {
                 id
                 publishedAt
+                firstPublishedAt
               }
             }
           }
