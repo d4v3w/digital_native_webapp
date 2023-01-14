@@ -13,10 +13,19 @@ export type ListDetailProps = {
   media: Array<Media>
 }
 
-const newsLink = (item: Content) => {
-  const link = item.link && item.type.match(/news|production/) ? item.link : undefined
+const generateLink = (item: Content) => {
+  const link = item.link ? item.link : undefined
   if (!link) {
     return null
+  }
+
+  const bandCampLink = link.match(/bandcamp.com\/EmbeddedPlayer/) ? link : undefined
+  if (bandCampLink) {
+    return (
+      <>
+        <iframe className={styles.iframe} src={link} seamless></iframe>
+      </>
+    )
   }
   return (
     <Link href={link} className={styles.link} passHref>
@@ -39,19 +48,6 @@ const backLink = (item: Content) => {
   )
 }
 
-const bandCampPlayer = (item: Content) => {
-  const link =
-    item.link && item.link.match(/bandcamp.com\/EmbeddedPlayer/) && item.type.match(/music/) ? item.link : undefined
-  if (!link) {
-    return null
-  }
-  return (
-    <>
-      <iframe className={styles.iframe} src={link} seamless></iframe>
-    </>
-  )
-}
-
 const ListDetail: React.FC<ListDetailProps> = ({ item }: ListDetailProps) => {
   const itemMedia = item.media?.at(0) as MediaAsset
 
@@ -69,8 +65,7 @@ const ListDetail: React.FC<ListDetailProps> = ({ item }: ListDetailProps) => {
           <Markdown className="summary">{item.summary}</Markdown>
           <Markdown className="article">{item.story}</Markdown>
           <Gallery items={item?.media?.length ?? 0 > 1 ? item.media : []} />
-          {bandCampPlayer(item)}
-          {newsLink(item)}
+          {generateLink(item)}
         </div>
         {backLink(item)}
       </>
