@@ -14,7 +14,7 @@ export type ListDetailProps = {
 }
 
 const newsLink = (item: Content) => {
-  const link = item.link && item.type.match(/news|production/) ? '/' + item.type : undefined
+  const link = item.link && item.type.match(/news|production/) ? item.link : undefined
   if (!link) {
     return null
   }
@@ -40,7 +40,8 @@ const backLink = (item: Content) => {
 }
 
 const bandCampPlayer = (item: Content) => {
-  const link = item.link && item.link.match(/bandcamp.com/) && item.type.match(/music/) ? item.link : undefined
+  const link =
+    item.link && item.link.match(/bandcamp.com\/EmbeddedPlayer/) && item.type.match(/music/) ? item.link : undefined
   if (!link) {
     return null
   }
