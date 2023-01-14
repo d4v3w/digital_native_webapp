@@ -58,3 +58,9 @@
     padding: 1rem;
   }
 }
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 50%;
+  }
+}
