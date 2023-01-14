@@ -26,7 +26,7 @@ export default class ContentfulApi {
     const query = gql`query {
       contentCollection(
         where: { type_in: ${JSON.stringify(type)} }
-        order: sys_createdAt_DESC
+        order: sys_createdAt
         limit: ${pageSize}
         skip: ${skip}
       ) {
