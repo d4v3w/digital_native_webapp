@@ -5,7 +5,6 @@
 
 .inline {
   flex: 1 1 30%;
-  min-width: fit-content;
 
   img {
     object-fit: cover;
