@@ -17,7 +17,8 @@
 }
 
 .item .link {
-  display: flex;
+  display: block;
+  width: 100%;
 }
 
 .heading {
