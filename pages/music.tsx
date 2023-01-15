@@ -28,7 +28,7 @@ const MusicPage = ({ items }: ListProps) => (
       </>
     </Article>
     <Section className={'music'}>
-      <List items={items} isHeadingHidden={true} isSummaryHidden={true} isStoryHidden={true} className="small" />
+      <List items={items} isHeadingHidden={false} isSummaryHidden={true} isStoryHidden={true} className="small" />
     </Section>
   </Layout>
 )
