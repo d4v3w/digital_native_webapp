@@ -43,7 +43,7 @@ export default class ContentfulApi {
           summary
           story
           link
-          mediaCollection(limit: 10) {
+          mediaCollection(limit: 1) {
             total
             items {
               title
@@ -51,19 +51,6 @@ export default class ContentfulApi {
               url
               width
               height
-            }
-          }
-          relatedCollection(limit: 10) {
-            total
-            items {
-              title
-              slug
-              type
-              sys {
-                id
-                publishedAt
-                firstPublishedAt
-              }
             }
           }
         }
@@ -139,7 +126,7 @@ export default class ContentfulApi {
               height
             }
           }
-          relatedCollection(limit: 10) {
+          relatedCollection(limit: 50) {
             total
             items {
               title
