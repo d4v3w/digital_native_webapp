@@ -1,7 +1,7 @@
 .item {
   display: flex;
   border: 1px solid #ccc;
-  padding: 1em;
+  padding: 0.5rem;
   border-radius: 5px;
   background-color: #fff;
   color: #222;
