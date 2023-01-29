@@ -14,12 +14,7 @@ export interface ListDetailProps {
   media: Array<Media>
 }
 
-interface State {
-  backgroundColor: string
-  boxShadow: string
-}
-
-class ListDetail extends React.Component<ListDetailProps, State> {
+class ListDetail extends React.Component<ListDetailProps> {
   item = this.props.item
 
   itemMedia = this.item.media?.at(0) as MediaAsset

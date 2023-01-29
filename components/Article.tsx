@@ -1,4 +1,6 @@
 import classNames from 'classnames'
+import { type } from 'os'
+import React from 'react'
 import Heading, { HeadingType } from '../components/Heading'
 import ImageBox from '../components/ImageBox'
 import { Media } from '../interfaces'
@@ -6,56 +8,54 @@ import styles from './article.module.css'
 
 export interface ArticleProps {
   heading: string | JSX.Element
-  headingType?: HeadingType
-  className?: string
-  isInline?: boolean
+  headingType: HeadingType
+  className: string
+  isInline: boolean
   image?: Media | undefined
-  type?: string
+  type: string
   children: string | JSX.Element | undefined
 }
 
-const Article: React.FC<ArticleProps> = ({
-  children,
-  headingType = 'heading',
-  isInline = false,
-  className = 'default',
-  type = 'default',
-  image,
-  ...props
-}: ArticleProps) => {
-  const getHeading = props.heading ? (
-    <Heading type={headingType} className={''}>
-      {<>{props.heading}</>}
+class Article extends React.Component<ArticleProps> {
+  getHeading = this.props.heading ? (
+    <Heading type={this.props.headingType} className={''}>
+      {<>{this.props.heading}</>}
     </Heading>
   ) : null
 
-  const getChildren = children ? <div className={styles.innerContent}>{children}</div> : null
+  getChildren = this.props.children ? <div className={styles.innerContent}>{this.props.children}</div> : null
 
-  const getContent =
-    getHeading !== null || getChildren !== null ? (
+  getContent =
+    this.getHeading !== null || this.getChildren !== null ? (
       <div className={styles.content}>
-        {getHeading}
-        {getChildren}
+        {this.getHeading}
+        {this.getChildren}
       </div>
     ) : null
 
-  return (
-    <article
-      className={classNames(styles.article, styles[className], styles[isInline ? 'inline' : ''])}
-      role="article"
-      data-content-type={type}
-    >
-      <ImageBox
-        src={image?.url || ''}
-        alt={props.heading ? props.heading.toString() : ''}
-        isBlock={!isInline}
-        priority={true}
-        width={image?.width}
-        height={image?.height}
-      />
-      {getContent}
-    </article>
-  )
+  render() {
+    return (
+      <article
+        className={classNames(
+          styles.article,
+          styles[this.props.className],
+          styles[this.props.isInline ? 'inline' : ''],
+        )}
+        role="article"
+        data-content-type={type}
+      >
+        <ImageBox
+          src={this.props.image?.url || ''}
+          alt={this.props.heading ? this.props.heading.toString() : ''}
+          isBlock={!this.props.isInline}
+          priority={true}
+          width={this.props.image?.width}
+          height={this.props.image?.height}
+        />
+        {this.getContent}
+      </article>
+    )
+  }
 }
 
 export default Article
