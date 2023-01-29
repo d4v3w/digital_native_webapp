@@ -11,23 +11,11 @@ export interface HeadingProps {
 
 const Heading: React.FC<HeadingProps> = ({ children, type = 'heading', className = '' }: HeadingProps) => {
   if (type === 'title') {
-    return (
-      <h1 className={classNames(styles.title, className)} role="heading">
-        {children}
-      </h1>
-    )
+    return <h1 className={classNames(styles.title, className)}>{children}</h1>
   } else if (type === 'subheading') {
-    return (
-      <h3 className={classNames(styles.subheading, className)} role="heading">
-        {children}
-      </h3>
-    )
+    return <h2 className={classNames(styles.subheading, className)}>{children}</h2>
   }
-  return (
-    <h2 className={classNames(styles.heading, className)} role="heading">
-      {children}
-    </h2>
-  )
+  return <h3 className={classNames(styles.heading, className)}>{children}</h3>
 }
 
 export default Heading

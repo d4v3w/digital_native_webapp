@@ -16,7 +16,7 @@ export interface ArticleProps {
 
 const Article: React.FC<ArticleProps> = ({
   children,
-  headingType = 'title',
+  headingType = 'heading',
   isInline = false,
   className = 'default',
   type = 'default',
@@ -39,11 +39,9 @@ const Article: React.FC<ArticleProps> = ({
       </div>
     ) : null
 
-  const inlineStyle: string = isInline ? 'inline' : ''
-
   return (
     <article
-      className={classNames(styles.article, styles[inlineStyle], styles[className])}
+      className={classNames(styles.article, styles[className], styles[isInline ? 'inline' : ''])}
       role="article"
       data-content-type={type}
     >

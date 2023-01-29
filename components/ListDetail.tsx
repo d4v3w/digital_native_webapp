@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import Link from 'next/link'
-import layoutStyles from '../components/layout.module.css'
+import React from 'react'
 import styles from '../components/listDetail.module.css'
 import { Content, Media } from '../interfaces'
 import { getMediaItem, MediaAsset } from '../utils/mediaUtils'
@@ -9,73 +9,83 @@ import { Gallery } from './Gallery'
 import Markdown from './Markdown'
 import Player from './Player'
 
-export type ListDetailProps = {
+export interface ListDetailProps {
   item: Content
   media: Array<Media>
 }
 
-const generateLink = (item: Content) => {
-  const link = item.link ? item.link : undefined
-  if (!link) {
-    return null
-  }
+interface State {
+  backgroundColor: string
+  boxShadow: string
+}
 
-  if (link.match(/bandcamp.com\/EmbeddedPlayer/)) {
+class ListDetail extends React.Component<ListDetailProps, State> {
+  item = this.props.item
+
+  itemMedia = this.item.media?.at(0) as MediaAsset
+
+  image: Media | undefined = getMediaItem(this.itemMedia)
+
+  generateLink = (item: Content) => {
+    const link = item.link ? item.link : undefined
+    if (!link) {
+      return null
+    }
+
+    if (link.match(/bandcamp.com\/EmbeddedPlayer/)) {
+      return (
+        <>
+          <iframe className={styles.iframe} src={link} seamless></iframe>
+        </>
+      )
+    }
+
+    if (link.match(/soundcloud|youtube|facebook|dailymotion|vimeo|file|wistia|mixcloud|vidyard|twitch/)) {
+      return <Player url={link} />
+    }
+
     return (
-      <>
-        <iframe className={styles.iframe} src={link} seamless></iframe>
-      </>
+      <Link href={link} className={styles.link} passHref>
+        <Markdown>{link}</Markdown>
+      </Link>
     )
   }
 
-  if (link.match(/soundcloud|youtube|facebook|dailymotion|vimeo|file|wistia|mixcloud|vidyard|twitch/)) {
-    return <Player url={link} />
+  backLink = (item: Content) => {
+    const link = item.type.match(/news|music|production/) ? '/' + item.type : undefined
+    if (!link) {
+      return null
+    }
+    return (
+      <nav>
+        <Link href={link} className={styles.link} title="Navigate to previous page" passHref>
+          <Markdown className="link">{`<< Back`}</Markdown>
+        </Link>
+      </nav>
+    )
   }
 
-  return (
-    <Link href={link} className={styles.link} passHref>
-      <Markdown>{link}</Markdown>
-    </Link>
-  )
-}
-
-const backLink = (item: Content) => {
-  const link = item.type.match(/news|music|production/) ? '/' + item.type : undefined
-  if (!link) {
-    return null
+  render() {
+    return (
+      <Article
+        heading={this.item.title}
+        headingType="title"
+        image={this.image}
+        className={classNames(styles.detail)}
+        type={this.item.type}
+      >
+        <>
+          <div className={styles.content}>
+            <Markdown className="summary">{this.item.summary}</Markdown>
+            <Markdown className="article">{this.item.story}</Markdown>
+            <Gallery items={this.item?.media?.length ?? 0 > 1 ? this.item.media : []} />
+            {this.generateLink(this.item)}
+          </div>
+          {this.backLink(this.item)}
+        </>
+      </Article>
+    )
   }
-  return (
-    <nav>
-      <Link href={link} className={styles.link} title="Navigate to previous page" passHref>
-        <Markdown className="link">{`<< Back`}</Markdown>
-      </Link>
-    </nav>
-  )
-}
-
-const ListDetail: React.FC<ListDetailProps> = ({ item }: ListDetailProps) => {
-  const itemMedia = item.media?.at(0) as MediaAsset
-
-  const image: Media | undefined = getMediaItem(itemMedia)
-
-  return (
-    <Article
-      heading={item.title}
-      image={image}
-      className={classNames(layoutStyles.article, styles.detail)}
-      type={item.type}
-    >
-      <>
-        <div className={styles.content}>
-          <Markdown className="summary">{item.summary}</Markdown>
-          <Markdown className="article">{item.story}</Markdown>
-          <Gallery items={item?.media?.length ?? 0 > 1 ? item.media : []} />
-          {generateLink(item)}
-        </div>
-        {backLink(item)}
-      </>
-    </Article>
-  )
 }
 
 export default ListDetail
