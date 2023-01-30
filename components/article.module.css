@@ -25,6 +25,10 @@
   flex: 3;
 }
 
+.content:empty {
+  display: none;
+}
+
 .article.small .content {
   position: absolute;
   left: -9999px;
@@ -34,6 +38,10 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.innerContent:empty {
+  display: none;
 }
 
 .article.feed .innerContent {
