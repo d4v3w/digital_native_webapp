@@ -59,7 +59,7 @@
     "babel-loader": "^9.1.2",
     "classnames": "^2.3.2",
     "contentful": "^9.3.0",
-    "contentful-management": "^10.27.0",
+    "contentful-management": "^10.27.2",
     "contentful-typescript-codegen": "^3.4.0",
     "eslint": "^8.32.0",
     "eslint-config-airbnb": "^19.0.4",
