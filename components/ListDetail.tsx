@@ -21,7 +21,7 @@ class ListDetail extends React.Component<ListDetailProps> {
 
   image: Media | undefined = getMediaItem(this.itemMedia)
 
-  generateLink = (item: Content) => {
+  generateLink: React.FC<Content> = (item: Content) => {
     const link = item.link ? item.link : undefined
     if (!link) {
       return null
@@ -46,7 +46,7 @@ class ListDetail extends React.Component<ListDetailProps> {
     )
   }
 
-  backLink = (item: Content) => {
+  backLink: React.FC<Content> = (item: Content) => {
     const link = item.type.match(/news|music|production/) ? '/' + item.type : undefined
     if (!link) {
       return null
@@ -68,6 +68,7 @@ class ListDetail extends React.Component<ListDetailProps> {
         image={this.image}
         className={classNames(styles.detail)}
         type={this.item.type}
+        isInline={false}
       >
         <>
           <div className={styles.content}>
