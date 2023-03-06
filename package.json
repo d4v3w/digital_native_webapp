@@ -21,7 +21,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "graphql": "^16.6.0",
-    "graphql-request": "^5.1.0",
+    "graphql-request": "^5.2.0",
     "next": "latest",
     "next-redux-wrapper": "^8.1.0",
     "next-sitemap": "^4.0.2",
