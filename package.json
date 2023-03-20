@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
-    "@contentful/rich-text-types": "^16.0.2",
+    "@contentful/rich-text-types": "^16.0.3",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@next/eslint-plugin-next": "^13.2.4",
     "@storybook/addon-actions": "^6.5.13",
