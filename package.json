@@ -40,7 +40,7 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@next/eslint-plugin-next": "^13.2.4",
     "@storybook/addon-actions": "^6.5.13",
-    "@storybook/addon-docs": "^6.5.13",
+    "@storybook/addon-docs": "^7.0.2",
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-links": "^6.5.16",
     "@storybook/addon-postcss": "^2.0.0",
