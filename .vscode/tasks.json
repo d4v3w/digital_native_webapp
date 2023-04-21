@@ -1,15 +1,5 @@
 {
 	"version": "2.0.0",
 	"tasks": [
-		{
-			"type": "npm",
-			"script": "build-storybook",
-			"problemMatcher": [
-				"$eslint-stylish"
-			],
-			"group": "build",
-			"label": "npm: build-storybook",
-			"detail": "build-storybook"
-		}
 	]
 }

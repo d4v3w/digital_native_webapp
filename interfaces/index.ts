@@ -3,8 +3,19 @@ import { IContentFields } from './contentful'
 
 export type Content = IContentFields
 
+export type ContentCollection = {
+  items: ApiContent[]
+  total: number
+  type: PageType
+}
+
+export type ContentfulResponse = {
+  contentCollection: ContentCollection
+}
+
 export type ApiContent = IContentFields & {
   mediaCollection: AssetCollection
+  relatedCollection: ContentCollection
 }
 
 export type Media = {
@@ -18,3 +29,5 @@ export type Media = {
 }
 
 export type PageType = 'event' | 'gallery' | 'music' | 'news' | 'page' | 'production'
+
+export const ALL_PAGE_TYPES: PageType[] = ['event', 'gallery', 'music', 'news', 'page', 'production']

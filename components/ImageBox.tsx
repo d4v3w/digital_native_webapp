@@ -24,6 +24,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({
         height={height}
         src={src}
         quality={80}
+        className="imageboxcover"
         {...props}
         style={{
           maxWidth: '100%',

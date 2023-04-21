@@ -6,10 +6,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -29,15 +26,6 @@
       }
     ]
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "postcss.config.js",
-    "next.config.js",
-    "tailwind.config.js",
-    ".next/types/**/*.ts"
-, "getContentfulEnvironment.js"  ]
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "next.config.js", ".next/types/**/*.ts", "getContentfulEnvironment.js"]
 }

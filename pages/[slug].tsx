@@ -1,11 +1,11 @@
 import { GetServerSideProps } from 'next'
-import Layout from '../../components/Layout'
-import { List } from '../../components/List'
-import ListDetail from '../../components/ListDetail'
-import Section from '../../components/Section'
-import { Content, Media } from '../../interfaces'
-import { SITE_NAME } from '../../utils/common'
-import ContentfulApi from '../../utils/ContentfulApi'
+import Layout from '../components/Layout'
+import PageDetail from '../components/pageDetail'
+import { Pages } from '../components/Pages'
+import Section from '../components/Section'
+import { Content, Media } from '../interfaces'
+import { SITE_NAME } from '../utils/common'
+import ContentfulApi from '../utils/ContentfulApi'
 
 type ArticlePageProps = {
   item: Content
@@ -29,9 +29,9 @@ const ArticlePage = ({ item, media, items, type }: ArticlePageProps) => {
 
   return (
     <Layout title={`${SITE_NAME} | ${item.title}`}>
-      <ListDetail item={item} media={media} />
-      <Section className={'news'}>
-        <List
+      <PageDetail item={item} media={media} />
+      <Section>
+        <Pages
           items={items}
           isHeadingHidden={isHeadingHidden}
           isImageHidden={isImageHidden}

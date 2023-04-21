@@ -1,10 +1,10 @@
 import classNames from 'classnames'
-import styles from './list.module.css'
-import ListItem from './ListItem'
+import PageItem from './PageItem'
+import styles from './pages.module.css'
 
 import { Content } from '../interfaces'
 
-export interface ListProps {
+export interface PagesProps {
   items: Content[]
   className?: string
   isHeadingHidden?: boolean
@@ -13,7 +13,7 @@ export interface ListProps {
   isStoryHidden?: boolean
 }
 
-export const List: React.FC<ListProps> = ({ items, className = '', ...props }: ListProps) => {
+export const Pages: React.FC<PagesProps> = ({ items, className = '', ...props }: PagesProps) => {
   let counter = -1
 
   return (
@@ -22,10 +22,10 @@ export const List: React.FC<ListProps> = ({ items, className = '', ...props }: L
         // Increment counter
         ++counter
         const key = `${className}-item-${index.toString()}-${item.slug}` || `${index.toString()}-${counter.toString()}`
-        return <ListItem key={key} id={counter} item={item} className={className} {...props} />
+        return <PageItem key={key} id={counter} item={item} className={className} {...props} />
       })}
     </ul>
   )
 }
 
-export default List
+export default Pages

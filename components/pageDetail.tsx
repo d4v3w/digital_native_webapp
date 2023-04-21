@@ -1,15 +1,14 @@
 import classNames from 'classnames'
 import Link from 'next/link'
-import layoutStyles from '../components/layout.module.css'
-import styles from '../components/listDetail.module.css'
 import { Content, Media } from '../interfaces'
 import { getMediaItem, MediaAsset } from '../utils/mediaUtils'
 import Article from './Article'
 import { Gallery } from './Gallery'
 import Markdown from './Markdown'
+import styles from './pageDetail.module.css'
 import Player from './Player'
 
-export type ListDetailProps = {
+export type PageDetailProps = {
   item: Content
   media: Array<Media>
 }
@@ -39,32 +38,13 @@ const generateLink = (item: Content) => {
   )
 }
 
-const backLink = (item: Content) => {
-  const link = item.type.match(/news|music|production/) ? '/' + item.type : undefined
-  if (!link) {
-    return null
-  }
-  return (
-    <nav>
-      <Link href={link} className={styles.link} title="Navigate to previous page" passHref>
-        <Markdown className="link">{`<< Back`}</Markdown>
-      </Link>
-    </nav>
-  )
-}
-
-const ListDetail: React.FC<ListDetailProps> = ({ item }: ListDetailProps) => {
+const PageDetail: React.FC<PageDetailProps> = ({ item }: PageDetailProps) => {
   const itemMedia = item.media?.at(0) as MediaAsset
 
   const image: Media | undefined = getMediaItem(itemMedia)
 
   return (
-    <Article
-      heading={item.title}
-      image={image}
-      className={classNames(layoutStyles.article, styles.detail)}
-      type={item.type}
-    >
+    <Article heading={item.title} image={image} className={classNames(styles.detail)} type={item.type}>
       <>
         <div className={styles.content}>
           <Markdown className="summary">{item.summary}</Markdown>
@@ -72,10 +52,9 @@ const ListDetail: React.FC<ListDetailProps> = ({ item }: ListDetailProps) => {
           <Gallery items={item?.media?.length ?? 0 > 1 ? item.media : []} />
           {generateLink(item)}
         </div>
-        {backLink(item)}
       </>
     </Article>
   )
 }
 
-export default ListDetail
+export default PageDetail

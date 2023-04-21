@@ -4,10 +4,10 @@ import { Content, Media } from '../interfaces'
 import { getMediaItem, MediaAsset } from '../utils/mediaUtils'
 import Article from './Article'
 import Heading from './Heading'
-import styles from './listItem.module.css'
 import Markdown from './Markdown'
+import styles from './pageItem.module.css'
 
-export interface ListItemProps {
+export interface PageItemProps {
   id: number
   item: Content
   className?: string
@@ -16,14 +16,14 @@ export interface ListItemProps {
   isStoryHidden?: boolean
 }
 
-const ListItem: React.FC<ListItemProps> = ({
+const PageItem: React.FC<PageItemProps> = ({
   id,
   item,
   className = 'default',
   isHeadingHidden = false,
   isSummaryHidden = false,
   isStoryHidden = false,
-}: ListItemProps) => {
+}: PageItemProps) => {
   const summary = !isSummaryHidden ? (
     <Heading type="subheading" className={classNames(styles.heading, styles.shortText)}>
       <>{item.summary}</>
@@ -43,7 +43,7 @@ const ListItem: React.FC<ListItemProps> = ({
 
   return item.title || image || summary || story ? (
     <li className={classNames(styles.item, styles[className])}>
-      <Link href="/news/[id]" as={`/news/${item.slug}`} className={styles.link} title={item.title}>
+      <Link href="/[id]" as={`/${item.slug}`} className={styles.link} title={item.title}>
         <Article
           heading={isHeadingHidden ? '' : item.title}
           image={image}
@@ -62,4 +62,4 @@ const ListItem: React.FC<ListItemProps> = ({
   ) : null
 }
 
-export default ListItem
+export default PageItem

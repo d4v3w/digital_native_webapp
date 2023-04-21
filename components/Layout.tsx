@@ -25,7 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title = '', className = '' }:
       <title>{pageTitle(title)}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content={`All the latest news and info about your favourite DJ/Producer ${siteTitle}`} />
+      <meta name="description" content={`Keep up to date with DJ/Producer ${siteTitle}`} />
       <meta property="og:image" content={siteImage.src} />
       <meta name="og:title" content={siteTitle} />
       <meta name="twitter:card" content="summary_large_image" />

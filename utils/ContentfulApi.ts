@@ -1,5 +1,6 @@
 import { gql, GraphQLClient, RequestDocument } from 'graphql-request'
-import { ApiContent, Content } from '../interfaces'
+import { ApiContent, Content, ContentfulResponse } from '../interfaces'
+import { IContent } from '../interfaces/contentful'
 import { PageType } from '../interfaces/index'
 import { Config } from './Config'
 
@@ -57,7 +58,7 @@ export default class ContentfulApi {
       }
     }`
 
-    const response = await this.callContentful(query)
+    const response: ContentfulResponse = (await this.callContentful(query)) as ContentfulResponse
 
     const items = response.contentCollection.items
 
@@ -87,7 +88,7 @@ export default class ContentfulApi {
       }
     `
 
-    const response = await this.callContentful(query)
+    const response: ContentfulResponse = (await this.callContentful(query)) as ContentfulResponse
 
     return {
       props: {
@@ -143,12 +144,12 @@ export default class ContentfulApi {
       }
     }`
 
-    const response = await this.callContentful(query)
+    const response: ContentfulResponse = (await this.callContentful(query)) as ContentfulResponse
 
-    const item = response.contentCollection.items.at(0)
+    const item = response.contentCollection.items?.at(0)
     const itemContent = item as Content
-    itemContent.media = item.mediaCollection.items
-    itemContent.related = item.relatedCollection.items
+    itemContent.media = item?.mediaCollection.items
+    itemContent.related = item?.relatedCollection.items as unknown as IContent[]
 
     return {
       props: {

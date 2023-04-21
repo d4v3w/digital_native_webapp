@@ -1,19 +1,20 @@
 import { GetStaticProps } from 'next/types'
+import Article from '../components/Article'
 import Layout from '../components/Layout'
-import { List, ListProps } from '../components/List'
-import Section from '../components/Section'
+import { Pages, PagesProps } from '../components/Pages'
+import { ALL_PAGE_TYPES } from '../interfaces'
 import ContentfulApi from '../utils/ContentfulApi'
 
-const IndexPage = ({ items }: ListProps) => (
-  <Layout title="Home" className="home">
-    <Section className={'home'}>
-      <List items={items} className="feed" isStoryHidden={true} />
-    </Section>
+const Page = ({ items }: PagesProps) => (
+  <Layout title="Digital Native">
+    <Article heading="Online Content">
+      <Pages items={items} />
+    </Article>
   </Layout>
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  return await ContentfulApi.getPaginatedContent(['news', 'event', 'music'], 1)
+  return await ContentfulApi.getPaginatedContent(ALL_PAGE_TYPES, 1)
 }
 
-export default IndexPage
+export default Page

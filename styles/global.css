@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400&family=Noto+Sans:wght@300&display=swap');
 
-/* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* purgecss end ignore */
-
 html {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
