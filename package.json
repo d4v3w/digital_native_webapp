@@ -14,9 +14,13 @@
     "test-watch": "jest --watch",
     "test-update": "jest --updateSnapshot ",
     "stylelint": "npx stylelint '**/*.module.css'",
-    "generate": "contentful-typescript-codegen --output ./interfaces/contentful.ts"
+    "generate": "contentful-typescript-codegen --output ./interfaces/contentful.ts",
+    "setup": "node ./contentful/setup.js"
   },
   "dependencies": {
+    "contentful": "^9.2.19",
+    "contentful-import": "^8.5.23",
+    "dotenv": "^16.0.3",
     "@reduxjs/toolkit": "^1.9.3",
     "graphql": "^16.6.0",
     "graphql-request": "^5.1.0",
