@@ -13,13 +13,16 @@
     "lint": "eslint --ext .jsx,.js,.ts,.tsx",
     "lint-fix": "eslint --fix --ext .jsx,.js,.ts,.tsx .",
     "test": "jest",
-    "test-watch": "jest --watch",
-    "test-update": "jest --updateSnapshot ",
+    "test:watch": "jest --watch",
+    "test:update": "jest --updateSnapshot",
+    "test:backstop": "backstop test",
+    "test:backstop-approve": "backstop approve",
     "stylelint": "npx stylelint '**/*.module.css'",
     "generate": "contentful-typescript-codegen --output ./interfaces/contentful.ts"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
+    "backstopjs": "^6.2.2",
     "graphql": "^16.8.1",
     "graphql-request": "^5.1.0",
     "next": "latest",

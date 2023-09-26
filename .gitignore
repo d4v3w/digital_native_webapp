@@ -38,6 +38,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# backstopjs
+backstop_data/bitmaps_test
+backstop_data/html_report
+
 amplify/team-provider-info.json
 
 #amplify-do-not-edit-begin

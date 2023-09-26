@@ -3,8 +3,7 @@
 exports[`All snapshots Components renders article unchanged 1`] = `
 <div>
   <article
-    class="article default"
-    data-content-type="default"
+    class="article"
     role="article"
   />
 </div>
@@ -224,7 +223,7 @@ exports[`All snapshots Components renders footer unchanged 1`] = `
       </li>
     </ul>
     <span>
-      © Digital Native UK 2022. All rights reserved.
+      © Digital Native UK 2023. All rights reserved.
     </span>
   </footer>
 </div>
@@ -348,12 +347,11 @@ exports[`All snapshots Components renders header unchanged 1`] = `
 
 exports[`All snapshots Components renders heading unchanged 1`] = `
 <div>
-  <h2
+  <h3
     class="heading"
-    role="heading"
   >
     Test
-  </h2>
+  </h3>
 </div>
 `;
 
@@ -695,7 +693,7 @@ exports[`All snapshots Components renders layout unchanged 1`] = `
         </li>
       </ul>
       <span>
-        © Digital Native UK 2022. All rights reserved.
+        © Digital Native UK 2023. All rights reserved.
       </span>
     </footer>
   </div>
@@ -1422,7 +1420,7 @@ exports[`All snapshots Pages renders homepage unchanged 1`] = `
         </li>
       </ul>
       <span>
-        © Digital Native UK 2022. All rights reserved.
+        © Digital Native UK 2023. All rights reserved.
       </span>
     </footer>
   </div>
@@ -1549,19 +1547,17 @@ exports[`All snapshots Pages renders music unchanged 1`] = `
       class="main music"
     >
       <article
-        class="article default"
-        data-content-type="default"
+        class="article"
         role="article"
       >
         <div
           class="content"
         >
-          <h1
-            class="title"
-            role="heading"
+          <h3
+            class="heading"
           >
             Digital Native UK Music
-          </h1>
+          </h3>
           <div
             class="innerContent"
           >
@@ -1817,7 +1813,7 @@ exports[`All snapshots Pages renders music unchanged 1`] = `
         </li>
       </ul>
       <span>
-        © Digital Native UK 2022. All rights reserved.
+        © Digital Native UK 2023. All rights reserved.
       </span>
     </footer>
   </div>
@@ -1945,18 +1941,16 @@ exports[`All snapshots Pages renders news unchanged 1`] = `
     >
       <article
         class="article"
-        data-content-type="default"
         role="article"
       >
         <div
           class="content"
         >
-          <h1
-            class="title"
-            role="heading"
+          <h3
+            class="heading"
           >
             Digital Native News
-          </h1>
+          </h3>
           <div
             class="innerContent"
           >
@@ -2168,7 +2162,7 @@ exports[`All snapshots Pages renders news unchanged 1`] = `
         </li>
       </ul>
       <span>
-        © Digital Native UK 2022. All rights reserved.
+        © Digital Native UK 2023. All rights reserved.
       </span>
     </footer>
   </div>
@@ -2295,19 +2289,17 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
       class="main production"
     >
       <article
-        class="article inline default"
-        data-content-type="default"
+        class="article inline"
         role="article"
       >
         <div
           class="content"
         >
-          <h1
-            class="title"
-            role="heading"
+          <h3
+            class="heading"
           >
             Digital Native Production Tutorials
-          </h1>
+          </h3>
           <div
             class="innerContent"
           >
@@ -2329,19 +2321,17 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
         </div>
       </article>
       <article
-        class="article inline default"
-        data-content-type="default"
+        class="article inline"
         role="article"
       >
         <div
           class="content"
         >
-          <h2
+          <h3
             class="heading"
-            role="heading"
           >
             Forever and Ever | Track Breakdown
-          </h2>
+          </h3>
           <div
             class="innerContent"
           >
@@ -2356,19 +2346,17 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
         </div>
       </article>
       <article
-        class="article inline default"
-        data-content-type="default"
+        class="article inline"
         role="article"
       >
         <div
           class="content"
         >
-          <h2
+          <h3
             class="heading"
-            role="heading"
           >
             London Elektricity - 'Possible Worlds' ft. Inja (Digital Native Remix)
-          </h2>
+          </h3>
           <div
             class="innerContent"
           >
@@ -2383,19 +2371,17 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
         </div>
       </article>
       <article
-        class="article inline default"
-        data-content-type="default"
+        class="article inline"
         role="article"
       >
         <div
           class="content"
         >
-          <h2
+          <h3
             class="heading"
-            role="heading"
           >
             Journey Through | Track Breakdown
-          </h2>
+          </h3>
           <div
             class="innerContent"
           >
@@ -2611,7 +2597,7 @@ exports[`All snapshots Pages renders production unchanged 1`] = `
         </li>
       </ul>
       <span>
-        © Digital Native UK 2022. All rights reserved.
+        © Digital Native UK 2023. All rights reserved.
       </span>
     </footer>
   </div>
