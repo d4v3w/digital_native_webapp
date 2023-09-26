@@ -46,6 +46,7 @@ const ListItem: React.FC<ListItemProps> = ({
       <Link href="/news/[id]" as={`/news/${item.slug}`} className={styles.link} title={item.title}>
         <Article
           heading={isHeadingHidden ? '' : item.title}
+          headingType='subheading'
           image={image}
           isInline={true}
           className={className}

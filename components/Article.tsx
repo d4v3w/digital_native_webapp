@@ -1,5 +1,4 @@
 import classNames from 'classnames'
-import { type } from 'os'
 import React from 'react'
 import Heading, { HeadingType } from '../components/Heading'
 import ImageBox from '../components/ImageBox'
@@ -12,7 +11,7 @@ export interface ArticleProps {
   className: string
   isInline: boolean
   image?: Media | undefined
-  type: string
+  type?: string
   children: string | JSX.Element | undefined
 }
 
@@ -35,15 +34,7 @@ class Article extends React.Component<ArticleProps> {
 
   render() {
     return (
-      <article
-        className={classNames(
-          styles.article,
-          styles[this.props.className],
-          styles[this.props.isInline ? 'inline' : ''],
-        )}
-        role="article"
-        data-content-type={type}
-      >
+      <article className={classNames(styles.article, styles[this.props.isInline ? 'inline' : ''])} role="article">
         <ImageBox
           src={this.props.image?.url || ''}
           alt={this.props.heading ? this.props.heading.toString() : ''}

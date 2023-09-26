@@ -17,7 +17,7 @@ export interface ListDetailProps {
 class ListDetail extends React.Component<ListDetailProps> {
   item = this.props.item
 
-  itemMedia = this.item.media?.at(0) as MediaAsset
+  itemMedia: MediaAsset | undefined = this.item?.media?.at(0) as MediaAsset
 
   image: Media | undefined = getMediaItem(this.itemMedia)
 
